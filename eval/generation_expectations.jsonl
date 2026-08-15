@@ -1,0 +1,15 @@
+{"id":"course_start_date","answer_concepts":[["2026년 9월 1일","2026. 9. 1"]]}
+{"id":"wishlist_credit_limit","answer_concepts":[["24학점"]]}
+{"id":"normal_credit_range","answer_concepts":[["6학점"],["18학점"]]}
+{"id":"high_grade_credit_limit","answer_concepts":[["16학점"],["B+","3.5"],["21학점"]]}
+{"id":"scholarship_minimum_credits","answer_concepts":[["15학점"],["4학년"],["10학점"]]}
+{"id":"credit_rollover_limit","answer_concepts":[["2학점"]]}
+{"id":"withdraw_replace_course","answer_concepts":[["추가로 신청할 수 없","추가 신청할 수 없","추가할 수 없"]]}
+{"id":"assigned_course_cancel","answer_concepts":[["취소할 수 없","취소가 불가능","취소하거나 반을 변경할 수 없"]]}
+{"id":"graduate_course_credits","answer_concepts":[["6학점"],["12학점"]]}
+{"id":"seventy_five_minute_class","answer_concepts":[["75분"],["2회"]]}
+{"id":"elearning_attendance_ratio","answer_concepts":[["80%"]]}
+{"id":"external_kmooc_credit_limit","answer_concepts":[["6학점"]]}
+{"id":"retake_eligibility","answer_concepts":[["C+"] , ["이하"]]}
+{"id":"retake_max_grade","answer_concepts":[["A0"]]}
+{"id":"exchange_student_gpa","answer_concepts":[["B0"],["3.0"]]}

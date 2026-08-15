@@ -1,0 +1,21 @@
+{"id":"fall_course_registration_seniors","category":"course_registration","query":"2026년 2학기 4학년 수강신청은 언제야?","expected_document_id":"notice3-891485","required_phrases":["4학년","8.14.(금) 10:00"]}
+{"id":"fall_leave_period","category":"academic_status","query":"2026년 2학기 정규 휴학 신청 기간은 언제야?","expected_document_id":"notice3-890724","required_phrases":["휴학신청 기간","2026. 7. 27"]}
+{"id":"fall_return_completion","category":"academic_status","query":"2026년 2학기 복학 승인을 받으려면 무엇을 완료해야 해?","expected_document_id":"notice3-890725","required_phrases":["수강신청","등록금 납부","최종 복학"]}
+{"id":"early_graduation_eligibility","category":"graduation","query":"2026년 2학기 조기졸업 신청 학점과 평점 조건은?","expected_document_id":"notice3-891273","required_phrases":["65/130 이상","4.1 이상"]}
+{"id":"graduation_review_update","category":"graduation","query":"2026년 8월 졸업심사 결과는 언제 기준으로 최신화됐어?","expected_document_id":"notice3-890789","required_phrases":["8월 6일자로 최신화"]}
+{"id":"fall_tuition_period","category":"tuition","query":"2026년 2학기 재학생 등록금 납부 기간과 시간은?","expected_document_id":"notice3-891311","required_phrases":["2026.08.25","09:00~16:00"]}
+{"id":"tuition_confirmation_time","category":"tuition","query":"등록금을 낸 뒤 학사정보시스템에서 언제 확인할 수 있어?","expected_document_id":"notice3-863757","required_phrases":["다음 근무일 오전 10시"]}
+{"id":"exchange_gpa","category":"credit","query":"2026년 2학기 본교생이 타 대학 학점교류를 신청하려면 평점이 얼마 이상이어야 해?","expected_document_id":"notice3-891366","required_phrases":["총 평점평균","B0(3.0) 이상"]}
+{"id":"incoming_exchange_id","category":"credit","query":"2026년 2학기 타교 학점교류생 임시학번은 언제 발송돼?","expected_document_id":"notice3-891483","required_phrases":["18:00 이후 발송"]}
+{"id":"national_scholarship_period","category":"scholarship","query":"2026년 2학기 국가장학금 1차 신청기간은 언제야?","expected_document_id":"notice7-886502","required_phrases":["2026. 05. 22","06. 22"]}
+{"id":"national_scholarship_grade","category":"scholarship","query":"2026년 2학기 국가장학금의 공통 성적 기준은?","expected_document_id":"notice7-886502","required_phrases":["직전학기 6 학점","백분위 성적 80 점"]}
+{"id":"national_scholarship_payment","category":"scholarship","query":"2026년 1학기 국가장학금 현금 지급 일정은 언제야?","expected_document_id":"notice7-866601","required_phrases":["현금지급일정","2026.04.24"]}
+{"id":"improvement_scholarship_grade","category":"scholarship","query":"2026년 1학기 성적향상장학금의 직전학기 학점과 평점 조건은?","expected_document_id":"notice7-866189","required_phrases":["직전학기 성적","평점 3.5 점 이상"]}
+{"id":"housing_scholarship_amount","category":"scholarship","query":"2026년 2학기 주거안정지원장학금은 월 얼마까지 지원해?","expected_document_id":"notice7-886181","required_phrases":["월 20 만원 한도"]}
+{"id":"change_major_credits","category":"academic_status","query":"2026년 1학기 전과를 신청하려면 몇 학점을 취득해야 해?","expected_document_id":"notice3-867033","required_phrases":["33학점 이상"]}
+{"id":"readmission_period","category":"academic_status","query":"2026년 2학기 재입학 신청 기간은 언제야?","expected_document_id":"notice3-885721","required_phrases":["2026년 6월 1일","6월 12일"]}
+{"id":"english_certification_documents","category":"graduation","query":"2026년 8월 졸업예정자가 영어졸업인증을 신청할 때 무엇을 가져가야 해?","expected_document_id":"notice3-886813","required_phrases":["공인영어성적표","신분증"]}
+{"id":"graduation_self_diagnosis_menu","category":"graduation","query":"재학생 졸업요건 자가진단은 학사정보시스템의 어느 메뉴에서 확인해?","expected_document_id":"notice3-865238","required_phrases":["학적/졸업","졸업요건자가진단"]}
+{"id":"extra_leave_return_period","category":"academic_status","query":"2026년 2학기 휴학 복학 추가 신청 마감은 언제야?","expected_document_id":"notice3-891420","required_phrases":["8. 13.","16:00"]}
+{"id":"military_elearning_credit","category":"course_registration","query":"2026년 2학기 군 e러닝은 한 학기에 최대 몇 학점 들을 수 있어?","expected_document_id":"notice3-891489","required_phrases":["학기당 최대 3 학점"]}
+{"id":"global_english_sessions","category":"course_registration","query":"2026년 2학기 글로벌잉글리쉬1은 매주 세션을 몇 번 신청해야 해?","expected_document_id":"notice3-891263","required_phrases":["매주 총 4회"]}

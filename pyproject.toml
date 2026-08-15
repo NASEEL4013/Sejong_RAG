@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sejong-university-rag"
+version = "0.1.0"
+description = "세종대학교 공식 학사정보 RAG 학습 프로젝트"
+requires-python = ">=3.10"
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "google-genai>=1.0,<2",
+  "numpy>=2,<3",
+  "olefile>=0.47,<1",
+  "openpyxl>=3.1,<4",
+  "pypdf>=6,<7",
+  "pyhwp>=0.1b15,<0.2",
+  "python-docx>=1.1,<2",
+  "python-dotenv>=1,<2",
+  "python-pptx>=1.0,<2",
+  "requests>=2.31,<3",
+  "sentence-transformers>=5,<6",
+  "six>=1.16,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+sejong-ingest = "sejong_rag.ingest:main"
+sejong-list-notices = "sejong_rag.list_notices:main"
+sejong-classify-notices = "sejong_rag.classify_notices:main"
+sejong-collect-details = "sejong_rag.collect_details:main"
+sejong-import-attachments = "sejong_rag.import_attachments:main"
+sejong-document-policy = "sejong_rag.document_policy:main"
+sejong-attachment-checklist = "sejong_rag.attachment_checklist:main"
+sejong-download-attachments = "sejong_rag.download_attachments:main"
+sejong-collect-year = "sejong_rag.collect_year_catalog:main"
+sejong-extract-attachments = "sejong_rag.extract_attachments:main"
+sejong-recover-attachments = "sejong_rag.recover_attachments:main"
+sejong-validate-ocr = "sejong_rag.validate_ocr:main"
+sejong-unified-chunk = "sejong_rag.unified_chunk:main"
+sejong-unified-search = "sejong_rag.unified_search:main"
+sejong-evaluate-unified = "sejong_rag.evaluate_unified:main"
+sejong-chunk = "sejong_rag.chunk_pdf:main"
+sejong-search = "sejong_rag.keyword_search:main"
+sejong-embed = "sejong_rag.embed_chunks:main"
+sejong-vector-search = "sejong_rag.vector_search:main"
+sejong-token-chunk = "sejong_rag.token_chunk:main"
+sejong-hybrid-search = "sejong_rag.hybrid_search:main"
+sejong-evaluate = "sejong_rag.evaluate_retrieval:main"
+sejong-context = "sejong_rag.context_builder:main"
+sejong-prompt = "sejong_rag.prompt_builder:main"
+sejong-ask = "sejong_rag.gemini_rag:main"
+sejong-evaluate-generation = "sejong_rag.evaluate_generation:main"
+sejong-evaluate-holdout-generation = "sejong_rag.evaluate_unified_generation:main"
+sejong-evaluate-behavior = "sejong_rag.evaluate_behavior:main"
+sejong-regrade-holdout = "sejong_rag.regrade_holdout:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

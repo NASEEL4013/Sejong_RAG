@@ -1,0 +1,15 @@
+{"id":"course_start_date","query":"2026년 2학기 개강일은 언제야?","expected_page":5,"required_phrases":["개강일","2026년 9월 1일"]}
+{"id":"wishlist_credit_limit","query":"관심과목 담기에는 최대 몇 학점까지 넣을 수 있어?","expected_page":5,"required_phrases":["관심 과목","최대 24학점"]}
+{"id":"normal_credit_range","query":"한 학기에 기본적으로 몇 학점까지 수강신청할 수 있어?","expected_page":6,"required_phrases":["매 학기 6학점","18학점까지"]}
+{"id":"high_grade_credit_limit","query":"직전 학기 성적이 좋으면 최대 몇 학점까지 신청 가능해?","expected_page":6,"required_phrases":["16학점 이상","B+(3.5) 이상","21학점까지"]}
+{"id":"scholarship_minimum_credits","query":"장학금을 신청하려면 학점을 최소 얼마나 들어야 해?","expected_page":6,"required_phrases":["장학금 신청","15학점 이상","4학년","10학점 이상"]}
+{"id":"credit_rollover_limit","query":"남은 수강신청 학점은 다음 학기로 얼마나 이월할 수 있어?","expected_page":7,"required_phrases":["2학점 내에서","다음 학기로 이월"]}
+{"id":"withdraw_replace_course","query":"수강철회한 뒤 다른 과목을 대신 추가할 수 있어?","expected_page":8,"required_phrases":["철회 시","다른 과목을 추가로 신청할 수 없다"]}
+{"id":"assigned_course_cancel","query":"학교에서 일괄 신청해 준 과목을 내가 취소할 수 있나?","expected_page":8,"required_phrases":["일괄 수강신청 과목","임의로 수강을 취소"]}
+{"id":"graduate_course_credits","query":"학부생이 대학원 과목을 전공선택으로 최대 몇 학점 들을 수 있어?","expected_page":9,"required_phrases":["6학점 이내","총 12학점"]}
+{"id":"seventy_five_minute_class","query":"75분 강의는 일주일에 어떻게 나눠서 진행돼?","expected_page":14,"required_phrases":["75분 2회","150분 강의"]}
+{"id":"elearning_attendance_ratio","query":"온라인 강의는 몇 퍼센트 이상 들어야 출석으로 인정돼?","expected_page":23,"required_phrases":["80% 이상 수강","정상 출석"]}
+{"id":"external_kmooc_credit_limit","query":"타 대학 K-MOOC는 졸업할 때까지 몇 학점 인정돼?","expected_page":25,"required_phrases":["학기당 3학점","졸업까지 최대 6학점"]}
+{"id":"retake_eligibility","query":"어떤 성적을 받은 과목부터 재수강할 수 있어?","expected_page":34,"required_phrases":["C+","이하","재수강할 수 있다"]}
+{"id":"retake_max_grade","query":"과목을 다시 들으면 받을 수 있는 최고 성적은?","expected_page":34,"required_phrases":["A0","초과할 수 없다"]}
+{"id":"exchange_student_gpa","query":"학점교류를 신청하려면 평균 평점이 얼마나 되어야 해?","expected_page":157,"required_phrases":["총 평점평균","B0(3.0) 이상"]}

@@ -1,0 +1,4 @@
+{"id":"b_ambiguous_scholarship","mode":"ambiguity","query":"장학금 신청 기간이 언제야?","required_any":["장학사업명","장학사업이 특정되지"]}
+{"id":"b_personal_graduation","mode":"abstain","query":"내가 지금 졸업 가능한지 확인해줘","required_any":["학사정보시스템","졸업요건자가진단"],"forbidden_any":["학번을 알려","성명을 알려","학번 또는","학번(또는"]}
+{"id":"b_future_registration","mode":"abstain","query":"2027년 2학기 수강신청 날짜를 알려줘","required_any":["확인할 수 없","공식 근거","아직","공지"]}
+{"id":"b_missing_graduation_conditions","mode":"clarify","query":"졸업하려면 몇 학점 들어야 해?","required_any":["학과","입학년도","단일","복수"]}

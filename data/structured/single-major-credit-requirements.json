@@ -1,0 +1,7117 @@
+{
+  "schema_version": 3,
+  "source_filename": "2026-2학기 수강편람_20260730.pdf",
+  "schema_variants": {
+    "six_columns": [
+      "general_required",
+      "foundational",
+      "major_total",
+      "major_required",
+      "major_elective",
+      "graduation_total"
+    ],
+    "seven_columns": [
+      "common_required",
+      "balanced_required",
+      "foundational",
+      "major_total",
+      "major_required",
+      "major_elective",
+      "graduation_total"
+    ],
+    "nine_columns": [
+      "common_required",
+      "balanced_required",
+      "academic_foundational",
+      "major_foundational",
+      "major_required",
+      "major_elective",
+      "major_core_total",
+      "major_area_total",
+      "graduation_total"
+    ]
+  },
+  "items": [
+    {
+      "admission_year": 2019,
+      "department": "건설환경공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 69,
+      "major_required": 27,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "건축공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 63,
+      "major_required": 27,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "건축학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 123,
+      "major_required": 99,
+      "major_elective": 24,
+      "graduation_total": 168,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "경영학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "경제통상학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "교육학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "국방시스템공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 13,
+      "foundational": 18,
+      "major_total": 72,
+      "major_required": 46,
+      "major_elective": 26,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "국어국문학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "글로벌조리학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "기계공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "나노신소재공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 24,
+      "major_total": 69,
+      "major_required": 27,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "데이터사이언스학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 140,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833",
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "디자인이노베이션전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 14,
+      "major_elective": 49,
+      "graduation_total": 140,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "만화애니메이션텍전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 62,
+      "major_required": 28,
+      "major_elective": 34,
+      "graduation_total": 140,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "무인이동체공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 69,
+      "major_required": 33,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833",
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "물리천문학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "미디어커뮤니케이션학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 18,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "바이오산업자원공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "바이오융합공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "법학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "소프트웨어학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 140,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833",
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "수학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "스마트기기공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 69,
+      "major_required": 33,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "식품생명공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "에너지자원공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 63,
+      "major_required": 36,
+      "major_elective": 27,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "역사학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "영어영문학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "영화예술학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 72,
+      "major_required": 27,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "외식경영학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "원자력공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 18,
+      "major_total": 63,
+      "major_required": 27,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "융합전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "응용통계학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "일어일문학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "전자정보통신공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 18,
+      "major_total": 72,
+      "major_required": 30,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "정보보호학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 140,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833",
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "중국통상학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 66,
+      "major_required": 18,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "체육학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 65,
+      "major_required": 22,
+      "major_elective": 43,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "컴퓨터공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 33,
+      "major_elective": 39,
+      "graduation_total": 140,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833",
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "패션디자인학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 72,
+      "major_required": 27,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "항공시스템공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 13,
+      "foundational": 18,
+      "major_total": 64,
+      "major_required": 38,
+      "major_elective": 26,
+      "graduation_total": 140,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "항공우주공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 63,
+      "major_required": 24,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "행정학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "호텔관광경영학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "호텔외식관광프랜차이즈경영학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "호텔외식비즈니스학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "화학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 15,
+      "major_total": 68,
+      "major_required": 15,
+      "major_elective": 53,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007833"
+      ]
+    },
+    {
+      "admission_year": 2019,
+      "department": "환경에너지공간융합학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 24,
+      "major_total": 63,
+      "major_required": 30,
+      "major_elective": 33,
+      "graduation_total": 130,
+      "page": 71,
+      "source_chunk_ids": [
+        "unified-007834"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "건설환경공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 69,
+      "major_required": 27,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "건축공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 24,
+      "major_total": 63,
+      "major_required": 27,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "건축학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 123,
+      "major_required": 99,
+      "major_elective": 24,
+      "graduation_total": 168,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "경영학부",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 78,
+      "major_required": 30,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "경제학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "교육학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "국방시스템공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 13,
+      "foundational": 18,
+      "major_total": 73,
+      "major_required": 45,
+      "major_elective": 28,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "국어국문학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "글로벌조리학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "기계공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "나노신소재공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 24,
+      "major_total": 69,
+      "major_required": 27,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "데이터사이언스학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 140,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821",
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "디자인이노베이션전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 14,
+      "major_elective": 49,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "만화애니메이션텍전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 62,
+      "major_required": 28,
+      "major_elective": 34,
+      "graduation_total": 140,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "무인이동체공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 69,
+      "major_required": 33,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821",
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "물리천문학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "미디어커뮤니케이션학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 18,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "바이오산업자원공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "바이오융합공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "법학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "소프트웨어학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 140,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821",
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "수학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "스마트기기공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 69,
+      "major_required": 33,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821",
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "식품생명공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "양자원자력공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 18,
+      "major_total": 63,
+      "major_required": 27,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "역사학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "영어영문학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "영화예술학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 72,
+      "major_required": 27,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "외식경영학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "융합전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "응용통계학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "일어일문학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "전자정보통신공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 18,
+      "major_total": 72,
+      "major_required": 30,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "정보보호학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 140,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821",
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "중국통상학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 66,
+      "major_required": 18,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "지구자원시스템공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 60,
+      "major_required": 33,
+      "major_elective": 27,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "체육학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 65,
+      "major_required": 22,
+      "major_elective": 43,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "컴퓨터공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 33,
+      "major_elective": 39,
+      "graduation_total": 140,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "패션디자인학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 72,
+      "major_required": 27,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "항공시스템공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 13,
+      "foundational": 18,
+      "major_total": 64,
+      "major_required": 38,
+      "major_elective": 26,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "항공우주공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 63,
+      "major_required": 24,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "행정학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "호텔관광경영학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "호텔외식관광프랜차이즈경영학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "호텔외식비즈니스학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "화학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 15,
+      "major_total": 68,
+      "major_required": 15,
+      "major_elective": 53,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007821"
+      ]
+    },
+    {
+      "admission_year": 2020,
+      "department": "환경에너지공간융합학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 24,
+      "major_total": 63,
+      "major_required": 15,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 66,
+      "source_chunk_ids": [
+        "unified-007822"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "건설환경공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 69,
+      "major_required": 27,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "건축공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 24,
+      "major_total": 63,
+      "major_required": 27,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "건축학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 123,
+      "major_required": 99,
+      "major_elective": 24,
+      "graduation_total": 168,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "경영학부",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 78,
+      "major_required": 30,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "경제학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "교육학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "국방시스템공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 13,
+      "foundational": 18,
+      "major_total": 73,
+      "major_required": 45,
+      "major_elective": 28,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "국어국문학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "글로벌조리학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "기계공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "나노신소재공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 24,
+      "major_total": 69,
+      "major_required": 27,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "데이터사이언스학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810",
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "디자인이노베이션전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 14,
+      "major_elective": 49,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "만화애니메이션텍전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 62,
+      "major_required": 28,
+      "major_elective": 34,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "무인이동체공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810",
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "물리천문학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "미디어커뮤니케이션학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 18,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "바이오산업자원공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "바이오융합공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "법학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "소프트웨어학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810",
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "수학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "스마트기기공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "스마트생명산업융합학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "식품생명공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "양자원자력공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 18,
+      "major_total": 63,
+      "major_required": 27,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "역사학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "영어영문학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "영화예술학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 72,
+      "major_required": 27,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "외식경영학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "융합전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "응용통계학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "인공지능학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "일어일문학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "전자정보통신공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 18,
+      "major_total": 72,
+      "major_required": 30,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "정보보호학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810",
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "정보통신공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 18,
+      "major_total": 72,
+      "major_required": 30,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "중국통상학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 66,
+      "major_required": 18,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "지구자원시스템공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 60,
+      "major_required": 33,
+      "major_elective": 27,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "체육학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 65,
+      "major_required": 22,
+      "major_elective": 43,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "컴퓨터공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 9,
+      "major_total": 72,
+      "major_required": 33,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810",
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "패션디자인학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 72,
+      "major_required": 27,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "항공시스템공학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 13,
+      "foundational": 18,
+      "major_total": 64,
+      "major_required": 38,
+      "major_elective": 26,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "항공우주공학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 21,
+      "major_total": 63,
+      "major_required": 24,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "행정학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "호텔관광경영학전공",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "호텔외식관광프랜차이즈경영학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "호텔외식비즈니스학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "화학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 15,
+      "major_total": 68,
+      "major_required": 15,
+      "major_elective": 53,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007810"
+      ]
+    },
+    {
+      "admission_year": 2021,
+      "department": "환경에너지공간융합학과",
+      "schema_variant": "six_columns",
+      "column_count": 6,
+      "general_required": 14,
+      "foundational": 24,
+      "major_total": 63,
+      "major_required": 15,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 61,
+      "source_chunk_ids": [
+        "unified-007811"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "건설환경공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 69,
+      "major_required": 27,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "건축공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 63,
+      "major_required": 27,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "건축학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 123,
+      "major_required": 99,
+      "major_elective": 24,
+      "graduation_total": 168,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "경영학부",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 81,
+      "major_required": 33,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "경제학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "교육학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "국방시스템공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 12,
+      "balanced_required": 6,
+      "foundational": 27,
+      "major_total": 73,
+      "major_required": 45,
+      "major_elective": 28,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "국어국문학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "글로벌조리학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 0,
+      "balanced_required": 6,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "기계공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "나노신소재공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 69,
+      "major_required": 24,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "데이터사이언스학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 21,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "디자인이노베이션전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 63,
+      "major_required": 14,
+      "major_elective": 49,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "만화애니메이션텍전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 62,
+      "major_required": 28,
+      "major_elective": 34,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "무인이동체공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "물리천문학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "미디어커뮤니케이션학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 18,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "바이오산업자원공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "바이오융합공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "법학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799",
+        "unified-007800"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "소프트웨어학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798",
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "수학통계학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 69,
+      "major_required": 24,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "스마트기기공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "스마트생명산업융합학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798",
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "식품생명공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "양자원자력공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 63,
+      "major_required": 27,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "역사학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "영어영문학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "영화예술학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 72,
+      "major_required": 27,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "외식경영학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "융합전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 0,
+      "balanced_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799",
+        "unified-007800"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "인공지능학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 18,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "일어일문학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "전자정보통신공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 24,
+      "major_total": 72,
+      "major_required": 33,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798",
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "정보보호학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798",
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "중국통상학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 66,
+      "major_required": 18,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "지구자원시스템공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 60,
+      "major_required": 33,
+      "major_elective": 27,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "체육학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 0,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 65,
+      "major_required": 22,
+      "major_elective": 43,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "컴퓨터공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 33,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798",
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "패션디자인학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 72,
+      "major_required": 27,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "항공시스템공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 12,
+      "balanced_required": 6,
+      "foundational": 24,
+      "major_total": 64,
+      "major_required": 38,
+      "major_elective": 26,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "항공우주공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 63,
+      "major_required": 24,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "행정학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "호텔관광경영학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "호텔외식관광프랜차이즈경영학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 0,
+      "balanced_required": 6,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "호텔외식비즈니스학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 0,
+      "balanced_required": 6,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "화학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 24,
+      "major_total": 68,
+      "major_required": 15,
+      "major_elective": 53,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007798"
+      ]
+    },
+    {
+      "admission_year": 2022,
+      "department": "환경에너지공간융합학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 63,
+      "major_required": 15,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 56,
+      "source_chunk_ids": [
+        "unified-007799"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "건설환경공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 69,
+      "major_required": 27,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "건축공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 63,
+      "major_required": 27,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "건축학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 123,
+      "major_required": 99,
+      "major_elective": 24,
+      "graduation_total": 168,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "경영학부",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 81,
+      "major_required": 33,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "경제학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "교육학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "국방시스템공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 12,
+      "balanced_required": 6,
+      "foundational": 27,
+      "major_total": 73,
+      "major_required": 45,
+      "major_elective": 28,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "국어국문학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "글로벌조리학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 0,
+      "balanced_required": 6,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "기계공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "나노신소재공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 69,
+      "major_required": 24,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "데이터사이언스학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 21,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "디자인이노베이션전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 63,
+      "major_required": 14,
+      "major_elective": 49,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "만화애니메이션텍전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 62,
+      "major_required": 28,
+      "major_elective": 34,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "물리천문학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "미디어커뮤니케이션학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 18,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "바이오산업자원공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "바이오융합공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "반도체시스템공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 24,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786",
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "법학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787",
+        "unified-007788"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "소프트웨어학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "수학통계학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 69,
+      "major_required": 24,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "스마트생명산업융합학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 24,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786",
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "식품생명공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 12,
+      "major_total": 72,
+      "major_required": 21,
+      "major_elective": 51,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "양자원자력공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 63,
+      "major_required": 27,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "역사학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "영어영문학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "영화예술학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 72,
+      "major_required": 27,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "외식경영학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "우주항공공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 63,
+      "major_required": 21,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "융합전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 0,
+      "balanced_required": 0,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 21,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787",
+        "unified-007788"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "인공지능학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 18,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "일어일문학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 63,
+      "major_required": 18,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "전자정보통신공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 24,
+      "major_total": 72,
+      "major_required": 33,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786",
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "정보보호학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 36,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "중국통상학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 66,
+      "major_required": 18,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "지구자원시스템공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 69,
+      "major_required": 30,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "지능기전공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 30,
+      "major_elective": 42,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "체육학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 0,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 65,
+      "major_required": 22,
+      "major_elective": 43,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "컴퓨터공학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 15,
+      "major_total": 72,
+      "major_required": 33,
+      "major_elective": 39,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786",
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "패션디자인학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 6,
+      "major_total": 72,
+      "major_required": 27,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "항공시스템공학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 12,
+      "balanced_required": 6,
+      "foundational": 24,
+      "major_total": 64,
+      "major_required": 38,
+      "major_elective": 26,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "행정학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "호텔관광경영학전공",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 9,
+      "major_total": 60,
+      "major_required": 24,
+      "major_elective": 36,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "호텔외식관광프랜차이즈경영학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 0,
+      "balanced_required": 6,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "호텔외식비즈니스학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 0,
+      "balanced_required": 6,
+      "foundational": 0,
+      "major_total": 60,
+      "major_required": 15,
+      "major_elective": 45,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "화학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 24,
+      "major_total": 68,
+      "major_required": 15,
+      "major_elective": 53,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007786"
+      ]
+    },
+    {
+      "admission_year": 2023,
+      "department": "환경에너지공간융합학과",
+      "schema_variant": "seven_columns",
+      "column_count": 7,
+      "common_required": 13,
+      "balanced_required": 6,
+      "foundational": 30,
+      "major_total": 63,
+      "major_required": 15,
+      "major_elective": 48,
+      "graduation_total": 130,
+      "page": 51,
+      "source_chunk_ids": [
+        "unified-007787"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "AI로봇학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "건설환경공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "건축공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "건축학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 15,
+      "major_foundational": 9,
+      "major_required": 93,
+      "major_elective": 24,
+      "major_core_total": 117,
+      "major_area_total": 126,
+      "graduation_total": 163,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "경영학부",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 24,
+      "major_elective": 42,
+      "major_core_total": 66,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "경제학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 69,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "교육학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "국방시스템공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 45,
+      "major_elective": 28,
+      "major_core_total": 73,
+      "major_area_total": 85,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007776"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "국어국문학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "국제통상전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 14,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "국제협력전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 14,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "글로벌조리학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "기계공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "나노신소재공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775",
+        "unified-007776"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "디자인이노베이션전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 14,
+      "major_elective": 49,
+      "major_core_total": 63,
+      "major_area_total": 63,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "만화애니메이션텍전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 28,
+      "major_elective": 32,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "물리천문학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774",
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "미디어커뮤니케이션학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "바이오산업자원공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "바이오융합공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "반도체시스템공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "법학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "소프트웨어학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 27,
+      "major_elective": 33,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "수학통계학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774",
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "스마트생명산업융합학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "식품생명공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "양자원자력공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775",
+        "unified-007776"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "역사학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "영어영문학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "영화예술학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 27,
+      "major_elective": 39,
+      "major_core_total": 66,
+      "major_area_total": 66,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007776"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "외식경영학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 69,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "우주항공공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "융합전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007776"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "인공지능데이터사이언스학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 24,
+      "major_elective": 36,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "일어일문학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "전자정보통신공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 33,
+      "major_elective": 39,
+      "major_core_total": 72,
+      "major_area_total": 87,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "정보보호학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 24,
+      "major_elective": 36,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "중국통상학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "즈니스학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "지구자원시스템공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "지능형드론융합전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775",
+        "unified-007776"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "체육학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 24,
+      "major_elective": 42,
+      "major_core_total": 66,
+      "major_area_total": 66,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007776"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "컴퓨터공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "패션디자인학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 27,
+      "major_elective": 39,
+      "major_core_total": 66,
+      "major_area_total": 66,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007776"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "한국언어문화전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 14,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "항공시스템공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 38,
+      "major_elective": 26,
+      "major_core_total": 64,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775",
+        "unified-007776"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "행정학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "호텔관광경영학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 69,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "호텔외식관광프랜차이즈경영학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "호텔외식비즈니스학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "화학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007774",
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2024,
+      "department": "환경에너지공간융합학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 46,
+      "source_chunk_ids": [
+        "unified-007775"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "AI로봇학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "AI융합전자공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 33,
+      "major_elective": 39,
+      "major_core_total": 72,
+      "major_area_total": 87,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "건설환경공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "건축공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "건축학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 15,
+      "major_foundational": 9,
+      "major_required": 93,
+      "major_elective": 24,
+      "major_core_total": 117,
+      "major_area_total": 126,
+      "graduation_total": 163,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "경영학부",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 24,
+      "major_elective": 42,
+      "major_core_total": 66,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "경제학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 69,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "교육학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "국방시스템공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 45,
+      "major_elective": 28,
+      "major_core_total": 73,
+      "major_area_total": 85,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "국어국문학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "국제통상전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 14,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "국제협력전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 14,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "글로벌조리학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "기계공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764",
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "나노신소재공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "디자인이노베이션전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 14,
+      "major_elective": 49,
+      "major_core_total": 63,
+      "major_area_total": 63,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "만화애니메이션텍전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 28,
+      "major_elective": 32,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "물리천문학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763",
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "미디어커뮤니케이션학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "바이오산업자원공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "바이오융합공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "반도체시스템공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "법학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "사이버국방학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 40,
+      "major_elective": 36,
+      "major_core_total": 76,
+      "major_area_total": 91,
+      "graduation_total": 140,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "수학통계학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763",
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "스마트생명산업융합학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "식품생명공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "양자원자력공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "역사학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "영어데이터융합전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "영화예술학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 27,
+      "major_elective": 39,
+      "major_core_total": 66,
+      "major_area_total": 66,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "외식경영학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 69,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "우주항공공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764",
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "융합전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "인공지능데이터사이언스학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 24,
+      "major_elective": 36,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "일어일문학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "정보보호학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 24,
+      "major_elective": 36,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "중국통상학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "즈니스학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "지구자원시스템공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "지능정보융합학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 27,
+      "major_elective": 33,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "지능형드론융합전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764",
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "체육학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 24,
+      "major_elective": 42,
+      "major_core_total": 66,
+      "major_area_total": 66,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "컴퓨터공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "콘텐츠소프트웨어학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 31,
+      "major_elective": 30,
+      "major_core_total": 61,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "패션디자인학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 27,
+      "major_elective": 39,
+      "major_core_total": 66,
+      "major_area_total": 66,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "한국언어문화전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 14,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "항공시스템공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 38,
+      "major_elective": 26,
+      "major_core_total": 64,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764",
+        "unified-007765"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "행정학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "호텔관광경영학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 69,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "호텔외식관광프랜차이즈경영학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "호텔외식비즈니스학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "화학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007763",
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2025,
+      "department": "환경융합공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 13,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 12,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 72,
+      "graduation_total": 130,
+      "page": 42,
+      "source_chunk_ids": [
+        "unified-007764"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "AI로봇학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "AI융합전자공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 9,
+      "major_elective": 60,
+      "major_core_total": 69,
+      "major_area_total": 84,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "건설환경공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 73,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "건축공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 73,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "건축학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 15,
+      "major_foundational": 10,
+      "major_required": 93,
+      "major_elective": 24,
+      "major_core_total": 117,
+      "major_area_total": 127,
+      "graduation_total": 163,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "경영학부",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 24,
+      "major_elective": 42,
+      "major_core_total": 66,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "경제학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 69,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "교육학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "국방AI로봇융합공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 11,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 45,
+      "major_elective": 28,
+      "major_core_total": 73,
+      "major_area_total": 88,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "국방AI융합시스템공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 11,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 45,
+      "major_elective": 28,
+      "major_core_total": 73,
+      "major_area_total": 86,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "국어국문학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "국제일본학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "국제통상전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 14,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "국제협력전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 14,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "기계공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 73,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753",
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "나노신소재공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 73,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "디자인이노베이션전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 14,
+      "major_elective": 49,
+      "major_core_total": 63,
+      "major_area_total": 63,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "만화애니메이션텍전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 28,
+      "major_elective": 32,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "물리천문학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 16,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752",
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "미디어커뮤니케이션학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "바이오산업자원공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 16,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "바이오융합공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 16,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "반도체시스템공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 27,
+      "major_elective": 39,
+      "major_core_total": 66,
+      "major_area_total": 81,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "법학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "사이버국방학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 11,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 40,
+      "major_elective": 36,
+      "major_core_total": 76,
+      "major_area_total": 91,
+      "graduation_total": 140,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "수학통계학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 16,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752",
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "스마트생명산업융합학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 16,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "식품생명공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 16,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "양자원자력공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 73,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "양자지능정보학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 25,
+      "major_elective": 35,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "에너지자원공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 73,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753",
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "역사학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "영어데이터융합전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "영화예술학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 27,
+      "major_elective": 39,
+      "major_core_total": 66,
+      "major_area_total": 66,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "외식경영학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 69,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "우주항공공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 73,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753",
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "융합전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "인공지능데이터사이언스학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 24,
+      "major_elective": 36,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "정보보호학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 24,
+      "major_elective": 36,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "조리서비스경영학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "중국통상학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "즈니스학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "지능정보융합학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 27,
+      "major_elective": 33,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "지능형드론융합전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 73,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "체육학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 24,
+      "major_elective": 42,
+      "major_core_total": 66,
+      "major_area_total": 66,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "컴퓨터공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 75,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "콘텐츠소프트웨어학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 15,
+      "major_required": 31,
+      "major_elective": 30,
+      "major_core_total": 61,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "패션디자인학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 27,
+      "major_elective": 39,
+      "major_core_total": 66,
+      "major_area_total": 66,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "한국언어문화전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 14,
+      "balanced_required": 0,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 18,
+      "major_elective": 42,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "항공시스템공학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 11,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 38,
+      "major_elective": 26,
+      "major_core_total": 64,
+      "major_area_total": 77,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007754"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "행정학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 6,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "호텔관광경영학전공",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 9,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 69,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "호텔외식관광프랜차이즈경영학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "호텔외식비즈니스학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 0,
+      "balanced_required": 9,
+      "academic_foundational": 0,
+      "major_foundational": 0,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 60,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "화학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 9,
+      "major_foundational": 16,
+      "major_required": 15,
+      "major_elective": 45,
+      "major_core_total": 60,
+      "major_area_total": 76,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007752",
+        "unified-007753"
+      ]
+    },
+    {
+      "admission_year": 2026,
+      "department": "환경융합공학과",
+      "schema_variant": "nine_columns",
+      "column_count": 9,
+      "common_required": 12,
+      "balanced_required": 9,
+      "academic_foundational": 12,
+      "major_foundational": 13,
+      "major_required": 21,
+      "major_elective": 39,
+      "major_core_total": 60,
+      "major_area_total": 73,
+      "graduation_total": 130,
+      "page": 38,
+      "source_chunk_ids": [
+        "unified-007753",
+        "unified-007754"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "rejected_rows": [
+    {
+      "admission_year": 2023,
+      "department": "정보보호학과",
+      "expected_columns": 7,
+      "found_values": [
+        13,
+        6,
+        15,
+        72,
+        36,
+        36
+      ],
+      "page": 51,
+      "chunk_id": "unified-007786"
+    }
+  ]
+}

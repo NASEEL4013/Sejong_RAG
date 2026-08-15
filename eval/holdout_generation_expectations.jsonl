@@ -1,0 +1,32 @@
+{"id":"h_wishlist_not_automatic","answer_concepts":[["자동으로","자동 신청"],["수강신청기간","수강신청 기간"]]}
+{"id":"h_retake_count_wishlist","answer_concepts":[["3과목","3 과목"]]}
+{"id":"h_leave_total_semesters","answer_concepts":[["6학기","6 학기"],["군입대휴학","군휴학"]]}
+{"id":"h_military_leave_documents","answer_concepts":[["입영통지서"],["병적증명서"],["택일","하나"]]}
+{"id":"h_return_zero_registration","answer_concepts":[["0원 등록","0 원 등록"],["미등록 제적"]]}
+{"id":"h_cyber_elearning_classification","answer_concepts":[["교양"]]}
+{"id":"h_college_english_documents","answer_concepts":[["학점 인정 신청서"],["공인영어성적표","공인 영어 성적표"]]}
+{"id":"h_college_english_separate_cert","answer_concepts":[["따로 신청","별도 신청","자동으로 처리되지"]]}
+{"id":"h_english_level_test_questions","answer_concepts":[["200문항","200 문항"],["2시간","2 시간"]]}
+{"id":"h_dgc_test_grade_ratio","answer_concepts":[["10%","10 %"]]}
+{"id":"h_degree_ceremony_time_place","answer_concepts":[["2026. 2. 20","2026년 2월 20일"],["10:00","10시"],["대양홀"]]}
+{"id":"h_degree_certificate_deadline","answer_concepts":[["6개월","6 개월"],["재발행 불가","재발행이 불가","재발행되지","재발급 불가"]]}
+{"id":"h_exceeded_semester_tuition_credits","answer_concepts":[["7~9학점","7~9 학점","7학점부터 9학점"],["1/2","절반"]]}
+{"id":"h_exceeded_zero_registration","answer_concepts":[["등록처리 되지","등록 처리가 되지","등록 처리되지","등록되지 않"],["수강신청"]]}
+{"id":"h_teaching_abandon_period","answer_concepts":[["3월 3일","3. 3"],["3월 9일","3. 9"]]}
+{"id":"h_seasonal_course_period","answer_concepts":[["6월 23일","6.23"],["7월 14일","7.14"]]}
+{"id":"h_seasonal_cyber_limit","answer_concepts":[["3학점","3 학점"]]}
+{"id":"h_stv_required","answer_concepts":[["반드시 이수","필수"]]}
+{"id":"h_semester_retake_scope","answer_concepts":[["2학기","2 학기","2개 학기","2 개 학기"],["연속"]]}
+{"id":"h_semester_retake_limit","answer_concepts":[["2회","2 회"]]}
+{"id":"h_certificate_outage","answer_concepts":[["7월 3일","07. 3","7. 3"],["7월 4일","07. 04","7. 4"],["인터넷 증명서"],["자동발급기"]]}
+{"id":"h_special_talent_credits","answer_concepts":[["10학점","10 학점"],["3학점","3 학점"]]}
+{"id":"h_language_scholarship_toeic","answer_concepts":[["150만원","150 만원"]]}
+{"id":"h_yunha_scholarship_amount","answer_concepts":[["250만원","250만 원","250 만원"]]}
+{"id":"h_yuhan_amount_deadline","answer_concepts":[["300만원","3백만원","3백만 원"],["3월 13일","3.13"],["17시","오후 5시"]]}
+{"id":"h_hope_ladder_support","answer_concepts":[["200만원","200 만원"]]}
+{"id":"h_samsung_lighthouse_support","answer_concepts":[["300만원","300 만원"],["4학기","4 학기"]]}
+{"id":"h_sunlight_targets_amount","answer_concepts":[["다문화"],["북한이탈주민"],["장애인"],["50만원","50 만원"]]}
+{"id":"h_science_excellence_support","answer_concepts":[["8명","8 명"],["4학기","4 학기","4개 학기","4 개 학기"],["등록금 전액"]]}
+{"id":"h_software_2019_credits","answer_concepts":[["전공필수","36학점","36 학점"],["졸업학점","140학점","140 학점"]]}
+{"id":"h_software_2024_credits","answer_concepts":[["전공영역","75학점","75 학점"],["졸업학점","130학점","130 학점"]]}
+{"id":"h_content_software_2026_credits","answer_concepts":[["전공필수","31학점","31 학점"],["전공영역","76학점","76 학점"]]}

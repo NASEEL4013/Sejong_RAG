@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "admission_year": 2021,
+      "department": "소프트웨어학과",
+      "major_type": "single",
+      "source_document_id": "notice3-891086-attachment-236497",
+      "source_title": "2026-2학기 수강편람 및 강의시간표 안내",
+      "filename": "2026-2학기 수강편람_20260730.pdf",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891086&article.offset=0&articleLimit=10",
+      "attachment_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=download&articleNo=891086&attachNo=236497",
+      "extraction_method": "pdftotext_bbox_layout_human_verified",
+      "verified_at": "2026-08-10",
+      "designated_general_electives": [
+        {"course": "세계사:인간과문명", "credits": 3, "recommended_term": "2학년", "page": 58},
+        {"course": "고급프로그래밍입문-P", "credits": 3, "recommended_term": "1학년 1학기", "page": 58},
+        {"course": "Technical Writing 기초", "credits": 2, "recommended_term": "3학년 1학기", "page": 58}
+      ],
+      "foundational_liberal_arts": [
+        {"course": "기초미적분학", "credits": 3, "recommended_term": "1학년 1학기", "page": 60},
+        {"course": "공업수학1", "credits": 3, "recommended_term": "1학년 2학기", "page": 60},
+        {"course": "통계학개론", "credits": 3, "recommended_term": "2학년 2학기", "page": 60}
+      ],
+      "notes": [
+        "교양선택 전체 최소 이수학점은 폐지되었으나 학교 및 학과 지정 과목은 이수해야 함",
+        "예비대학프로그램의 동일과목 인정 규정은 수강편람 58쪽 확인"
+      ]
+    }
+  ]
+}

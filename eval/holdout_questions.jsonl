@@ -1,0 +1,32 @@
+{"id":"h_wishlist_not_automatic","category":"course_registration","query":"관심과목담기에 넣으면 수강신청도 자동으로 되는 거야?","expected_document_id":"notice3-890841","required_phrases":["자동으로 이루어지는 것은 아니기 때문에","수강신청기간에 수강신청"]}
+{"id":"h_retake_count_wishlist","category":"course_registration","query":"관심과목담기 안내 기준으로 한 학기에 재수강은 몇 과목까지 가능해?","expected_document_id":"notice3-890841","required_phrases":["재수강은 학기 당 3 과목"]}
+{"id":"h_leave_total_semesters","category":"academic_status","query":"일반휴학은 재학 중 모두 합쳐 몇 학기까지 할 수 있어?","expected_document_id":"notice3-862318","required_phrases":["총 6 학기","군입대휴학은 휴학기간에서 제외"]}
+{"id":"h_military_leave_documents","category":"academic_status","query":"군휴학을 신청할 때 어떤 서류 중 하나를 내면 돼?","expected_document_id":"notice3-862318","required_phrases":["입영통지서","병적증명서 중 택일"]}
+{"id":"h_return_zero_registration","category":"academic_status","query":"전액 장학금을 받는 복학생도 등록 절차를 해야 해?","expected_document_id":"notice3-862321","required_phrases":["0원 등록 처리","미등록 제적"]}
+{"id":"h_cyber_elearning_classification","category":"credit","query":"세종사이버대학교 e러닝 과목은 어떤 이수구분으로 인정돼?","expected_document_id":"notice3-862742","required_phrases":["이수구분은 \" 교양 \"","6개 이수영역"]}
+{"id":"h_college_english_documents","category":"course_registration","query":"2026 신입생이 대학영어 학점 인정을 신청할 때 제출할 서류는?","expected_document_id":"notice3-862743","required_phrases":["학점 인정 신청서","공인영어성적표"]}
+{"id":"h_college_english_separate_cert","category":"graduation","query":"대학영어 학점 인정을 받으면 영어졸업인증도 자동으로 처리돼?","expected_document_id":"notice3-862743","required_phrases":["영어졸업인증은 각각 따로 신청"]}
+{"id":"h_english_level_test_questions","category":"course_registration","query":"2026 신입생 대학영어 레벨테스트 문항 수와 시험 시간은?","expected_document_id":"notice3-863033","required_phrases":["200문항","총 2시간"]}
+{"id":"h_dgc_test_grade_ratio","category":"course_registration","query":"외국인 신입생 DGC Korean 레벨테스트 응시 여부가 성적에 얼마나 반영돼?","expected_document_id":"notice3-863053","required_phrases":["성적에 10% 반영"]}
+{"id":"h_degree_ceremony_time_place","category":"graduation","query":"제84회 전기 학위수여식은 언제 어디에서 열려?","expected_document_id":"notice3-863195","required_phrases":["2026. 2. 20(금) 10:00","대양홀"]}
+{"id":"h_degree_certificate_deadline","category":"graduation","query":"졸업 학위증서는 언제까지 받아야 하고 분실하면 재발행돼?","expected_document_id":"notice3-863195","required_phrases":["졸업 후 6개월 이내","분실 시 재발행 불가"]}
+{"id":"h_exceeded_semester_tuition_credits","category":"tuition","query":"초과학기생이 7~9학점을 신청하면 등록금은 얼마야?","expected_document_id":"notice3-863329","required_phrases":["7~9학점","수업료의 1/2"]}
+{"id":"h_exceeded_zero_registration","category":"tuition","query":"초과학기생이 수강신청 없이 0원 등록만 하면 등록 처리돼?","expected_document_id":"notice3-863329","required_phrases":["0원 등록절차","등록처리 되지않으며"]}
+{"id":"h_teaching_abandon_period","category":"academic_status","query":"2026년 1학기 교직과정 이수 포기 신청서는 언제 내야 해?","expected_document_id":"notice3-863571","required_phrases":["2026. 3. 3","3. 9"]}
+{"id":"h_seasonal_course_period","category":"course_registration","query":"2026 하계 본교 계절학기 수업 기간은 언제야?","expected_document_id":"notice3-885709","required_phrases":["2026. 6.23","7.14"]}
+{"id":"h_seasonal_cyber_limit","category":"course_registration","query":"하계 계절학기 세종사이버대 e러닝은 최대 몇 학점 들을 수 있어?","expected_document_id":"notice3-885709","required_phrases":["세종사이버대학교 e- 러닝 강의는 3 학점까지만"]}
+{"id":"h_stv_required","category":"academic_status","query":"교직과정 특성화 프로그램 STV1은 교직 이수자에게 선택사항이야?","expected_document_id":"notice3-886083","required_phrases":["반드시 이수"]}
+{"id":"h_semester_retake_scope","category":"course_registration","query":"학기재수강은 최대 몇 개의 연속 학기를 다시 이수하는 제도야?","expected_document_id":"notice3-886869","required_phrases":["연속된 2 학기","다시 이수"]}
+{"id":"h_semester_retake_limit","category":"course_registration","query":"학기재수강은 재학 중 몇 번 신청할 수 있어?","expected_document_id":"notice3-886869","required_phrases":["재학 중 2 회만 신청 가능"]}
+{"id":"h_certificate_outage","category":"academic_status","query":"2026년 7월 증명서 발급 중단 시간과 중단되는 발급 수단은?","expected_document_id":"notice3-887188","required_phrases":["2026. 07. 3","인터넷 증명서 직접출력","자동발급기"]}
+{"id":"h_special_talent_credits","category":"scholarship","query":"2026-1 특기장학금은 직전 학기에 몇 학점을 취득해야 신청할 수 있어?","expected_document_id":"notice7-863797","required_phrases":["직전학기 10 학점","최종학년일경우 3 학점"]}
+{"id":"h_language_scholarship_toeic","category":"scholarship","query":"2026-1 어학우수장학금에서 비전공자가 TOEIC 950점 이상이면 얼마를 받아?","expected_document_id":"notice7-863798","required_phrases":["950 이상","150 만원"]}
+{"id":"h_yunha_scholarship_amount","category":"scholarship","query":"2026 푸른등대 기부장학금의 물리·천문 분야 생활비 지원액은?","expected_document_id":"notice7-864162","required_phrases":["학기당 250만 원","생활비 무상보조"]}
+{"id":"h_yuhan_amount_deadline","category":"scholarship","query":"2026 유한재단 결손·다문화 장학금 금액과 제출 마감은?","expected_document_id":"notice7-864169","required_phrases":["3백만원","3월 13일 17시"]}
+{"id":"h_hope_ladder_support","category":"scholarship","query":"희망사다리 1유형은 등록금 외에 취창업지원금을 얼마 지원해?","expected_document_id":"notice7-864186","required_phrases":["등록금 전액","학기당 200 만원"]}
+{"id":"h_samsung_lighthouse_support","category":"scholarship","query":"2026 푸른등대 삼성기부장학금은 학기당 얼마이고 최대 몇 학기 지원돼?","expected_document_id":"notice7-865237","required_phrases":["학기당 300만원","최대 4학기"]}
+{"id":"h_sunlight_targets_amount","category":"scholarship","query":"2026-1 햇빛장학금 대상과 금액은 어떻게 돼?","expected_document_id":"notice7-866780","required_phrases":["다문화가정자녀","북한이탈주민자녀","장애인 학생","입학 첫학기 50 만원"]}
+{"id":"h_science_excellence_support","category":"scholarship","query":"2026 국가이공계 재학중우수자 장학금은 몇 명을 뽑고 몇 학기 지원해?","expected_document_id":"notice7-866982","required_phrases":["총 8 명","4 개 학기 등록금 전액"]}
+{"id":"h_software_2019_credits","category":"graduation","query":"2019학년도 입학 소프트웨어학과 단일전공의 전공필수와 졸업학점은?","expected_document_id":"notice3-891086","required_phrases":["소프트웨어학과 14 9 72 36 36 140"]}
+{"id":"h_software_2024_credits","category":"graduation","query":"2024학년도 입학 소프트웨어학과 단일전공의 전공영역 총계와 졸업학점은?","expected_document_id":"notice3-891086","required_phrases":["소프트웨어학과 13 9 9 15 27 33 60 75 130"]}
+{"id":"h_content_software_2026_credits","category":"graduation","query":"2026학년도 입학 콘텐츠소프트웨어학과 단일전공의 전공필수와 전공영역 총계는?","expected_document_id":"notice3-891086","required_phrases":["콘텐츠소프트웨어학과 12 9 9 15 31 30 61 76 130"]}

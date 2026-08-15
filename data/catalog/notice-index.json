@@ -1,0 +1,292 @@
+{
+  "collected_at": "2026-08-09T09:43:37.026382+00:00",
+  "board_pages": {
+    "academic_notice": 1,
+    "scholarship_notice": 1
+  },
+  "item_count": 23,
+  "changes": {
+    "new": [],
+    "updated": [],
+    "unchanged": [
+      "notice3-891311",
+      "notice3-891273",
+      "notice3-864878",
+      "notice3-891489",
+      "notice3-891485",
+      "notice3-891483",
+      "notice3-891421",
+      "notice3-891420",
+      "notice3-891366",
+      "notice3-891263",
+      "notice3-891086",
+      "notice3-891030",
+      "notice3-891012",
+      "notice7-886502",
+      "notice7-886382",
+      "notice7-886190",
+      "notice7-886181",
+      "notice7-866982",
+      "notice7-866974",
+      "notice7-866780",
+      "notice7-866601",
+      "notice7-866189",
+      "notice7-865237"
+    ]
+  },
+  "items": [
+    {
+      "document_id": "notice3-891311",
+      "article_no": "891311",
+      "board": "academic_notice",
+      "title": "2026학년도 2학기 학부 재학생 등록금 납부 안내(재학생, 복학생, 재입학생) / Guide to Registration in the 2nd Semester of the 2026 Academic Year",
+      "department": "재무과",
+      "published_at": "2026.08.04",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891311&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": true
+    },
+    {
+      "document_id": "notice3-891273",
+      "article_no": "891273",
+      "board": "academic_notice",
+      "title": "26-2학기 조기졸업 신청 안내 (Notification on Application for Autumn 2026 Early Graduation)",
+      "department": "학사지원과",
+      "published_at": "2026.08.04",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891273&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": true
+    },
+    {
+      "document_id": "notice3-864878",
+      "article_no": "864878",
+      "board": "academic_notice",
+      "title": "[AX혁신원] 2026 세종대학교 AI 활용 가이드라인 안내/2026 Sejong University AI Usage Guideline",
+      "department": "AX혁신원",
+      "published_at": "2026.03.20",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=864878&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": true
+    },
+    {
+      "document_id": "notice3-891489",
+      "article_no": "891489",
+      "board": "academic_notice",
+      "title": "2026-2학기 군 복무 중 원격강좌(군e-러닝) 수강 안내",
+      "department": "학사지원과",
+      "published_at": "2026.08.07",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891489&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice3-891485",
+      "article_no": "891485",
+      "board": "academic_notice",
+      "title": "2026-2학기 수강신청 안내/Guide to Course Registration for Fall, 2026",
+      "department": "학사지원과",
+      "published_at": "2026.08.07",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891485&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice3-891483",
+      "article_no": "891483",
+      "board": "academic_notice",
+      "title": "2026학년도 2학기 학점교류생(타교생) 학번 안내",
+      "department": "학사지원과",
+      "published_at": "2026.08.07",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891483&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice3-891421",
+      "article_no": "891421",
+      "board": "academic_notice",
+      "title": "2026-2학기 세종사이버대학교 e-러닝(교환교류) 수강 안내",
+      "department": "학사지원과",
+      "published_at": "2026.08.06",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891421&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice3-891420",
+      "article_no": "891420",
+      "board": "academic_notice",
+      "title": "2026학년도 2학기 휴학·복학 추가 신청 안내",
+      "department": "학사지원과",
+      "published_at": "2026.08.06",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891420&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice3-891366",
+      "article_no": "891366",
+      "board": "academic_notice",
+      "title": "2026학년도 2학기 학점교류 안내(본교 → 타 대학교)",
+      "department": "학사지원과",
+      "published_at": "2026.08.05",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891366&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice3-891263",
+      "article_no": "891263",
+      "board": "academic_notice",
+      "title": "2026년도 2학기 글로벌잉글리쉬1 수강신청 안내 Guidelines for Enrolling in Global English 1 - Fall, 2026",
+      "department": "교양영어실",
+      "published_at": "2026.08.03",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891263&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice3-891086",
+      "article_no": "891086",
+      "board": "academic_notice",
+      "title": "2026-2학기 수강편람 및 강의시간표 안내/Lecture Schedule for Fall, 2026",
+      "department": "학사지원과",
+      "published_at": "2026.07.30",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891086&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice3-891030",
+      "article_no": "891030",
+      "board": "academic_notice",
+      "title": "2026-1학기 전부(과) 합격 안내",
+      "department": "학사지원과",
+      "published_at": "2026.07.29",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891030&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice3-891012",
+      "article_no": "891012",
+      "board": "academic_notice",
+      "title": "2027학년도 학교현장실습(교육실습) 신청 안내",
+      "department": "교직과",
+      "published_at": "2026.07.29",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891012&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice7-886502",
+      "article_no": "886502",
+      "board": "scholarship_notice",
+      "title": "2026-2 국가장학금(Ⅰ,Ⅱ) 및 에델바이스Ⅱ 신청안내",
+      "department": "학생지원과",
+      "published_at": "2026.06.11",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=886502&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice7-886382",
+      "article_no": "886382",
+      "board": "scholarship_notice",
+      "title": "2026-1 기숙지원장학금 선발결과 안내",
+      "department": "학생지원과",
+      "published_at": "2026.06.09",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=886382&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice7-886190",
+      "article_no": "886190",
+      "board": "scholarship_notice",
+      "title": "2026-1 학생회관복지장학금 장학생 선발결과 안내",
+      "department": "학생지원과",
+      "published_at": "2026.06.01",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=886190&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice7-886181",
+      "article_no": "886181",
+      "board": "scholarship_notice",
+      "title": "2026-2 주거안정지원장학금 신청안내",
+      "department": "학생지원과",
+      "published_at": "2026.06.01",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=886181&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice7-866982",
+      "article_no": "866982",
+      "board": "scholarship_notice",
+      "title": "2026 국가이공계 재학중우수자(2년지원) 장학생 신청안내",
+      "department": "학생지원과",
+      "published_at": "2026.05.11",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=866982&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice7-866974",
+      "article_no": "866974",
+      "board": "scholarship_notice",
+      "title": "2026-1 성적향상장학금 선발결과 안내",
+      "department": "학생지원과",
+      "published_at": "2026.05.11",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=866974&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice7-866780",
+      "article_no": "866780",
+      "board": "scholarship_notice",
+      "title": "2026-1 햇빛장학금 신청안내",
+      "department": "학생지원과",
+      "published_at": "2026.05.06",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=866780&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice7-866601",
+      "article_no": "866601",
+      "board": "scholarship_notice",
+      "title": "2026-1 국가장학금 및 에델바이스Ⅱ 지급안내",
+      "department": "학생지원처",
+      "published_at": "2026.04.27",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=866601&article.offset=0&articleLimit=10",
+      "has_attachment": false,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice7-866189",
+      "article_no": "866189",
+      "board": "scholarship_notice",
+      "title": "2026-1 성적향상장학금 신청안내",
+      "department": "학생지원과",
+      "published_at": "2026.04.20",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=866189&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": false
+    },
+    {
+      "document_id": "notice7-865237",
+      "article_no": "865237",
+      "board": "scholarship_notice",
+      "title": "2026 푸른등대 삼성기부장학금 신규장학생 선발안내",
+      "department": "학생지원과",
+      "published_at": "2026.03.27",
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=865237&article.offset=0&articleLimit=10",
+      "has_attachment": true,
+      "is_pinned": false
+    }
+  ]
+}
