@@ -4,9 +4,47 @@
 
 RAG(Retrieval-Augmented Generation, 검색 증강 생성)는 질문과 관련된 학교 자료를 먼저 검색한 뒤, 검색된 근거만 사용해 답변을 만드는 방식입니다. 학교 자료를 모델이 다시 학습하는 것이 아니라 수집·검색·답변의 세 단계를 연결합니다.
 
-## 현재 상태
+## 최종 벤치마크와 마무리 범위
+
+최신 평가 기준은 [프로젝트 최종 벤치마크](docs/PROJECT_BENCHMARK.md)입니다.
+새 질문 32개에서 검색·답변 정확성·근거 충실도·보류 행동·지연·토큰 사용량을 분리해 평가했습니다.
+동일 예산의 벡터 검색 대비 현재 검색 Hit@5는 45.8% → 62.5%, 완전 답변 정확도는 18/24(75.0%)입니다.
+주장별 근거 충실도는 46/47(97.9%), 행동 확인은 8/8이며 전체 코드 테스트 456개가 통과했습니다.
+assistant 원문 대조 결과이고 사람 승인 평가는 아닙니다. 검색·답변의 80% 참고 목표는 미달했습니다.
+이 프로젝트의 완료 범위는 학습용 CLI RAG와 재현 가능한 평가 기록까지이며, 웹 화면·공개 배포는 포함하지 않습니다.
+아래에 보존한 과거 경로의 100% 점수를 현재 시스템의 전체 정확도로 해석하지 마세요.
+
+## 2025·2026 선별 인덱스 검색·답변 생성 (2026-10-11)
+
+최근 학습 과정에서 만든 33,734개 청크의 검색 경로는 아래 명령으로 실행합니다.
+기본값은 기존 E5 벡터 순위를 유지하면서 짧은 청크에 같은 원문의 인접 설명을 붙이는 방식입니다.
+
+```bash
+.venv/bin/python -m sejong_rag.selected_search "2026년 2학기 등록금 납부 확인은 언제 가능해?"
+```
+
+최대 5개 근거 묶음을 반환하며, 제목·본문 합계는 E5 기준 2,200토큰 이내입니다.
+키워드 결합은 `--strategy improved`로 시험할 수 있지만 기본값은 아닙니다.
+원본 자료·청크·임베딩은 보존했습니다. 아래의 레거시 답변 생성 경로와 새 연결 경로는 별도로 유지합니다.
+진단 원인, 전략 비교와 평가 결과는 [검색 개선 기록](docs/EMBEDDING_BASELINE.md)을 참고하세요.
+
+개선한 검색 결과로 Gemini 답변까지 생성하려면 새 연결 경로를 사용합니다.
+
+```bash
+# 프롬프트만 확인: 외부 API 호출 및 API 키 조회 없음
+.venv/bin/python -m sejong_rag.ask_selected "2026년 2학기 등록금 납부 확인은 언제 가능해?" --dry-run
+
+# 실제 답변 생성: 기존 GEMINI_API_KEY 또는 GOOGLE_API_KEY 사용
+.venv/bin/python -m sejong_rag.ask_selected "2026년 2학기 등록금 납부 확인은 언제 가능해?"
+```
+
+`--output-dir 새폴더`를 추가하면 실제 프롬프트와 답변·출처를 저장합니다. 기존 폴더는 덮어쓰지 않습니다.
+아래의 레거시 `sejong-ask` 경로는 별도로 보존합니다. 연결 방식과 검증 결과는 [답변 생성 기록](docs/UNIFIED_GENERATION.md)을 참고하세요.
+
+## 기존 답변 생성 경로의 상태
 
 사용 화면을 만들기 직전 단계까지 완료했습니다. 기준일은 2026-08-10입니다.
+이하의 지표·키워드 혼합 검색 흐름·다음 단계는 기존 경로의 기록입니다. 최신 선별 인덱스 실행법과 진단 결과는 위의 안내를 참고하세요.
 
 | 항목 | 현재 결과 |
 |---|---:|
@@ -58,11 +96,15 @@ cp .env.example .env
 GEMINI_API_KEY=발급받은_API_키
 ```
 
-질문은 다음처럼 실행합니다.
+수집 자료·정리본·선별 청크·인덱스와 로컬 E5 모델이 준비된 현재 작업 공간에서는 다음처럼 실행합니다.
+의존성 설치만으로 학교 자료와 인덱스가 자동 생성되지는 않습니다.
 
 ```bash
-.venv/bin/python -m sejong_rag.ask_unified "2021년 소프트웨어학과 입학생의 졸업요건을 알려줘"
+.venv/bin/python -m sejong_rag.ask_selected "2026년 2학기 등록금 납부 확인은 언제 가능해?"
 ```
+
+터미널에서 한글을 직접 입력할 때 깨지면 편집창에서 명령 전체를 작성한 뒤 붙여넣어 실행할 수 있습니다.
+이 명령은 한 번에 질문 하나를 처리하며, 이전 대화를 기억하는 채팅 기능은 아닙니다.
 
 ## 데이터 갱신 원칙
 
@@ -83,33 +125,38 @@ GEMINI_API_KEY=발급받은_API_키
 .venv/bin/python -m pytest -q
 ```
 
-전체 검색 평가:
+현재 경로의 최종 벤치마크(외부 호출 없이 검색·프롬프트 확인):
 
 ```bash
-.venv/bin/python -m sejong_rag.evaluate_unified_retrieval
+.venv/bin/python -m sejong_rag.benchmark --output-dir data/processed/benchmark-new-offline
 ```
 
-독립 평가 질문에 대한 Gemini 답변 평가:
+실제 Gemini 답변까지 평가(새 출력 폴더 필수, API 사용량 발생):
 
 ```bash
-.venv/bin/python -m sejong_rag.evaluate_unified_generation
+.venv/bin/python -m sejong_rag.benchmark --output-dir data/processed/benchmark-new-live --live
 ```
 
-독립 평가(holdout evaluation)는 검색 설정을 조정할 때 사용하지 않은 별도 질문으로 실제 일반화 성능을 확인하는 과정입니다. 결과 해석은 [독립 평가 보고서](docs/HOLDOUT_EVALUATION.md)에 정리했습니다.
+질문·정답표를 먼저 고정하고 결과를 본 뒤 수정하지 않습니다. 자동 문구 검사와 별도 assistant 원문 검토를 구분합니다.
+과거 실행기와 결과는 [기존 경로의 평가 기록](docs/HOLDOUT_EVALUATION.md)에 보존했습니다.
+`data/processed/`의 상세 프롬프트·답변 보고서는 로컬 산출물이며 Git 추적 대상이 아닙니다.
+벤치마크 명세·검토 기록·최종 요약은 `eval/`과 `docs/`에 별도로 남깁니다.
 
 ## 주요 문서
 
 - [전체 제작 로드맵](RAG_ROADMAP.md): 완료 단계와 다음 작업
 - [문서 지도](docs/README.md): 현재 문서와 과거 실험 기록 구분
+- [최종 벤치마크](docs/PROJECT_BENCHMARK.md): 평가 기준, 결과, 재현 명령과 남은 한계
 - [Gemini 설정](docs/GEMINI_SETUP.md): API 키와 모델 설정
 - [통합 검색 인덱스](docs/UNIFIED_INDEX.md): 검색 자료를 합친 방식
 - [통합 답변 생성](docs/UNIFIED_GENERATION.md): 검색 결과를 답변으로 만드는 방식
 - [졸업요건 처리](docs/DEPARTMENT_GRADUATION_REQUIREMENTS.md): 입학연도·학과별 규칙
 - [2021년 필수과목 처리](docs/SOFTWARE_2021_REQUIRED_COURSES.md): 과목명 근거 보강
 
-## 다음 단계
+## 선택 확장
 
-다음 개발 단계는 사용 화면입니다. 화면에서는 질문 입력, 답변, 인용한 공지와 첨부파일, 적용 학년도 경고, 근거 부족 안내를 함께 보여줘야 합니다. 구현 순서는 [전체 제작 로드맵](RAG_ROADMAP.md)을 기준으로 합니다.
+웹 질문 화면, 실제 학생 질문 평가, 개인정보 필터 강화, 정기 갱신과 공개 배포는 후속 확장입니다.
+이번 마무리에 포함하지 않으며, 배포 준비가 끝났다는 의미도 아닙니다. 자세한 범위는 [로드맵](RAG_ROADMAP.md)을 참고하세요.
 
 ## 주의사항
 

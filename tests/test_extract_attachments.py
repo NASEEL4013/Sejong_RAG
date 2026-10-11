@@ -29,3 +29,35 @@ def test_legacy_doc_is_failed_explicitly(tmp_path: Path):
     raw=tmp_path/"sample.doc"; raw.write_bytes(b"legacy"); metadata={"document_id":"a-1","resolved_raw_path":str(raw),"file_type":"doc","filename":"sample.doc"}
     report=extract_one(metadata,tmp_path/"out"); assert report["status"]=="failed"; assert "not supported safely" in report["error"]
     assert json.loads((tmp_path/"out/reports/a-1.json").read_text())["record_count"]==0
+
+
+def test_hwpx_preserves_cell_location_without_duplicate_nested_paragraphs():
+    from sejong_rag.extract_attachments import extract_hwpx
+    stream=io.BytesIO()
+    with zipfile.ZipFile(stream,"w") as archive:
+        archive.writestr("Contents/section0.xml", '<sec><p><run><t>졸업요건</t><tbl><tr><tc><p><run><t>130학점</t></run></p></tc></tr></tbl></run></p></sec>')
+    stream.seek(0)
+    records,warnings=extract_hwpx(stream)
+    assert warnings==[]
+    assert [r['text'] for r in records]==['졸업요건','130학점']
+    assert records[1]['locator']['table']==1
+    assert records[1]['locator']['row']==1 and records[1]['locator']['column']==1
+
+
+def test_xlsm_uses_cell_reader_without_executing_macros(tmp_path):
+    from sejong_rag.extract_attachments import EXTRACTORS
+    assert EXTRACTORS['xlsm'] is extract_xlsx
+    book=Workbook(); book.active.append(['학점',130]); raw=tmp_path/'credits.xlsm'; book.save(raw)
+    report=extract_one({'document_id':'macro','resolved_raw_path':str(raw),'file_type':'xlsm'},tmp_path/'out')
+    assert report['status']=='success' and report['record_count']==1
+
+
+def test_mislabeled_xlsx_detects_actual_legacy_format(monkeypatch):
+    from sejong_rag import extract_attachments
+    stream=io.BytesIO(bytes.fromhex('D0CF11E0A1B11AE1')+b'xls')
+    def reader(source):
+        assert source.tell()==0
+        return [{'text':'구형 엑셀'}],[]
+    monkeypatch.setattr(extract_attachments,'extract_xls',reader)
+    records,warnings=extract_xlsx(stream)
+    assert records[0]['text']=='구형 엑셀' and not warnings

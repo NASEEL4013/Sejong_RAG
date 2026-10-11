@@ -1,0 +1,20 @@
+{"id":"S01","category":"app","query":"2026년 2학기 전자출결 앱은 무엇을 설치해야 하나요?","notice_id":"notice3-892260","evidence_any":[["세종대 모바일","U-Check Plus","사용 불가"],["세종대학교 통합 모바일 앱","설치"]],"answer_note":"세종대 모바일/세종대학교 통합 모바일 앱. 기존 U-Check Plus 사용 불가.","previously_smoke_tested":true}
+{"id":"S02","category":"condition","query":"2026년 2학기 전자출결에서 휴대폰을 바꾼 뒤 며칠 지나야 다시 변경할 수 있어?","notice_id":"notice3-892260","evidence_any":[["변경 가능 간격 7일"]],"answer_note":"승인 없이 변경 가능한 간격은 7일."}
+{"id":"S03","category":"condition","query":"2026년 2학기에 전자출결용 휴대폰을 네 번째 바꾸려면 승인이 필요해?","notice_id":"notice3-892260","evidence_any":[["학사지원과의 승인이 필요","휴대폰 변경 4회 이상"]],"answer_note":"4회 이상 변경은 학사지원과 승인 필요."}
+{"id":"S04","category":"contact","query":"2026년 2학기 전자출결 시스템 문제는 어느 부서 전화번호로 문의해?","notice_id":"notice3-892260","evidence_any":[["학사지원과","02-3408-3036"]],"answer_note":"학사지원과 02-3408-3036."}
+{"id":"S05","category":"date","query":"2026년 2학기 휴학 신청은 언제부터 언제까지야?","notice_id":"notice3-890724","evidence_any":[["휴학신청 기간","2026. 7. 27","8. 2"]],"answer_note":"2026년 7월 27일~8월 2일."}
+{"id":"S06","category":"condition","query":"2026년 2학기 휴학 안내 기준으로 일반휴학은 총 몇 학기까지 가능하고 군휴학도 포함돼?","notice_id":"notice3-890724","evidence_any":[["총 6 학기를 초과","군입대휴학은 휴학기간에서 제외"]],"answer_note":"총 6학기, 군입대휴학 기간 제외."}
+{"id":"S07","category":"condition","query":"2026년 2학기에 개강하고 6주가 지난 뒤에도 일반휴학할 수 있나?","notice_id":"notice3-890724","evidence_any":[["개강 후 6 주가 경과하면 일반휴학이 불가능","군입대휴학","질병휴학 제외"]],"answer_note":"일반휴학 불가. 군입대·질병휴학은 제외."}
+{"id":"S08","category":"procedure","query":"2026년 2학기 복학 신청만 하면 끝나, 아니면 수강신청과 등록금 납부도 해야 해?","notice_id":"notice3-890725","evidence_any":[["수강신청","등록금 납부를 모두 완료해야 최종 복학이 승인"]],"answer_note":"수강신청과 등록금 납부 모두 완료해야 최종 승인."}
+{"id":"S09","category":"condition","query":"2026년 2학기 복학생 최소 수강학점은 몇 학점이고 마지막 학기도 같아?","notice_id":"notice3-890725","evidence_any":[["최소 수강학점","6 학점","최종학기는 3 학점"]],"answer_note":"6학점, 최종학기는 3학점."}
+{"id":"S10","category":"date","query":"2025년 1학기 복학 신청기간이 정정됐다는데 최종 일정은 언제야?","notice_id":"notice3-805889","evidence_any":[["1. 23","2. 2.","복학신청기간 정정"]],"answer_note":"2025년 1월 23일~2월 2일."}
+{"id":"S11","category":"condition","query":"2026년 2학기 재입학 공지에서 1학년 1학기 중 자퇴한 사람도 지원할 수 있어?","notice_id":"notice3-885721","evidence_any":[["1 학년 1 학기 중 자퇴자는","재입학이 불가"]],"answer_note":"1학년 1학기 중 자퇴자는 재입학 불가."}
+{"id":"S12","category":"date","query":"2026년 2학기 재입학 신청 마감일은 언제야?","notice_id":"notice3-885721","evidence_any":[["2026년 6월 1일","6월 12일","신청 기간 외에는 접수가 불가"]],"answer_note":"2026년 6월 12일, 기간 외 접수 불가."}
+{"id":"S13","category":"condition","query":"2026년 2학기에 전액 장학금으로 등록금이 0원인데도 등록 처리를 해야 하나?","notice_id":"notice3-891311","evidence_any":[["0 원 등록 처리를 해야","미등록 제적"],["0원","반드시","등록과정을 거치지 않을 시 미등록"]],"answer_note":"0원이어도 등록 처리 필요."}
+{"id":"S14","category":"condition","query":"2026년 2학기 재입학생은 등록금 분할납부 신청 대상이야?","notice_id":"notice3-891311","evidence_any":[["신청 대상","제외 대상자","재입학생","학자금대출신청자"]],"answer_note":"해당 학기 재입학생은 분할납부 대상에서 제외."}
+{"id":"S15","category":"procedure","query":"2026년 2학기 등록금을 낸 뒤 학사정보시스템에서 납부 확인은 언제 가능해?","notice_id":"notice3-891311","evidence_any":[["납부 후 다음 근무일 오전 10 시 이후 확인 가능"]],"answer_note":"다음 근무일 오전 10시 이후."}
+{"id":"S16","category":"condition","query":"2026년 1학기 성적향상장학금 신청할 때 직전학기 평점 기준은 얼마야?","notice_id":"notice7-866189","evidence_any":[["직전학기 성적","평점 3.5 점 이상"]],"answer_note":"직전학기 평점 3.5 이상. 학점 등 다른 자격조건도 존재."}
+{"id":"S17","category":"procedure","query":"2026년 1학기 성적향상장학금 신청서는 어디로 가져가야 해?","notice_id":"notice7-866189","evidence_any":[["학생지원과","집현관 104 호","방문 제출"]],"answer_note":"학생지원과 집현관 104호 방문 제출."}
+{"id":"S18","category":"date","query":"2025년 2학기 성적향상장학금 접수는 몇 월 며칠 몇 시에 끝나?","notice_id":"notice7-857819","evidence_any":[["2025 년 10 월 20 일","11 월 7 일","오후 4 시까지"]],"answer_note":"2025년 11월 7일 오후 4시."}
+{"id":"S19","category":"amount","query":"2026년 2학기 주거안정지원장학금은 한 달에 최대 얼마까지 지원돼?","notice_id":"notice7-886181","evidence_any":[["월 20 만원 한도","주거 관련 지출 비용 지원"]],"answer_note":"월 20만원 한도 내 주거 관련 지출 비용 지원."}
+{"id":"S20","category":"condition","query":"2026년 2학기 주거안정지원장학금 성적 기준은 몇 학점에 몇 점이야?","notice_id":"notice7-886181","evidence_any":[["직전학기 12 학점 이상 취득","백분위 70 점 이상"]],"answer_note":"직전학기 12학점 이상, 백분위 70점 이상."}

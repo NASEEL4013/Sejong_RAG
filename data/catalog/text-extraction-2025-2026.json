@@ -1,0 +1,2943 @@
+{
+  "started_at": "2026-10-08T10:30:29.184414+00:00",
+  "backup_dir": "/tmp/rag-text-extraction-backup-uo68cnbl",
+  "extraction": [
+    {
+      "document_id": "notice3-805885-attachment-217237",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 383,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805885-attachment-217238",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805887-attachment-217239",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805888-attachment-217240",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 43,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805890-attachment-217241",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805891-attachment-217242",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 424,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805891-attachment-217243",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805891-attachment-217244",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805893-attachment-217247",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 12,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805893-attachment-217248",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805894-attachment-217249",
+      "status": "failed",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": "ValueError: legacy DOC extraction is not supported safely; conversion/review required"
+    },
+    {
+      "document_id": "notice3-805896-attachment-217250",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 138,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805896-attachment-217251",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2421,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805896-attachment-217252",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2451,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805900-attachment-217253",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 40,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805905-attachment-217254",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 12,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805905-attachment-217255",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 7,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805905-attachment-217256",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805906-attachment-217257",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2947,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805908-attachment-217258",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 350,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805910-attachment-217259",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 36,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805910-attachment-217260",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2421,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805910-attachment-217261",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2451,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805910-attachment-217262",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 138,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805917-attachment-217263",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805919-attachment-217264",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 147,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805921-attachment-217265",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 38,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805921-attachment-217266",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 38,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805921-attachment-217267",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805924-attachment-217268",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805926-attachment-217269",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805928-attachment-217270",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805928-attachment-217271",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805930-attachment-217272",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805933-attachment-217273",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 36,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805933-attachment-217274",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 138,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805933-attachment-217275",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2421,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805933-attachment-217276",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2451,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805939-attachment-217281",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805941-attachment-217282",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805946-attachment-217287",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805951-attachment-217292",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 622,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805951-attachment-217293",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 921,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805951-attachment-217294",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1185,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805955-attachment-217295",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805958-attachment-217296",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805958-attachment-217297",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805961-attachment-217298",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805963-attachment-217299",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805963-attachment-217300",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 37,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805964-attachment-217301",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805964-attachment-217302",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805964-attachment-217303",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805964-attachment-217304",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805965-attachment-217305",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805965-attachment-217306",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805967-attachment-217307",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 48,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805967-attachment-217308",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805968-attachment-217309",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805969-attachment-217310",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805972-attachment-217311",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805974-attachment-217312",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 155,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805976-attachment-217313",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 83,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805978-attachment-217314",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805980-attachment-217315",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805980-attachment-217316",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805980-attachment-217317",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805982-attachment-217318",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805982-attachment-217319",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805982-attachment-217320",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805983-attachment-217321",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 60,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805983-attachment-217322",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805985-attachment-217323",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805986-attachment-217324",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805987-attachment-217325",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 16,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805987-attachment-217326",
+      "status": "failed",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": "ValueError: legacy DOC extraction is not supported safely; conversion/review required"
+    },
+    {
+      "document_id": "notice3-805996-attachment-217331",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805996-attachment-217332",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805998-attachment-217333",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-805998-attachment-217334",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-806001-attachment-217335",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-806004-attachment-217336",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 35,
+      "error": null
+    },
+    {
+      "document_id": "notice3-806004-attachment-217337",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-806004-attachment-217338",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-806007-attachment-228538",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-806007-attachment-229117",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-806008-attachment-217346",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-852997-attachment-228453",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 44,
+      "error": null
+    },
+    {
+      "document_id": "notice3-853129-attachment-228500",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-853168-attachment-228517",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 7,
+      "error": null
+    },
+    {
+      "document_id": "notice3-853321-attachment-228566",
+      "status": "failed",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": "ValueError: legacy DOC extraction is not supported safely; conversion/review required"
+    },
+    {
+      "document_id": "notice3-853683-attachment-228931",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 134,
+      "error": null
+    },
+    {
+      "document_id": "notice3-853683-attachment-229538",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2449,
+      "error": null
+    },
+    {
+      "document_id": "notice3-853683-attachment-229539",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2479,
+      "error": null
+    },
+    {
+      "document_id": "notice3-853903-attachment-228810",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1718,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854042-attachment-228884",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854042-attachment-229139",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 12,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854075-attachment-228896",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854075-attachment-228897",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854075-attachment-228898",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854075-attachment-228900",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854150-attachment-228927",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 134,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854150-attachment-228930",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 36,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854150-attachment-229534",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2449,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854150-attachment-229535",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2479,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854318-attachment-229008",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 38,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854635-attachment-229121",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854635-attachment-229122",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854766-attachment-229194",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854973-attachment-229273",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-854973-attachment-229274",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855275-attachment-229412",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 72,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855275-attachment-229413",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 95,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855275-attachment-229414",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 95,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855275-attachment-229415",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 95,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855275-attachment-229416",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 95,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855336-attachment-229435",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 38,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855336-attachment-229436",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 38,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855336-attachment-229437",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855387-attachment-229469",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 415,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855387-attachment-229470",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 39,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855387-attachment-229480",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 242,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855678-attachment-229620",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855896-attachment-229670",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 333,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855896-attachment-229671",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 538,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855896-attachment-229672",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 126,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855896-attachment-229673",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 136,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855896-attachment-229674",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 111,
+      "error": null
+    },
+    {
+      "document_id": "notice3-855907-attachment-229679",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-856385-attachment-229803",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 8,
+      "error": null
+    },
+    {
+      "document_id": "notice3-856385-attachment-229804",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-857089-attachment-230081",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-857161-attachment-230094",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-857161-attachment-230095",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-857652-attachment-230220",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-857652-attachment-230221",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-857715-attachment-230237",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-857715-attachment-230238",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-857930-attachment-230326",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-857930-attachment-230994",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 12,
+      "error": null
+    },
+    {
+      "document_id": "notice3-858879-attachment-230622",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-858879-attachment-230623",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-858879-attachment-230624",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-859179-attachment-230726",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 62,
+      "error": null
+    },
+    {
+      "document_id": "notice3-859179-attachment-230727",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-859467-attachment-230830",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-859467-attachment-230832",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-859467-attachment-230833",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-859580-attachment-230885",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-859604-attachment-230886",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-860012-attachment-230974",
+      "status": "failed",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": "ValueError: legacy DOC extraction is not supported safely; conversion/review required"
+    },
+    {
+      "document_id": "notice3-860012-attachment-230975",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 16,
+      "error": null
+    },
+    {
+      "document_id": "notice3-860129-attachment-231040",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-860690-attachment-231136",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-860707-attachment-231147",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-860707-attachment-231148",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-231348",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-231679",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 579,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-231801",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 14,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-231884",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-231966",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1111,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-231967",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 14,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-231968",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 16,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-231982",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 512,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-231983",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-232084",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 20,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861340-attachment-232120",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861957-attachment-231567",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 421,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861957-attachment-231568",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-861957-attachment-231569",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862005-attachment-231571",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862073-attachment-231612",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 36,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862127-attachment-231706",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 49,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862318-attachment-231724",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862321-attachment-231914",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862548-attachment-231838",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862548-attachment-231839",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862548-attachment-231840",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862548-attachment-231841",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862548-attachment-231842",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862579-attachment-232292",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 145,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862579-attachment-232293",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2604,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862579-attachment-232294",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2604,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862742-attachment-231905",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 32,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862742-attachment-231955",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862743-attachment-231906",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862743-attachment-231907",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 14,
+      "error": null
+    },
+    {
+      "document_id": "notice3-862821-attachment-231956",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 3008,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863033-attachment-232085",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863047-attachment-232073",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 12,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863047-attachment-232747",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863048-attachment-232076",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 36,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863048-attachment-232296",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 145,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863048-attachment-232453",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2603,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863048-attachment-232454",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2633,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863053-attachment-232087",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 18,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863053-attachment-232088",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 18,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863245-attachment-232178",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863571-attachment-232324",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863571-attachment-232325",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863710-attachment-232379",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863751-attachment-232410",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 11,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863778-attachment-232428",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 39,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863778-attachment-232429",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 38,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863778-attachment-232430",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863785-attachment-232432",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863806-attachment-232445",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 36,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863806-attachment-232446",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 145,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863806-attachment-232451",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2603,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863806-attachment-232452",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2633,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863816-attachment-232464",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863816-attachment-232465",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 10,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863888-attachment-232507",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863915-attachment-232538",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863915-attachment-232539",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 10,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863915-attachment-232626",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 92,
+      "error": null
+    },
+    {
+      "document_id": "notice3-863954-attachment-232572",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-864275-attachment-232727",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-864275-attachment-232895",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 8,
+      "error": null
+    },
+    {
+      "document_id": "notice3-864878-attachment-232883",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-864878-attachment-232884",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 8,
+      "error": null
+    },
+    {
+      "document_id": "notice3-865618-attachment-233087",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-865722-attachment-233136",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-865722-attachment-233137",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866038-attachment-233223",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866298-attachment-233303",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 48,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866298-attachment-233304",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866311-attachment-233511",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866311-attachment-234016",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 1248,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866493-attachment-233409",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866493-attachment-233410",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866602-attachment-233454",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866602-attachment-233455",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866602-attachment-233456",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866602-attachment-233457",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866778-attachment-234018",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 8,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866778-attachment-234019",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866778-attachment-234020",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866978-attachment-233639",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866978-attachment-233640",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-866978-attachment-233641",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-867033-attachment-233687",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 62,
+      "error": null
+    },
+    {
+      "document_id": "notice3-867033-attachment-233688",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-885721-attachment-234009",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-885721-attachment-234010",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-885721-attachment-234011",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-885760-attachment-234048",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886083-attachment-234200",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886083-attachment-234201",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886174-attachment-234299",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886258-attachment-234367",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 16,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886258-attachment-234368",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 36,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886813-attachment-234683",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886857-attachment-234700",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886857-attachment-234701",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886872-attachment-234712",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 26,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886872-attachment-234713",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886872-attachment-234714",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-886915-attachment-234737",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-887246-attachment-234903",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-887246-attachment-236492",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 8037,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890224-attachment-236129",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 7,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890224-attachment-236130",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 12,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890224-attachment-236131",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890224-attachment-236132",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890559-attachment-236271",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 31,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890724-attachment-236351",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890725-attachment-236352",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890725-attachment-236353",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890725-attachment-236354",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890789-attachment-236609",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1867,
+      "error": null
+    },
+    {
+      "document_id": "notice3-890841-attachment-236396",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 36,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891012-attachment-236457",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891012-attachment-236458",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891012-attachment-236459",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891012-attachment-236460",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891086-attachment-236497",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 172,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891086-attachment-236498",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2530,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891086-attachment-236499",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2560,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891311-attachment-236574",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 12,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891311-attachment-236575",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891366-attachment-236589",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891366-attachment-236590",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 8074,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891421-attachment-236615",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 52,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891485-attachment-236666",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2648,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891485-attachment-236667",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 2678,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891485-attachment-236668",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 36,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891485-attachment-236669",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 172,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891627-attachment-236720",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 25,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891806-attachment-236809",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-891932-attachment-237156",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-892170-attachment-236966",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice3-892256-attachment-237007",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice3-892256-attachment-237008",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice3-892260-attachment-237010",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 44,
+      "error": null
+    },
+    {
+      "document_id": "notice3-892260-attachment-237012",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice3-892260-attachment-237020",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 44,
+      "error": null
+    },
+    {
+      "document_id": "notice3-892260-attachment-237021",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice3-892427-attachment-237064",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-892509-attachment-237094",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-892509-attachment-237095",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-893055-attachment-237272",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-893055-attachment-237273",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 8,
+      "error": null
+    },
+    {
+      "document_id": "notice3-893679-attachment-237503",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-893679-attachment-237504",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-893791-attachment-237509",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice3-894256-attachment-237627",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 4,
+      "error": null
+    },
+    {
+      "document_id": "notice3-894256-attachment-237628",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810913-attachment-220335",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810913-attachment-220336",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810913-attachment-220337",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810915-attachment-220338",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810922-attachment-220342",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810924-attachment-220343",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810925-attachment-220344",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 17,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810925-attachment-220345",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810926-attachment-220346",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 17,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810926-attachment-220347",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810927-attachment-220348",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810929-attachment-220349",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 19,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810931-attachment-220352",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810931-attachment-220353",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 30,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810931-attachment-220354",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810932-attachment-220355",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 10,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810936-attachment-220356",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 28,
+      "error": null
+    },
+    {
+      "document_id": "notice7-810937-attachment-220357",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 9,
+      "error": null
+    },
+    {
+      "document_id": "notice7-853360-attachment-228583",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 85,
+      "error": null
+    },
+    {
+      "document_id": "notice7-853360-attachment-228584",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-853929-attachment-228829",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice7-853929-attachment-228830",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice7-854731-attachment-229161",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 9,
+      "error": null
+    },
+    {
+      "document_id": "notice7-855190-attachment-229441",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-855190-attachment-229442",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-855190-attachment-229443",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-855190-attachment-229444",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-855524-attachment-229533",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-857819-attachment-230285",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-858079-attachment-230351",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice7-858779-attachment-230598",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice7-858781-attachment-230599",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice7-858949-attachment-230638",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 3,
+      "error": null
+    },
+    {
+      "document_id": "notice7-858949-attachment-230639",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 6,
+      "error": null
+    },
+    {
+      "document_id": "notice7-859501-attachment-230855",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice7-859501-attachment-230856",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice7-860017-attachment-230976",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 28,
+      "error": null
+    },
+    {
+      "document_id": "notice7-860017-attachment-230977",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 30,
+      "error": null
+    },
+    {
+      "document_id": "notice7-861807-attachment-231488",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 24,
+      "error": null
+    },
+    {
+      "document_id": "notice7-861807-attachment-231489",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 5,
+      "error": null
+    },
+    {
+      "document_id": "notice7-861807-attachment-231490",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 24,
+      "error": null
+    },
+    {
+      "document_id": "notice7-862431-attachment-231782",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-862431-attachment-231783",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-862431-attachment-231784",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-863797-attachment-232441",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-863797-attachment-232442",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-863797-attachment-232443",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-864162-attachment-232664",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-864162-attachment-232665",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-864169-attachment-232678",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-864172-attachment-232680",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 17,
+      "error": null
+    },
+    {
+      "document_id": "notice7-864172-attachment-232681",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-864174-attachment-232682",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-864174-attachment-232683",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 17,
+      "error": null
+    },
+    {
+      "document_id": "notice7-864186-attachment-232694",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 25,
+      "error": null
+    },
+    {
+      "document_id": "notice7-865237-attachment-232968",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 40,
+      "error": null
+    },
+    {
+      "document_id": "notice7-865237-attachment-232969",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 15,
+      "error": null
+    },
+    {
+      "document_id": "notice7-866189-attachment-233281",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-866982-attachment-233652",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 19,
+      "error": null
+    },
+    {
+      "document_id": "notice7-886181-attachment-234304",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 10,
+      "error": null
+    },
+    {
+      "document_id": "notice7-886181-attachment-234305",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 8,
+      "error": null
+    },
+    {
+      "document_id": "notice7-886502-attachment-234530",
+      "status": "review_required",
+      "run_status": "skipped",
+      "record_count": 28,
+      "error": null
+    },
+    {
+      "document_id": "notice7-886502-attachment-234531",
+      "status": "success",
+      "run_status": "skipped",
+      "record_count": 36,
+      "error": null
+    },
+    {
+      "document_id": "notice7-891548-attachment-236751",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 0,
+      "error": null
+    },
+    {
+      "document_id": "notice7-891548-attachment-236752",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 2,
+      "error": null
+    },
+    {
+      "document_id": "notice7-892119-attachment-236981",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-892119-attachment-236982",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-892119-attachment-236983",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-892486-attachment-237092",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 103,
+      "error": null
+    },
+    {
+      "document_id": "notice7-892486-attachment-237093",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-892517-attachment-237096",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 14,
+      "error": null
+    },
+    {
+      "document_id": "notice7-892571-attachment-237117",
+      "status": "review_required",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    },
+    {
+      "document_id": "notice7-893809-attachment-237516",
+      "status": "success",
+      "run_status": "processed",
+      "record_count": 1,
+      "error": null
+    }
+  ],
+  "recovery": [
+    {
+      "document_id": "notice3-860012-attachment-230974",
+      "kind": "doc",
+      "status": "success"
+    },
+    {
+      "document_id": "notice3-853321-attachment-228566",
+      "kind": "doc",
+      "status": "success"
+    },
+    {
+      "document_id": "notice3-805987-attachment-217326",
+      "kind": "doc",
+      "status": "success"
+    },
+    {
+      "document_id": "notice3-805894-attachment-217249",
+      "kind": "doc",
+      "status": "success"
+    },
+    {
+      "document_id": "notice3-805921-attachment-217265",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 1,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-810932-attachment-220355",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 1,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-858949-attachment-230638",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 11,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-853929-attachment-228830",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 15,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-810924-attachment-220343",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 1,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-858949-attachment-230639",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 5,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-859501-attachment-230856",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 15,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-810927-attachment-220348",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 2,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice3-892260-attachment-237021",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 1,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice3-855336-attachment-229435",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 1,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-853929-attachment-228829",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 13,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice3-805958-attachment-217296",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 2,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-891548-attachment-236752",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 16,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-892571-attachment-237117",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 24,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-810937-attachment-220357",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 1,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-854731-attachment-229161",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 1,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice3-892256-attachment-237008",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 8,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-859501-attachment-230855",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 13,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-891548-attachment-236751",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 16,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice3-892260-attachment-237012",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 1,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-858079-attachment-230351",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 3,
+      "remaining_pages": [],
+      "error": null
+    },
+    {
+      "document_id": "notice7-810922-attachment-220342",
+      "kind": "pdf",
+      "status": "review_required",
+      "ocr_pages": 24,
+      "remaining_pages": [],
+      "error": null
+    }
+  ],
+  "notice_images": {
+    "notices": 50,
+    "images": 93,
+    "processed": 30,
+    "failed": 5,
+    "manual_transcription_recovered": 1,
+    "ocr_failure_after_review": 0,
+    "unavailable_sources": 4
+  },
+  "summary": {
+    "attachments": 381,
+    "statuses": {
+      "success": 343,
+      "review_required": 38
+    },
+    "record_count": 91526,
+    "text_length": 19390417,
+    "newly_extracted": 235,
+    "reused": 146,
+    "failed_reports": [],
+    "zero_record_reports": [
+      {
+        "document_id": "notice3-892256-attachment-237007",
+        "file_type": "zip",
+        "warnings": [
+          "기초코딩 강의 정보 확인.exe: unsupported ZIP member type"
+        ]
+      },
+      {
+        "document_id": "notice3-863915-attachment-232538",
+        "file_type": "zip",
+        "warnings": [
+          "기초코딩 강의 정보 확인.exe: unsupported ZIP member type"
+        ]
+      },
+      {
+        "document_id": "notice3-863816-attachment-232464",
+        "file_type": "zip",
+        "warnings": [
+          "기초코딩 강의 정보 확인.exe: unsupported ZIP member type"
+        ]
+      }
+    ],
+    "ocr_pdf_records_including_previous": 272,
+    "zip_ocr_records": 40,
+    "low_confidence_pdf_records": 17,
+    "manual_transcribed_images": 1,
+    "images_with_text": 89,
+    "unavailable_images": [
+      {
+        "document_id": "notice3-805959",
+        "image": 1
+      },
+      {
+        "document_id": "notice3-805910",
+        "image": 1
+      },
+      {
+        "document_id": "notice3-805976",
+        "image": 1
+      },
+      {
+        "document_id": "notice3-806010",
+        "image": 1
+      }
+    ],
+    "outstanding_encrypted_workbooks": 1,
+    "verified_blank_pages": 1
+  },
+  "indexes_and_chunks_unchanged": true,
+  "completed_at": "2026-10-08T10:39:19.888127+00:00",
+  "postprocessing_completed_at": "2026-10-08T10:41:31.653850+00:00"
+}

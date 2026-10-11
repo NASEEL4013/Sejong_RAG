@@ -9,3 +9,16 @@ def test_parse_tesseract_tsv_groups_lines_and_confidence():
 def test_missing_text_pages_are_unique_and_sorted():
     report={"warnings":["page 4: no embedded text (OCR may be required)","other", "page 1: no embedded text (OCR may be required)","page 4: no embedded text"]}
     assert missing_text_pages(report)==[1,4]
+
+
+def test_partial_ocr_keeps_unprocessed_pages_and_review_status(tmp_path,monkeypatch):
+    import json
+    from sejong_rag.recover_attachments import recover_pdf
+    output=tmp_path/'out'; (output/'reports').mkdir(parents=True); (output/'records').mkdir()
+    report={'warnings':['page 1: no embedded text','page 2: no embedded text'],'records_path':str(output/'records/doc.jsonl')}
+    (output/'reports/doc.json').write_text(json.dumps(report))
+    monkeypatch.setattr('sejong_rag.recover_attachments.ocr_pdf_page',lambda *args:('인식된 글',None))
+    result=recover_pdf({'document_id':'doc','resolved_raw_path':str(tmp_path/'a.pdf')},output,max_pages=1)
+    assert missing_text_pages(result)==[2]
+    assert result['status']=='review_required'
+    assert any('source verification' in warning for warning in result['warnings'])

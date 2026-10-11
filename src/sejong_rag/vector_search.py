@@ -39,11 +39,24 @@ def rank_by_similarity(
     return [(int(index), float(scores[index])) for index in order]
 
 
+def chunk_locations(chunk):
+    locators = chunk.get('locators') or [s.get('locator', {}) for s in chunk.get('source_spans', [])]
+    if not locators and 'page' in chunk:
+        locators = [{'page': chunk['page']}]
+    values = []
+    for loc in locators:
+        label = ', '.join(f'{key}={loc[key]}' for key in
+            ('zip_member','page','sheet','table','row','slide','section','image') if key in loc)
+        if label and label not in values: values.append(label)
+    return '; '.join(values[:4]) or 'document'
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="수강편람 벡터 검색")
     parser.add_argument("query", help="자연어 질문")
     parser.add_argument("--index", type=Path, default=DEFAULT_INDEX)
     parser.add_argument("--top-k", type=int, default=5)
+    parser.add_argument("--local-files-only", action="store_true")
     args = parser.parse_args()
 
     embeddings, chunks, metadata = load_index(args.index)
@@ -53,7 +66,7 @@ def main() -> None:
 
     from sentence_transformers import SentenceTransformer
 
-    model = SentenceTransformer(str(metadata["model"]), device="cpu")
+    model = SentenceTransformer(str(metadata["model"]), device="cpu", local_files_only=args.local_files_only)
     query_embedding = model.encode(
         f"{metadata['query_prefix']}{args.query}",
         normalize_embeddings=True,
@@ -63,9 +76,12 @@ def main() -> None:
 
     for rank, (index, score) in enumerate(results, start=1):
         chunk = chunks[index]
-        print(f"\n[{rank}] cosine={score:.6f} page={chunk['page']}")
+        print(f"\n[{rank}] cosine={score:.6f} location={chunk_locations(chunk)}")
         print(f"chunk_id={chunk['chunk_id']}")
+        print(f"title={chunk.get('document_title', '')}")
         print(f"source={chunk['source_url']}")
+        for alias in chunk.get('source_aliases', []):
+            print(f"linked_notice={alias.get('document_title', '')} date={alias.get('published_at', '')} source={alias.get('source_url', '')}")
         print("-" * 72)
         print(make_snippet(str(chunk["text"]), [], limit=500))
 

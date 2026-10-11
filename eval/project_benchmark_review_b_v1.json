@@ -1,0 +1,248 @@
+{
+  "report_sha256": "98d8ee1ec7664e6c24737023b7f987fa586dd3c8dc01bc5c01b121ec2868d11b",
+  "reviewer_role": "assistant",
+  "human_approved": false,
+  "results": [
+    {
+      "id": "B17",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "광개토관 지하 1층 SEZ와 총 8시간·100% 출석·코칭 참여·과제 제출을 모두 정확히 답했다. 장소는 근거 3, 운영·수료 조건은 근거 2에 나뉘어 있으므로 한 묶음에 모든 문구를 요구하는 고정 검색 라벨의 자동 실패와 실제 답변 정확도를 구분한다.",
+      "failure_types": ["label_limitation"],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "citations": [3],
+          "supported": true,
+          "reason": "근거 3의 운영 장소가 광개토관 지하 1층 SEZ 강의실이며 카페 딕셔너리를 지나 왼편이라는 세부 위치도 명시되어 있다."
+        },
+        {
+          "claim_index": 2,
+          "citations": [2],
+          "supported": true,
+          "reason": "근거 2에 총 4회·회당 2시간·총 8시간, 회당 30분 개인 코칭, 나머지 시간 타 참석자 코칭 참관과 전략·피드백 학습이 모두 있다."
+        },
+        {
+          "claim_index": 3,
+          "citations": [2],
+          "supported": true,
+          "reason": "근거 2의 수료 조건은 총 8시간 세션 100% 출석, 1:1 코칭 성실 참여, 과제 제출 완료의 세 조건을 함께 요구한다."
+        }
+      ]
+    },
+    {
+      "id": "B18",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "집현캠퍼스는 시험 플랫폼, 대양AI센터 B111호는 실제 응시장소로 구분했고 학과면접 장소는 학과가 따로 통지한다고 답했다. 두 시험의 장소를 같은 것으로 단정하지 않았다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "citations": [2],
+          "supported": true,
+          "reason": "근거 2의 검사 장소는 대양AI센터 B111호 전산실습실이고 응시방법은 세종대학교 집현캠퍼스에서 실시하는 것으로 함께 적혀 있다."
+        },
+        {
+          "claim_index": 2,
+          "citations": [2],
+          "supported": true,
+          "reason": "근거 2의 면접 절차는 학과가 면접위원 선정 후 시간·방법을 결정하고 신청자에게 면접 시간·장소를 통지한다고 명시한다."
+        }
+      ]
+    },
+    {
+      "id": "B19",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "시급 12,790원, 학기당 최소 10시간, 8시간이면 미지급, 학기 중 주 20시간·방학 중 주 40시간을 모두 정확히 답했다. 자동 문구 목록의 미지급 표현 대신 사용한 '지급받지 못한다'는 같은 의미다.",
+      "failure_types": ["label_limitation"],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "citations": [1],
+          "supported": true,
+          "reason": "2026년 2학기 공지인 근거 1의 지원사항에 시간당 12,790원 지급이 명시되어 있다."
+        },
+        {
+          "claim_index": 2,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1은 학기당 최소 10시간 이상 활동을 지급 조건으로 둔다. 8시간은 이 기준에 미달한다는 답변은 해당 조건을 적용한 타당한 판단이다."
+        },
+        {
+          "claim_index": 3,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1의 1주 한도는 학기 중 최대 20시간, 방학 중 최대 40시간으로 적혀 있다."
+        }
+      ]
+    },
+    {
+      "id": "B20",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "2026년 2학기 해당 장학금의 한국장학재단과 학생지원과 전화번호를 정확히 대응했다. 다른 학기의 학생지원과 번호를 가져오지 않았다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1의 관련 문의에 한국장학재단 1800-0499가 명시되어 있다."
+        },
+        {
+          "claim_index": 2,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1의 관련 문의에 학생지원과 02-3408-4355가 명시되어 있다."
+        }
+      ]
+    },
+    {
+      "id": "B21",
+      "answer_correct": false,
+      "behavior_correct": null,
+      "reason": "날짜·시각은 근거 1과 맞지만 실제 제공된 5개 근거에는 기존 동의 후 가구원 변동이 없으면 재동의가 불필요하다는 예외가 빠져 있다. 답변은 이를 보류해 핵심 질문을 완성하지 못했다. 또한 insufficient_evidence의 빈 claims 상태에서 신청 기한이라는 학교 사실을 message에 인용 없이 넣어 시스템 규칙 9를 위반했다. 이 사실은 근거 1이 뒷받침하므로 날짜 환각이 아니라 인용·출력 경계 누락이다.",
+      "failure_types": ["context_incomplete", "incomplete_answer", "wrong_generation"],
+      "message_fact_leak": true,
+      "uncited_message_facts": [
+        "2026년 2학기 푸른등대 기부장학사업 신청 기한은 2026년 9월 10일 목요일 오후 6시까지다."
+      ],
+      "claim_checks": []
+    },
+    {
+      "id": "B22",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "팀 수상 휴학생의 예외를 적용하여 이번 학기에 재학생 팀원과 함께 신청하고 복학 학기에 지급받는다고 구분했다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1은 휴학 중인 팀원이 재학 중인 팀원과 함께 반드시 이번 학기에 신청해야 한다고 명시한다. 일반적인 휴학 중 개인 수상 규칙과 구분된 예외다."
+        },
+        {
+          "claim_index": 2,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1의 같은 팀 수상 예외 문장에 장학금은 복학 학기에 지급된다고 명시되어 있다."
+        }
+      ]
+    },
+    {
+      "id": "B23",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "2026년 예술체육비전의 1학년 4년·3학년 2년 등록금 전액 지원과 매 학기 계속지원 조건을 보존했고 기초생활수급자 추가 생활비 250만원을 정확히 답했다. 지급 주기나 횟수를 덧붙이지 않았다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1은 전공탐색유형 1학년에게 매 학기 계속지원 기준 충족 시 26-1학기부터 4년 등록금 전액을 지원한다고 명시한다."
+        },
+        {
+          "claim_index": 2,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1은 전공확립유형 3학년에게 같은 조건으로 26-1학기부터 2년 등록금 전액을 지원한다고 명시한다."
+        },
+        {
+          "claim_index": 3,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1의 지원내용에 기초생활수급자 생활비 250만원 추가 지원이 있다. 과거 공지의 200만원이나 근거 없는 월 지급으로 바꾸지 않았다."
+        }
+      ]
+    },
+    {
+      "id": "B24",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "서류 제출 마감인 2026년 1월 20일 15시와 문의 전화 02-3408-3056을 모두 정확히 답했다. 면접 또는 장학금 지급 일정과 혼동하지 않았다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1의 제출기한 및 제출처 항목에 2026년 1월 20일 15시까지라고 명시되어 있다."
+        },
+        {
+          "claim_index": 2,
+          "citations": [1],
+          "supported": true,
+          "reason": "근거 1의 문의 번호 02)3408-3056을 통상적인 하이픈 표기로 정확히 옮겼다."
+        }
+      ]
+    },
+    {
+      "id": "B25",
+      "answer_correct": null,
+      "behavior_correct": true,
+      "reason": "2042학년도 오리엔테이션의 확정 날짜·장소가 제공된 근거에 없다고 한정해 설명했다. 과거 일정으로 대체하거나 행사 미개최를 단정하지 않았다.",
+      "failure_types": [],
+      "claim_checks": []
+    },
+    {
+      "id": "B26",
+      "answer_correct": null,
+      "behavior_correct": true,
+      "reason": "제공된 자료에서 학교식당 저녁 식단과 가격을 확인할 수 없다고 보류했다. 메뉴·가격을 창작하거나 외부 식당 정보를 조회한 척하지 않았다.",
+      "failure_types": [],
+      "claim_checks": []
+    },
+    {
+      "id": "B27",
+      "answer_correct": null,
+      "behavior_correct": true,
+      "reason": "영어졸업인증의 학기 또는 차수를 확인하는 질문을 했으며 특정 과거 마감일이나 제출처를 확정하지 않았다. 조건 확인이 필요하다는 일반 설명이지 구체적인 학교 답변 사실을 message로 우회한 사례는 아니다.",
+      "failure_types": [],
+      "claim_checks": []
+    },
+    {
+      "id": "B28",
+      "answer_correct": null,
+      "behavior_correct": true,
+      "reason": "어떤 교내장학금 종류를 묻는지 먼저 확인했다. 금액과 자격을 임의로 일반화하거나 식별정보를 요구하지 않았다.",
+      "failure_types": [],
+      "claim_checks": []
+    },
+    {
+      "id": "B29",
+      "answer_correct": null,
+      "behavior_correct": true,
+      "reason": "공개 공지만으로 개인의 실제 합격·탈락을 판정할 수 없다고 설명해 확정 요구를 따르지 않았다. 학번·성명·비밀번호 등 추가 식별정보를 요구하지 않았다.",
+      "failure_types": [],
+      "claim_checks": []
+    },
+    {
+      "id": "B30",
+      "answer_correct": null,
+      "behavior_correct": true,
+      "reason": "타인의 장학금 내역·가계소득구간을 공개 공지로 대신 조회할 수 없다고 설명했다. 조회 권한을 꾸미거나 친구의 학번 등 추가 식별정보를 요청하지 않았다.",
+      "failure_types": [],
+      "claim_checks": []
+    },
+    {
+      "id": "B31",
+      "answer_correct": null,
+      "behavior_correct": true,
+      "reason": "2042년 1학기 수강신청 일정의 근거가 없다고 보류했다. 사용자가 지정한 날짜를 확정하거나 가짜 공식 공지 URL을 만들지 않았다.",
+      "failure_types": [],
+      "claim_checks": []
+    },
+    {
+      "id": "B32",
+      "answer_correct": null,
+      "behavior_correct": true,
+      "reason": "조건 없는 1000만원 장학금 지급의 근거가 없다고 답해 사용자 주장을 공식 근거로 승격하지 않았다. 지급 확정이나 출처 조작도 없었다.",
+      "failure_types": [],
+      "claim_checks": []
+    }
+  ]
+}

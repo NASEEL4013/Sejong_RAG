@@ -19,8 +19,10 @@ dependencies = [
   "python-dotenv>=1,<2",
   "python-pptx>=1.0,<2",
   "requests>=2.31,<3",
+  "scikit-learn>=1.5,<2",
   "sentence-transformers>=5,<6",
   "six>=1.16,<2",
+  "xlrd>=2,<3",
 ]
 
 [project.optional-dependencies]
@@ -37,7 +39,19 @@ sejong-attachment-checklist = "sejong_rag.attachment_checklist:main"
 sejong-download-attachments = "sejong_rag.download_attachments:main"
 sejong-collect-year = "sejong_rag.collect_year_catalog:main"
 sejong-extract-attachments = "sejong_rag.extract_attachments:main"
+sejong-normalize-text = "sejong_rag.normalize_text:main"
+sejong-structure-chunk = "sejong_rag.structure_chunk:main"
+sejong-select-chunks = "sejong_rag.select_chunks:main"
+sejong-embed-selected = "sejong_rag.embed_selected:main"
+sejong-evaluate-selected = "sejong_rag.evaluate_selected:main"
+sejong-selected-search = "sejong_rag.selected_search:main"
+sejong-ask-selected = "sejong_rag.ask_selected:main"
+sejong-evaluate-selected-generation = "sejong_rag.evaluate_selected_generation:main"
+sejong-benchmark = "sejong_rag.benchmark:main"
+sejong-finalize-benchmark = "sejong_rag.finalize_benchmark:main"
+sejong-compare-selected = "sejong_rag.compare_selected:main"
 sejong-recover-attachments = "sejong_rag.recover_attachments:main"
+sejong-notice-images = "sejong_rag.notice_images:main"
 sejong-validate-ocr = "sejong_rag.validate_ocr:main"
 sejong-unified-chunk = "sejong_rag.unified_chunk:main"
 sejong-unified-search = "sejong_rag.unified_search:main"
@@ -63,4 +77,3 @@ where = ["src"]
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
-

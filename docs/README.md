@@ -8,10 +8,12 @@
 2. [전체 제작 로드맵](../RAG_ROADMAP.md): 완료된 단계와 다음 작업
 3. [데이터 출처](DATA_SOURCES.md): 공식 출처와 수집 정책
 4. [정확도·버전 정책](ACCURACY_AND_VERSION_POLICY.md): 최신 문서와 입학연도 규칙
-5. [독립 평가 보고서](HOLDOUT_EVALUATION.md): 현재 검색·답변 성능
+5. [프로젝트 최종 벤치마크](PROJECT_BENCHMARK.md): 현재 경로의 평가 기준·결과·한계
 
 ## 현재 시스템 설명
 
+- [2025·2026 선별 인덱스 검색 개선](EMBEDDING_BASELINE.md): 최신 검색 경로와 전략 비교
+- [선별 인덱스 답변 연결](UNIFIED_GENERATION.md): 최신 Gemini 연결·프롬프트·실제 답변 진단; 기존 경로의 기록도 별도로 보존
 - [범위와 분류](SCOPE_AND_CLASSIFICATION.md)
 - [승인된 첨부파일 다운로드](AUTHORIZED_ATTACHMENT_DOWNLOAD.md)
 - [첨부파일 다운로드 현황](ATTACHMENT_DOWNLOAD_CHECKLIST.md)
@@ -22,7 +24,6 @@
 - [통합 검색 평가](UNIFIED_RETRIEVAL_EVALUATION.md)
 - [문맥 구성기](CONTEXT_BUILDER.md)
 - [답변 프롬프트](GENERATION_PROMPT.md)
-- [통합 답변 생성](UNIFIED_GENERATION.md)
 - [Gemini 설정](GEMINI_SETUP.md)
 - [학과별 졸업요건](DEPARTMENT_GRADUATION_REQUIREMENTS.md)
 - [졸업요건 질문 보정](GRADUATION_QUERY_FIX.md)
@@ -32,6 +33,7 @@
 
 아래 문서는 현재 사용법이 아니라 성능이 어떻게 개선됐는지 남긴 기록입니다. 문서 안의 데이터 수나 테스트 수는 실험 당시 값일 수 있습니다.
 
+- [기존 경로의 독립 평가](HOLDOUT_EVALUATION.md): 2026 단독 인덱스와 과거 답변 경로
 - [공지 목록 수집기](NOTICE_LIST_CRAWLER.md)
 - [공지 상세 수집](DETAIL_COLLECTION.md)
 - [수동 첨부파일 반입](MANUAL_ATTACHMENT_IMPORT.md)

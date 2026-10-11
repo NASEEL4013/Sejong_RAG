@@ -7,6 +7,7 @@ from docx import Document
 from openpyxl import load_workbook
 from pypdf import PdfReader
 from pptx import Presentation
+from xml.etree import ElementTree
 DEFAULT_DATA_DIR = Path("data")
 MAX_ZIP_MEMBERS = 200
 MAX_ZIP_MEMBER_BYTES = 50 * 1024 * 1024
@@ -57,6 +58,12 @@ def extract_pdf(source):
     return records, warnings
 
 def extract_xlsx(source):
+    if isinstance(source, (str, Path)):
+        with open(source, 'rb') as file: header=file.read(8)
+    else:
+        position=source.tell(); header=source.read(8); source.seek(position)
+    if header == bytes.fromhex('D0CF11E0A1B11AE1'):
+        return extract_xls(source)
     book, records = load_workbook(source, read_only=True, data_only=False), []
     for sheet in book.worksheets:
         for row_number, row in enumerate(sheet.iter_rows(values_only=True), 1):
@@ -64,6 +71,30 @@ def extract_xlsx(source):
             item = _record(" | ".join(cells), {"sheet": sheet.title, "row": row_number}, "openpyxl_row")
             if item: records.append(item)
     book.close(); return records, []
+
+def extract_xls(source):
+    """구형 XLS 셀을 직접 읽는다. 매크로나 수식을 실행하지 않는다."""
+    import xlrd
+    import olefile
+    position = source.tell() if hasattr(source, 'tell') else None
+    with olefile.OleFileIO(str(source) if isinstance(source, (str, Path)) else source) as container:
+        if container.exists('EncryptedPackage'):
+            raise ValueError('암호화된 엑셀입니다. 암호가 해제된 원본이 필요합니다.')
+    if position is not None: source.seek(position)
+    if isinstance(source, (str, Path)):
+        book=xlrd.open_workbook(filename=str(source),on_demand=True)
+    else:
+        book=xlrd.open_workbook(file_contents=source.read(),on_demand=True)
+    records=[]
+    try:
+        for sheet in book.sheets():
+            for number in range(sheet.nrows):
+                cells=[f'{column}열: {value}' for column,value in enumerate(sheet.row_values(number),1) if value!='']
+                item=_record(' | '.join(cells),{'sheet':sheet.name,'row':number+1},'xlrd_row')
+                if item: records.append(item)
+    finally:
+        book.release_resources()
+    return records, []
 
 def extract_docx(source):
     document, records = Document(source), []
@@ -94,6 +125,47 @@ def extract_hwp(path: Path):
     if result.returncode: raise ValueError(clean_text(result.stderr) or f"hwp5txt exit code {result.returncode}")
     item = _record(result.stdout, {"section": "document"}, "pyhwp_hwp5txt")
     return ([item] if item else []), ([] if item else ["HWP parser returned no text"])
+
+def extract_hwpx(source):
+    """HWPX의 본문 문단과 표 셀을 중복 없이 읽고 위치를 보존한다."""
+    records, warnings = [], []
+    def tag(node): return node.tag.rsplit("}", 1)[-1]
+    def paragraph_text(node):
+        if tag(node) == "t": return node.text or ""
+        return "".join(paragraph_text(child) for child in node if tag(child) not in {"p", "tbl"})
+    with zipfile.ZipFile(source) as archive:
+        members = _safe_zip_members(archive)
+        sections = sorted((m for m in members if re.fullmatch(r"Contents/section\d+\.xml", m.filename)),
+                          key=lambda m: int(re.search(r"section(\d+)", m.filename).group(1)))
+        for section in sections:
+            payload = archive.read(section)
+            if b"<!DOCTYPE" in payload.upper() or b"<!ENTITY" in payload.upper():
+                raise ValueError("HWPX external/entity declarations are not supported")
+            root = ElementTree.fromstring(payload)
+            counts = Counter()
+            def walk(node, locator):
+                kind = tag(node)
+                locator = dict(locator)
+                if kind == "tbl":
+                    counts["table"] += 1
+                    locator["table"] = counts["table"]
+                if kind == "p":
+                    counts["paragraph"] += 1
+                    locator["paragraph"] = counts["paragraph"]
+                    item = _record(paragraph_text(node), locator, "hwpx_xml_paragraph")
+                    if item: records.append(item)
+                if kind == "pic": warnings.append(f"{section.filename}: embedded image requires visual review")
+                rows, cells = 0, 0
+                for child in node:
+                    child_locator = dict(locator)
+                    if tag(child) == "tr":
+                        rows += 1; child_locator["row"] = rows
+                    if tag(child) == "tc":
+                        cells += 1; child_locator["column"] = cells
+                    walk(child, child_locator)
+            walk(root, {"section": section.filename})
+    if not sections: warnings.append("HWPX has no body sections")
+    return records, list(dict.fromkeys(warnings))
 
 def _safe_zip_members(archive):
     members = [item for item in archive.infolist() if not item.is_dir()]
@@ -141,7 +213,8 @@ def extract_zip(source, depth=0):
             except Exception as exc:
                 warnings.append(f"{name}: {type(exc).__name__}: {exc}")
     return records, warnings
-EXTRACTORS = {"pdf": extract_pdf, "xlsx": extract_xlsx, "docx": extract_docx, "pptx": extract_pptx}
+EXTRACTORS = {"pdf": extract_pdf, "xlsx": extract_xlsx, "xlsm": extract_xlsx, "xls": extract_xls,
+              "hwpx": extract_hwpx, "docx": extract_docx, "pptx": extract_pptx}
 
 def extract_one(metadata, output_dir: Path, refresh=False):
     document_id, raw_path = str(metadata["document_id"]), Path(str(metadata["resolved_raw_path"]))

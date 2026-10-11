@@ -1,0 +1,33 @@
+{
+  "version": "body_hybrid_context_v1",
+  "selected_strategy": "improved",
+  "development_report": "data/processed/evaluation-selected-compare-v1/report.json",
+  "heldout_cases": "eval/selected_retrieval_holdout_v1.jsonl",
+  "heldout_sha256": "3d87c7691f4994047c201421db4089c92e936456c9048169f83c5818f495a168",
+  "search_code_sha256": "fd4991cb12cf1c375d9df19578031810b5734dbb2bc93e3885d56390f87fbf64",
+  "evaluation_code_sha256": "4d9fad863dd4947f7af928184ad2b1450f43e54396d804b3479ed25abe5e937b",
+  "index_sha256": "6c0abe238ee35effc784d24793675be5c814db18773aa477d15918ac11641570",
+  "settings": {
+    "top_k": 5,
+    "candidate_k_per_channel": 100,
+    "rrf_constant": 60,
+    "vector_weight": 2.0,
+    "lexical_weight": 1.0,
+    "lexical_method": "body-only character 2-3 gram TF-IDF",
+    "exact_period_bonus": 0.008,
+    "conflicting_period_penalty": -0.018,
+    "dense_top1_protection": "within top2 unless explicit period conflict",
+    "expand_anchor_at_most_tokens": 100,
+    "max_bundle_tokens": 512,
+    "total_evidence_tokens": 2200,
+    "adjacency": "same normalized record, gap at most 10 characters, next then previous",
+    "deduplication": "same notice scopes and identical assembled body, at least 80 normalized characters"
+  },
+  "predeclared_validation": {
+    "baseline": "unchanged original vector top5 chunks",
+    "primary": "actual returned context hit@5 must not fall below baseline",
+    "secondary": "actual returned context MRR@5 must not fall below baseline",
+    "limitations": "Twenty assistant-authored source-verified heldout questions; not representative service accuracy",
+    "no_post_holdout_tuning": true
+  }
+}

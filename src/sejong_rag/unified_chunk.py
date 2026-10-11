@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Iterable
 from sejong_rag.extract_attachments import load_attachment_metadata
 from sejong_rag.token_chunk import window_token_spans
+from sejong_rag.ingest import parse_notice_html
 DEFAULT_MODEL="intfloat/multilingual-e5-small"
 DEFAULT_DATA=Path("data")
 DEFAULT_OUTPUT=Path("data/processed/unified-chunks")
@@ -24,7 +25,7 @@ def split_long(text: str, tokenizer, max_tokens: int, overlap: int):
     return [(text[a:b].strip(),n) for a,b,n in window_token_spans(offsets,max_tokens,overlap)]
 
 def location_label(locator: dict[str,object]) -> str:
-    return ", ".join(f"{k}={v}" for k,v in locator.items() if k in {"page","sheet","row","slide","paragraph","table","zip_member","section"}) or "document"
+    return ", ".join(f"{k}={v}" for k,v in locator.items() if k in {"page","sheet","row","slide","paragraph","table","zip_member","section","image"}) or "document"
 
 def build_units(records: list[dict[str,object]], title: str, filename: str|None, tokenizer, max_tokens: int, overlap: int):
     units=[]
@@ -77,7 +78,28 @@ def make_chunks(data_dir: Path, output_dir: Path, tokenizer, max_tokens=448, ove
             sequence+=1; body="\n".join(str(x["text"]) for x in group); text=f"{header}\n{body}".strip()
             chunks.append({"chunk_id":f"unified-{sequence:06d}","document_id":document_id,"parent_document_id":parent_id,"document_title":title,"filename":filename,"file_type":file_type,"quality_tier":quality,"text":text,"text_length":len(text),"token_count":token_count,"locators":[x["locator"] for x in group],"record_ids":[x["record_id"] for x in group],"extraction_methods":sorted({str(x["extraction_method"]) for x in group}),"source_url":source_url,"attachment_url":attachment_url,"source_aliases":source_aliases,"chunk_index":local_index,"chunk_method":"e5_token_pack_v1","chunk_max_tokens":max_tokens,"chunk_overlap_tokens":overlap})
     for notice,records in notice_records(data_dir/"metadata/details"):
+        start = len(chunks)
         add_document(str(notice["document_id"]),str(notice["title"]),None,records,"trusted",notice.get("source_url"),None,notice["document_id"],[{"document_id":notice["document_id"],"source_url":notice.get("source_url")}],"html")
+        raw = data_dir / "raw/notices" / f"{notice['document_id']}.html"
+        images = notice.get("body_images", [])
+        if raw.is_file():
+            images = parse_notice_html(raw.read_text(encoding="utf-8"), str(notice["source_url"])).body_images
+        if images:
+            for chunk in chunks[start:]:
+                chunk["evidence_warning"] = "공지 본문에 원본 대조가 필요한 이미지가 있습니다. 이미지의 조건·정정 사항을 확인하지 못했으므로 관련 내용을 단정하지 마세요."
+        report_path = data_dir / "processed/notice-images" / f"{notice['document_id']}.json"
+        if images and report_path.is_file():
+            report = json.loads(report_path.read_text(encoding="utf-8"))
+            current_urls = {image["url"] for image in images}
+            for image in report.get("images", []):
+                if image["image_url"] not in current_urls or not image.get("text"):
+                    continue
+                image_id = f"{notice['document_id']}-body-image-{image['image']}"
+                image_records = [{"record_id": image_id, "text": image["text"],
+                    "locator": {"section": "notice_body_image", "image": image["image"], "image_url": image["image_url"]},
+                    "extraction_method": "tesseract_kor_eng_notice_image"}]
+                add_document(image_id, str(notice["title"]), None, image_records, "review",
+                    notice.get("source_url"), None, notice["document_id"], [], "image")
     canonical_ids=set(aliases)
     for document_id,report in sorted(reports.items()):
         if document_id not in canonical_ids:

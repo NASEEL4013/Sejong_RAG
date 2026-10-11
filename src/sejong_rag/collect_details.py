@@ -64,6 +64,7 @@ def content_hash(notice: Notice) -> str:
         "published_at": notice.published_at,
         "body": notice.body,
         "attachments": [asdict(item) for item in notice.attachments],
+        "body_images": notice.body_images,
     }
     raw = json.dumps(value, ensure_ascii=False, sort_keys=True).encode("utf-8")
     return hashlib.sha256(raw).hexdigest()

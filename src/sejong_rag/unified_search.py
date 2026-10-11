@@ -13,7 +13,7 @@ def format_locations(chunk):
     labels=[]
     for locator in chunk.get("locators",[]):
         parts=[]
-        for key,label in (("page","p."),("sheet","sheet="),("row","row="),("slide","slide="),("table","table="),("paragraph","paragraph="),("zip_member","zip="),("section","section=")):
+        for key,label in (("page","p."),("sheet","sheet="),("row","row="),("slide","slide="),("table","table="),("paragraph","paragraph="),("zip_member","zip="),("section","section="),("image","image=")):
             if key in locator: parts.append(f"{label}{locator[key]}")
         value=", ".join(parts) or "document"
         if value not in labels: labels.append(value)

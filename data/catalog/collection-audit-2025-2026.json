@@ -1,0 +1,56 @@
+{
+  "boards": [
+    "academic_notice",
+    "scholarship_notice"
+  ],
+  "delay_seconds": 0,
+  "backup_dir": "/tmp/rag-catalog-backup-qe3fyht9",
+  "raw_list_dir": "data/raw/notice-list-audit/20261008T084821Z",
+  "years": {
+    "2026": {
+      "previous_count": 145,
+      "live_count": 179,
+      "added_count": 42,
+      "saved_count": 187,
+      "previous_ids_not_seen": [
+        "notice3-862548",
+        "notice3-863237",
+        "notice3-863238",
+        "notice3-863240",
+        "notice3-863329",
+        "notice3-863793",
+        "notice3-863826",
+        "notice3-866778"
+      ],
+      "page_counts": {
+        "academic_notice": 15,
+        "scholarship_notice": 5
+      },
+      "board_counts": {
+        "academic_notice": 147,
+        "scholarship_notice": 40
+      },
+      "published_min": "2026.01.02",
+      "published_max": "2026.10.06"
+    },
+    "2025": {
+      "previous_count": 0,
+      "live_count": 227,
+      "added_count": 227,
+      "saved_count": 227,
+      "previous_ids_not_seen": [],
+      "page_counts": {
+        "academic_notice": 34,
+        "scholarship_notice": 10
+      },
+      "board_counts": {
+        "academic_notice": 185,
+        "scholarship_notice": 42
+      },
+      "published_min": "2025.01.08",
+      "published_max": "2025.12.24"
+    }
+  },
+  "unique_list_requests": 44,
+  "completed_at": "2026-10-08T08:48:49.030502+00:00"
+}

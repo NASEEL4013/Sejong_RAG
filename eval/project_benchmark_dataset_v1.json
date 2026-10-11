@@ -1,0 +1,401 @@
+{
+  "dataset_id": "project_benchmark_v1",
+  "status": "source_crosschecked_frozen_before_execution",
+  "authorship": "assistant_authored",
+  "independent_human_validation": false,
+  "created_without_retrieval_or_answer_generation": true,
+  "retrieval_runs_during_authoring": 0,
+  "answer_model_api_calls_during_authoring": 0,
+  "selection_rule": "All notice IDs appearing anywhere in the prior eval JSON/JSONL files were excluded; answerable cases use 24 distinct official notice HTML sources.",
+  "prior_eval_files": [
+    {
+      "path": "eval/unified_questions.jsonl",
+      "sha256": "db8047508d7de1eaa1c5c5bf3a628d18d049739f60f4f1ec6b0e34f8fed75534"
+    },
+    {
+      "path": "eval/selected_retrieval_v1.jsonl",
+      "sha256": "e35ad023ea1ca58eb577f4c898ce9c06f5a9ab67b664e90b369aff0bad47fe4e"
+    },
+    {
+      "path": "eval/holdout_questions.jsonl",
+      "sha256": "c1b33da8e3c01a9be93241d66934e4caf32c94e65b29c6e2b3fc8b67d684ac1b"
+    },
+    {
+      "path": "eval/ocr_page_overrides.json",
+      "sha256": "ebe7e6592eba11604690e3fd3da72add696a3e1a7c362a930f15b5db298d1aa5"
+    },
+    {
+      "path": "eval/selected_retrieval_release_v2.json",
+      "sha256": "b12fd69a275dc19faaa5c177e59c84958a33cc36655bdeb93bfed5ac661e09e0"
+    },
+    {
+      "path": "eval/selected_retrieval_final_holdout_v1.jsonl",
+      "sha256": "b93ffcac7aa3da851f1874a88790f8dbbdad11ad12a1ce03d20173c5a3ae3341"
+    },
+    {
+      "path": "eval/selected_generation_v1.jsonl",
+      "sha256": "f18ceb1a880724addefef457aae189ea56eb9e9dc993d8df6cf9376c0c59d222"
+    },
+    {
+      "path": "eval/selected_generation_v1_review.json",
+      "sha256": "7ce4fa0f583511d627c235d1e8de55d4cf8b77eaae8012658d0655ce60dfa3d8"
+    },
+    {
+      "path": "eval/selected_retrieval_release_v1.json",
+      "sha256": "cb34ca821ba3b5247bf49f0068c32b56fbf1e9c08bb2c3f53a7e034108afbe6c"
+    },
+    {
+      "path": "eval/generation_expectations.jsonl",
+      "sha256": "b3e76807360e8d5a8dc13337ba2571734bd0fed9c72acb169962896ebabcb97a"
+    },
+    {
+      "path": "eval/selected_retrieval_holdout_v1.jsonl",
+      "sha256": "3d87c7691f4994047c201421db4089c92e936456c9048169f83c5818f495a168"
+    },
+    {
+      "path": "eval/holdout_generation_expectations.jsonl",
+      "sha256": "a7392ddf8918c6251334aefe513186ce06e1656bbba222e59d550dcfa1e82bb1"
+    },
+    {
+      "path": "eval/selected_retrieval_v1_audit.json",
+      "sha256": "0c428c5aa166ee355f669c1bf2529ec29f869843e4b7b41eb672517b6894c36b"
+    },
+    {
+      "path": "eval/selected_retrieval_final_holdout_v1_audit.json",
+      "sha256": "ca04cd6988b303720e566e33b812e96a1142871c39ababd617e3de24e126f1a4"
+    },
+    {
+      "path": "eval/questions.jsonl",
+      "sha256": "7223a05a7e33d6d1a8c13fb164519b9246aeece921637be430067e7740c8373c"
+    },
+    {
+      "path": "eval/holdout_behavior_questions.jsonl",
+      "sha256": "8a89d673dfad530a20d3690e1e45d2b3605931e54c11d87e340139d1bd5b2646"
+    }
+  ],
+  "excluded_notice_ids": [
+    "notice3-805889",
+    "notice3-805927",
+    "notice3-854075",
+    "notice3-859463",
+    "notice3-862318",
+    "notice3-862321",
+    "notice3-862742",
+    "notice3-862743",
+    "notice3-863033",
+    "notice3-863053",
+    "notice3-863195",
+    "notice3-863329",
+    "notice3-863571",
+    "notice3-863715",
+    "notice3-863757",
+    "notice3-864154",
+    "notice3-865238",
+    "notice3-866183",
+    "notice3-866493",
+    "notice3-867033",
+    "notice3-885709",
+    "notice3-885721",
+    "notice3-886083",
+    "notice3-886813",
+    "notice3-886857",
+    "notice3-886869",
+    "notice3-887188",
+    "notice3-890724",
+    "notice3-890725",
+    "notice3-890789",
+    "notice3-890841",
+    "notice3-891086",
+    "notice3-891263",
+    "notice3-891273",
+    "notice3-891311",
+    "notice3-891366",
+    "notice3-891420",
+    "notice3-891483",
+    "notice3-891485",
+    "notice3-891489",
+    "notice3-892170",
+    "notice3-892260",
+    "notice3-892428",
+    "notice3-893055",
+    "notice3-893285",
+    "notice3-893528",
+    "notice3-893791",
+    "notice3-894142",
+    "notice7-810931",
+    "notice7-855703",
+    "notice7-857819",
+    "notice7-858949",
+    "notice7-863797",
+    "notice7-863798",
+    "notice7-864162",
+    "notice7-864169",
+    "notice7-864186",
+    "notice7-865237",
+    "notice7-866189",
+    "notice7-866601",
+    "notice7-866780",
+    "notice7-866982",
+    "notice7-886181",
+    "notice7-886502",
+    "notice7-891548",
+    "notice7-892116",
+    "notice7-892117",
+    "notice7-892118",
+    "notice7-893809",
+    "notice7-894170"
+  ],
+  "source_disjoint_notice_id_check": {
+    "passed": true,
+    "overlap": [],
+    "unique_answerable_notice_ids": 24
+  },
+  "exact_question_disjoint_check": {
+    "passed": true,
+    "normalization": "Remove whitespace and lowercase; compare query/question strings recursively in prior eval JSON/JSONL.",
+    "overlap_case_ids": []
+  },
+  "counts": {
+    "total": 32,
+    "answerable": 24,
+    "unanswerable": 2,
+    "clarification": 2,
+    "privacy": 2,
+    "adversarial": 2,
+    "answerable_years": {
+      "2025": 12,
+      "2026": 12
+    },
+    "answerable_year_board": {
+      "2025_academic_notice": 6,
+      "2025_scholarship_notice": 6,
+      "2026_academic_notice": 6,
+      "2026_scholarship_notice": 6
+    },
+    "answerable_categories": {
+      "date": 4,
+      "procedure": 4,
+      "condition": 4,
+      "contact": 4,
+      "place": 3,
+      "amount": 4,
+      "calculation": 1
+    }
+  },
+  "year_definition": "Publication/catalog year of the source notice; an academic winter term may extend into the next calendar year. Behavioral cases have null year.",
+  "quote_validation": {
+    "method": "Each quote is an exact substring of BeautifulSoup(raw_html, 'html.parser').select_one('.b-content-box').get_text(' ', strip=True). Whitespace-only matching is used to locate phrases but stored quotes preserve visible-text characters.",
+    "all_quotes_validated": true,
+    "evidence_options_validated_against_raw_notice_body": true
+  },
+  "special_source_checks": [
+    {
+      "case_id": "B13",
+      "detail": "Original HTML table inspected: old/new columns distinguish 87.5 from revised 88.5 for GPA 3.35; new formula GPA*10+55."
+    },
+    {
+      "case_id": "B14",
+      "detail": "Original HTML inspected: 08:00~17:00 has an s strike-through tag; 07:00~17:00 is the bold corrected interval."
+    },
+    {
+      "case_id": "B10",
+      "detail": "The expected 500,000 KRW is a transparent subtraction of the published non-major TOEIC award tiers 1,500,000-1,000,000, under the explicitly stated differential-payment scenario."
+    }
+  ],
+  "multi_fact_or_exception_case_ids": [
+    "B01",
+    "B02",
+    "B03",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B13",
+    "B14",
+    "B15",
+    "B16",
+    "B17",
+    "B18",
+    "B19",
+    "B21",
+    "B22",
+    "B23",
+    "B24"
+  ],
+  "gold_source_files": [
+    {
+      "case_id": "B01",
+      "path": "data/raw/notices/notice3-859241.html",
+      "sha256": "aa995520e446a11e253443707e02fc2703f93f4b1055f8d336a4784a6327ddc3"
+    },
+    {
+      "case_id": "B02",
+      "path": "data/raw/notices/notice3-855929.html",
+      "sha256": "afeb5bf3937f165de8dcc346cc8925edfe292f81ce798f5bbbd84c29fc0de650"
+    },
+    {
+      "case_id": "B03",
+      "path": "data/raw/notices/notice3-805981.html",
+      "sha256": "72ae664124f7215b14078dc937fa1db1aea3f2ffb8bbb4724c8f6c04614e54db"
+    },
+    {
+      "case_id": "B04",
+      "path": "data/raw/notices/notice3-805977.html",
+      "sha256": "21cbf720738d8ea8132afb96baa988aac034d0fc753d113b5bb61169500788ca"
+    },
+    {
+      "case_id": "B05",
+      "path": "data/raw/notices/notice3-805913.html",
+      "sha256": "a17e12a1b19302417199c4326ecc15bd45ccb55f6e91e2a8e49781be1154940f"
+    },
+    {
+      "case_id": "B06",
+      "path": "data/raw/notices/notice3-805912.html",
+      "sha256": "e2d9add5212ecd20140b7edf839850cf7a716897b53759ea16222aa2b4435d66"
+    },
+    {
+      "case_id": "B07",
+      "path": "data/raw/notices/notice7-810924.html",
+      "sha256": "1db9eab02740395487b905194e33988877c6c5dae5838b9d121e6d9ef0272d52"
+    },
+    {
+      "case_id": "B08",
+      "path": "data/raw/notices/notice7-810927.html",
+      "sha256": "fcc2d97d1e5050043f3962a6d053dfa603a5d8789569c26085976f4da6300c01"
+    },
+    {
+      "case_id": "B09",
+      "path": "data/raw/notices/notice7-810929.html",
+      "sha256": "76c11a0ceb3d787197fdc3110da2568a966e04e6f0f469c91581ce186502aca1"
+    },
+    {
+      "case_id": "B10",
+      "path": "data/raw/notices/notice7-855191.html",
+      "sha256": "9786ce63633e304d7291ad54343da0d805529758465b793c9607c8af575dbba6"
+    },
+    {
+      "case_id": "B11",
+      "path": "data/raw/notices/notice7-858649.html",
+      "sha256": "7505de7e2a2a2bdd008414fcaf5da1277ccbc2f36ecfc6076a47119701fcc982"
+    },
+    {
+      "case_id": "B12",
+      "path": "data/raw/notices/notice7-810913.html",
+      "sha256": "e9190b0b996487714fc95b305a0f1f6c83c3109140725473da688bdda6fe80ed"
+    },
+    {
+      "case_id": "B13",
+      "path": "data/raw/notices/notice3-892429.html",
+      "sha256": "e81f54c15c6a93c83067d29330b3aeb745f51f5374a70440fbf53b5bc2f7feea"
+    },
+    {
+      "case_id": "B14",
+      "path": "data/raw/notices/notice3-866906.html",
+      "sha256": "88de9772c81095b9fc6dc83d82f9ec00eafac7476883d0d45b7cdf2659e9c4ff"
+    },
+    {
+      "case_id": "B15",
+      "path": "data/raw/notices/notice3-862274.html",
+      "sha256": "466e4f78d1ec6006f0b9e13f32a5c42e30bc6ffe4d4623488c766d7d62b536f8"
+    },
+    {
+      "case_id": "B16",
+      "path": "data/raw/notices/notice3-866954.html",
+      "sha256": "fd0f111b2f5df50edf604db86c9dff15295d66640d69c893efcdd41bb7789041"
+    },
+    {
+      "case_id": "B17",
+      "path": "data/raw/notices/notice3-885701.html",
+      "sha256": "3fa0d12df59bd19d75364a3ebe85372982d807a24bac010f2a3bc023e5043421"
+    },
+    {
+      "case_id": "B18",
+      "path": "data/raw/notices/notice3-864814.html",
+      "sha256": "e506c3a1ddaaadb2b5342cf64820f954bf0aa2a242a3da366af26e5c403f1a99"
+    },
+    {
+      "case_id": "B19",
+      "path": "data/raw/notices/notice7-892390.html",
+      "sha256": "35b515b1523cc05b773164f77475db327164ba85fbfda8a6fb24e44f216ff81d"
+    },
+    {
+      "case_id": "B20",
+      "path": "data/raw/notices/notice7-892517.html",
+      "sha256": "3d62395ab367d2cc5d6d58b58150cecd85f19f1d6121c8aba3fc6964079627a9"
+    },
+    {
+      "case_id": "B21",
+      "path": "data/raw/notices/notice7-892486.html",
+      "sha256": "b497e54d98bc8527acafa1b6cd9e27b18eddb0c27a518f71bb3e947ba999ecc0"
+    },
+    {
+      "case_id": "B22",
+      "path": "data/raw/notices/notice7-892119.html",
+      "sha256": "7e22e21613819a8bafd00f923ea6e49fc54f16dc28468c18104bec6dcb081ec0"
+    },
+    {
+      "case_id": "B23",
+      "path": "data/raw/notices/notice7-864174.html",
+      "sha256": "feeeac337052e956ed2344813f3d762272708c2c96f3b714df8bc4e4fb4faca6"
+    },
+    {
+      "case_id": "B24",
+      "path": "data/raw/notices/notice7-861807.html",
+      "sha256": "29483430e51beab114d421d0987f25aff951881db37f5e71fb80b5e2fb087cdc"
+    }
+  ],
+  "label_semantics": {
+    "expected_status": "One of the listed statuses is acceptable.",
+    "answer_concepts": "All groups must be represented; alternatives inside a group are OR. String presence is diagnostic only and does not establish semantic correctness or polarity.",
+    "evidence_options": "OR across source-scoped options; each evidence_any option is an AND group of original phrases. Never mix a notice scope from one option with the phrases of another.",
+    "rubric": "Semantic human/assistant review must check negation, numerical unit/role, conditions, source validity, completeness, and permitted behavior."
+  },
+  "limitations": [
+    "Assistant-authored diagnostic benchmark, not an independently human-labeled or population-representative test set.",
+    "Notice-ID and exact-question separation are verified; document-family/content semantic independence is not guaranteed because official notices reuse templates and rules.",
+    "The corpus already contains these sources; source-disjoint refers to earlier evaluation sources, not exclusion from the retrieval index.",
+    "All answerable gold sources are official HTML notice bodies; this set does not independently measure OCR or attachment-only evidence quality.",
+    "Category counts are near-balanced across date, amount, condition, procedure, place and contact, with one explicit calculation case.",
+    "No actual retrieved evidence, generated answer, ranking or score was inspected to select questions or set labels.",
+    "Behavior labels express intended product behavior, not evidence that an actual answer will be unsafe or incorrect.",
+    "After pre-execution source crosscheck and freezing, do not repair questions or labels in response to benchmark outputs; record any later annotation issue in a separate audit.",
+    "Behavior scenario families such as future schedules, cafeteria menus and personal-eligibility judgment appeared in earlier diagnostics. The new behavior wording is not a claim of scenario-family independence.",
+    "Behavior answer_concepts are empty: an automatic expected-status match alone is not semantic behavior success. Independent rubric review remains required, including improper disclosure, invented facts, and endorsement versus rejection of quoted false claims."
+  ],
+  "dataset_path": "eval/project_benchmark_v1.jsonl",
+  "dataset_sha256": "f1a8585ab37d57a69ce05dcd53cd1bfe129f5c01269e8c3cc44bb51134c3200e",
+  "preexecution_assistant_review": {
+    "human_review": false,
+    "answerable_source_review": {
+      "reviewer": "generation_tests",
+      "case_ids": "B01-B24",
+      "completed": true,
+      "scope": "Read all 24 original HTML bodies; verified factual answers, numerical calculations, exceptions, corrected-time markup, source disjointness and balance. Re-read and approved the three edits before freezing."
+    },
+    "behavior_rubric_review": {
+      "reviewer": "generation_review",
+      "case_ids": "B25-B32",
+      "completed": true,
+      "scope": "Verified question/status/rubric agreement without retrieval or generation; accepted clarification/insufficiency alternatives and non-endorsing quotation of false claims."
+    },
+    "retrieval_or_generation_outputs_used": false,
+    "changes_before_freeze": [
+      {
+        "case_id": "B02",
+        "change": "Clarified that advance application is required no later than the previous day, not exclusively on that day. Added the original maximum-three-week recurring-application quote, allowed equivalent advance-application wording, and clarified that the three-week detail is not a required answer."
+      },
+      {
+        "case_id": "B12",
+        "change": "Changed the question from telephone OR email to explicitly requesting both telephone and email, consistent with the two required concept groups."
+      },
+      {
+        "case_id": "B15",
+        "change": "Narrowed the question to the specified course-completion-check screen's tab/column and the required-major example, since the original notice also lists another valid lookup route. Removed mandatory repetition of the screen name already in the question."
+      }
+    ],
+    "frozen_before_any_benchmark_retrieval_or_generation": true
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "review_type": "post_hoc_source_comparison",
+  "reviewer": "independent_assistant_source_review",
+  "report_path": "data/processed/evaluation-selected-final-holdout-v1/report.json",
+  "report_sha256": "c327182b445532ae60976df3da5af6f77b5c4b9e6f7671fde7ef8ae71a308852",
+  "original_labels_and_report_unchanged": true,
+  "retrieval_changes_from_this_audit": false,
+  "reviewed_case_ids": [
+    "F03",
+    "F05",
+    "F06",
+    "F09",
+    "F14",
+    "F15",
+    "F16"
+  ],
+  "metrics": {
+    "baseline_rawvector": {
+      "automatic": {
+        "questions": 20,
+        "context_hit_at_1": 0.4,
+        "context_hit_at_5": 0.65,
+        "context_mrr_at_5": 0.4958333333333333
+      },
+      "posthoc_reviewed": {
+        "questions": 20,
+        "context_hit_at_1": 0.5,
+        "context_hit_at_5": 0.75,
+        "context_mrr_at_5": 0.5958333333333333
+      }
+    },
+    "vector_context": {
+      "automatic": {
+        "questions": 20,
+        "context_hit_at_1": 0.4,
+        "context_hit_at_5": 0.7,
+        "context_mrr_at_5": 0.5083333333333333
+      },
+      "posthoc_reviewed": {
+        "questions": 20,
+        "context_hit_at_1": 0.55,
+        "context_hit_at_5": 0.8,
+        "context_mrr_at_5": 0.6458333333333333
+      }
+    }
+  },
+  "accepted_equivalents": [
+    {
+      "case_id": "F03",
+      "method": "vector_context",
+      "automatic_first_rank": 4,
+      "reviewed_first_rank": 1,
+      "chunk_ids": [
+        "structured-bb10d8d6a247eb316aa02a54",
+        "structured-bfedbf8567ccecc223138494",
+        "structured-bb0ce6ed26b56b73c28c4ea6"
+      ],
+      "source_spans": [
+        {
+          "record_id": "notice3-891086-attachment-236497-record-25",
+          "start": 426,
+          "end": 610,
+          "locator": {
+            "page": 25
+          }
+        }
+      ],
+      "notice_ids": [
+        "notice3-891086",
+        "notice3-891086-attachment-236497",
+        "notice3-891485",
+        "notice3-891485-attachment-236669"
+      ],
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice3.do?mode=view&articleNo=891086&article.offset=0&articleLimit=10",
+      "required_phrases": [
+        "학기당 3학점",
+        "졸업까지 최대 6학점"
+      ],
+      "reason": "같은 2026-2학기 수강편람의 타 대학 K-MOOC 절에 있는 학기당 3학점·졸업까지 최대 6학점은 질문에 직접 답한다. 고정 라벨은 특정 K-MOOC 공지와 학기당 최대 3학점 표현만 인정하여 동등 근거를 놓쳤다. 원래 벡터 top5에는 해당 숫자가 없으며 문맥 확장 1위에서 새로 포함됐다.",
+      "verified_sources": [
+        {
+          "path": "data/raw/auto-attachments/notice3-891086/notice3-891086-attachment-236497.pdf",
+          "sha256": "ed240fd14939f31ea56d3580e4cb0dc696bc6783427cd30678f48bffff941f82"
+        },
+        {
+          "path": "data/raw/notices/notice3-893055.html",
+          "sha256": "28b86fd1b3d8cef876f5d58f59c8b5cb538fd65b94495e8482d5282740589305"
+        }
+      ],
+      "verification_method": "Stored official HTML and original PDF text extraction"
+    },
+    {
+      "case_id": "F15",
+      "method": "baseline_rawvector",
+      "automatic_first_rank": null,
+      "reviewed_first_rank": 1,
+      "chunk_ids": [
+        "structured-1bc8d62d91102d72ac0b8689"
+      ],
+      "source_spans": [
+        {
+          "record_id": "notice7-893809-attachment-237516-record-1",
+          "start": 860,
+          "end": 989,
+          "locator": {
+            "section": "document"
+          }
+        }
+      ],
+      "notice_ids": [
+        "notice7-893809",
+        "notice7-893809-attachment-237516"
+      ],
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=893809&article.offset=0&articleLimit=10",
+      "required_phrases": [
+        "학기당 300만 원",
+        "생활비 무상보조로 정액 지원"
+      ],
+      "reason": "공식 첨부의 학부생 장학금액은 학기당 300만 원 생활비 무상보조다. 원문 공지의 국내 4년제 대학·학부 대상과 대조했다. 고정 라벨의 지원금액이라는 소제목 대신 장학금액을 써서 자동 실패했다. 같은 첨부의 대학원생 600만 원은 별도 대상이며 이 정답으로 인정하지 않았다.",
+      "verified_sources": [
+        {
+          "path": "data/raw/auto-attachments/notice7-893809/notice7-893809-attachment-237516.hwp",
+          "sha256": "d85ff4f3beee4f0e25f59eed80f8d9373ad2ec98564b38b03920c3182b3ff7e3"
+        },
+        {
+          "path": "data/raw/notices/notice7-893809.html",
+          "sha256": "46e00c6319828221cdb2fc0dc296c3fc7849a3883155d265c7b0915d96693808"
+        }
+      ],
+      "verification_method": "Stored official HTML and original HWP text extraction"
+    },
+    {
+      "case_id": "F15",
+      "method": "vector_context",
+      "automatic_first_rank": null,
+      "reviewed_first_rank": 1,
+      "chunk_ids": [
+        "structured-1bc8d62d91102d72ac0b8689",
+        "structured-ce284208d42f11ba5cd96a98",
+        "structured-2accbf0c96d377af0255c60c"
+      ],
+      "source_spans": [
+        {
+          "record_id": "notice7-893809-attachment-237516-record-1",
+          "start": 575,
+          "end": 1206,
+          "locator": {
+            "section": "document"
+          }
+        }
+      ],
+      "notice_ids": [
+        "notice7-893809",
+        "notice7-893809-attachment-237516"
+      ],
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=893809&article.offset=0&articleLimit=10",
+      "required_phrases": [
+        "학기당 300만 원",
+        "생활비 무상보조로 정액 지원"
+      ],
+      "reason": "공식 첨부의 학부생 장학금액은 학기당 300만 원 생활비 무상보조다. 원문 공지의 국내 4년제 대학·학부 대상과 대조했다. 고정 라벨의 지원금액이라는 소제목 대신 장학금액을 써서 자동 실패했다. 같은 첨부의 대학원생 600만 원은 별도 대상이며 이 정답으로 인정하지 않았다.",
+      "verified_sources": [
+        {
+          "path": "data/raw/auto-attachments/notice7-893809/notice7-893809-attachment-237516.hwp",
+          "sha256": "d85ff4f3beee4f0e25f59eed80f8d9373ad2ec98564b38b03920c3182b3ff7e3"
+        },
+        {
+          "path": "data/raw/notices/notice7-893809.html",
+          "sha256": "46e00c6319828221cdb2fc0dc296c3fc7849a3883155d265c7b0915d96693808"
+        }
+      ],
+      "verification_method": "Stored official HTML and original HWP text extraction"
+    },
+    {
+      "case_id": "F16",
+      "method": "baseline_rawvector",
+      "automatic_first_rank": null,
+      "reviewed_first_rank": 1,
+      "chunk_ids": [
+        "structured-942b6f5e86963d8e1e65e08e"
+      ],
+      "source_spans": [
+        {
+          "record_id": "notice7-810931-attachment-220352-record-1",
+          "start": 510,
+          "end": 649,
+          "locator": {
+            "page": 1
+          }
+        }
+      ],
+      "notice_ids": [
+        "notice7-810931",
+        "notice7-810931-attachment-220352"
+      ],
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=810931&article.offset=60&articleLimit=10",
+      "required_phrases": [
+        "400만원 (일회성 지급)",
+        "생활비 장학금"
+      ],
+      "reason": "질문이 묻는 금액과 반복 지급 여부에 첨부의 400만원(일회성 지급)이 직접 답한다. 생활비 장학금이라는 유형도 일치한다. 고정 라벨은 지원금액이라는 소제목까지 강제했으나 첨부는 장학금액을 사용한다.",
+      "verified_sources": [
+        {
+          "path": "data/raw/auto-attachments/notice7-810931/notice7-810931-attachment-220352.pdf",
+          "sha256": "aa5992acd8ee51b4b4988cec57e30478c8cfec69ab9de279bad7e2f73c5733bc"
+        },
+        {
+          "path": "data/raw/notices/notice7-810931.html",
+          "sha256": "744ec455948ca2098f2d14d62eff29dbaa46a8e1d5cc10d802a53311197d51e8"
+        }
+      ],
+      "verification_method": "Stored official HTML and original PDF text extraction"
+    },
+    {
+      "case_id": "F16",
+      "method": "vector_context",
+      "automatic_first_rank": null,
+      "reviewed_first_rank": 1,
+      "chunk_ids": [
+        "structured-942b6f5e86963d8e1e65e08e",
+        "structured-162da740a2208c2f64d6d874"
+      ],
+      "source_spans": [
+        {
+          "record_id": "notice7-810931-attachment-220352-record-1",
+          "start": 496,
+          "end": 649,
+          "locator": {
+            "page": 1
+          }
+        }
+      ],
+      "notice_ids": [
+        "notice7-810931",
+        "notice7-810931-attachment-220352"
+      ],
+      "source_url": "https://www.sejong.ac.kr/kor/intro/notice7.do?mode=view&articleNo=810931&article.offset=60&articleLimit=10",
+      "required_phrases": [
+        "400만원 (일회성 지급)",
+        "생활비 장학금"
+      ],
+      "reason": "질문이 묻는 금액과 반복 지급 여부에 첨부의 400만원(일회성 지급)이 직접 답한다. 생활비 장학금이라는 유형도 일치한다. 고정 라벨은 지원금액이라는 소제목까지 강제했으나 첨부는 장학금액을 사용한다.",
+      "verified_sources": [
+        {
+          "path": "data/raw/auto-attachments/notice7-810931/notice7-810931-attachment-220352.pdf",
+          "sha256": "aa5992acd8ee51b4b4988cec57e30478c8cfec69ab9de279bad7e2f73c5733bc"
+        },
+        {
+          "path": "data/raw/notices/notice7-810931.html",
+          "sha256": "744ec455948ca2098f2d14d62eff29dbaa46a8e1d5cc10d802a53311197d51e8"
+        }
+      ],
+      "verification_method": "Stored official HTML and original PDF text extraction"
+    }
+  ],
+  "confirmed_misses": [
+    {
+      "case_id": "F05",
+      "baseline_rawvector_first_rank": null,
+      "vector_context_first_rank": null,
+      "reason": "상위 근거에는 장병e음 문의처만 있고 수강신청·취소가 그곳에서만 가능하다는 조건은 없다."
+    },
+    {
+      "case_id": "F06",
+      "baseline_rawvector_first_rank": null,
+      "vector_context_first_rank": null,
+      "reason": "상위 근거에는 초과학기 수강철회 가능 여부만 있고 재무과 집현관 212호 환불 장소는 없다."
+    },
+    {
+      "case_id": "F09",
+      "baseline_rawvector_first_rank": null,
+      "vector_context_first_rank": null,
+      "reason": "상위 근거는 이수학점 최소39학점만 설명하며 교육과정 설계의 최소3개학과·39~54학점 범위는 없다."
+    },
+    {
+      "case_id": "F14",
+      "baseline_rawvector_first_rank": null,
+      "vector_context_first_rank": null,
+      "reason": "상위 근거에는 선발기준·금액·지급시기만 있고 별도 신청이 불필요하다는 안내가 없다."
+    }
+  ],
+  "baseline_F03_review": {
+    "first_rank": null,
+    "reason": "원래 벡터1위는 K-MOOC 이수증 제출기간 문장뿐이다. top5 전부 학기당3학점·졸업6학점 답이 없으며 문맥확장1위와 혼동하면 안 된다."
+  },
+  "limitations": [
+    "This is post-hoc review, not a second untouched holdout score.",
+    "Seven flagged cases were reviewed, not an exhaustive relevance assessment of the whole corpus.",
+    "Equivalence was judged against the question and its answer note; fixed phrase labels were not rewritten.",
+    "F15 is accepted in the cited undergraduate-notice scope; its shared attachment also has a different graduate-student award.",
+    "No retrieval tuning or model changes were performed using this audit."
+  ]
+}

@@ -6,7 +6,7 @@ import argparse
 import hashlib
 import json
 import re
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
@@ -50,6 +50,7 @@ class Notice:
     board: str
     body: str
     attachments: list[Attachment]
+    body_images: list[dict[str, str]] = field(default_factory=list)
 
 
 def _clean_text(element) -> str:
@@ -122,6 +123,9 @@ def parse_notice_html(html: str, source_url: str) -> Notice:
         board=board,
         body=_clean_text(body_node),
         attachments=attachments,
+        body_images=[{"url": urljoin(source_url, image.get("data-src") or image.get("src", "")),
+                      "alt": image.get("alt", "")} for image in body_node.select("img")
+                     if image.get("data-src") or image.get("src")],
     )
 
 
@@ -269,4 +273,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

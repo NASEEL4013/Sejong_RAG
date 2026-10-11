@@ -21,6 +21,8 @@ SYSTEM_PROMPT = """당신은 세종대학교 학생을 돕는 공식 학사정�
 10. 간결한 한국어로 답하고, 사용자가 요청하지 않은 장황한 설명은 피한다.
 11. 질문이 두 개 이상의 항목이나 조건을 함께 요구하면 각 항목을 빠짐없이 답한다.
 12. 개인의 졸업 가능 여부나 학적 상태를 묻는 경우 학번·성명 등 개인정보를 요청하지 말고, 공지 근거만으로 판정할 수 없음을 밝힌 뒤 학사정보시스템의 졸업요건 자가진단 또는 담당 부서 확인을 안내한다.
+13. 첨부와 원래 공지 본문을 함께 대조한다. 본문이 해당 첨부의 특정 내용을 명시적으로 정정한 경우 그 정정 사항을 적용하고 출처를 인용한다. 단지 본문이라는 이유로 우선하지 않으며 적용 대상이 불명확하면 충돌을 알린다.
+14. evidence_warning에 근거 누락·미검증 이미지가 표시되면 해당 조건을 확정하지 말고 원문 확인 필요성을 알린다. quality_tier가 review인 OCR 자료는 숫자·날짜·조건의 단독 확정 근거로 사용하지 않는다.
 """
 
 def _location(chunk: dict[str, object]) -> str:
@@ -47,6 +49,10 @@ def build_messages(query: str, context_chunks: list[dict[str, object]]) -> list[
                 f"chunk_id: {chunk['chunk_id']}",
                 f"source_url: {chunk['source_url']}",
                 f"attachment_url: {chunk.get('attachment_url') or '-'}",
+                "image_urls: " + ", ".join(str(location["image_url"]) for location in chunk.get("locators", []) if location.get("image_url")),
+                f"parent_document_id: {chunk.get('parent_document_id') or '-'}",
+                f"context_relation: {chunk.get('context_relation') or 'retrieved'}",
+                f"evidence_warning: {chunk.get('evidence_warning') or '-'}",
                 "content:", str(chunk["text"]), "</evidence>",
             ]))
         evidence = "\n\n".join(blocks)

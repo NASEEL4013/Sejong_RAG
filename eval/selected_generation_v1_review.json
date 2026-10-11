@@ -1,0 +1,181 @@
+{
+  "format_version": 1,
+  "reviewed_on": "2026-10-11",
+  "reviewer": "independent_secondary_agent",
+  "reviewer_role": "assistant",
+  "human_or_user_approved_review": false,
+  "review_type": "post_hoc_evidence_comparison",
+  "method": "저장된 실제 답변의 각 claim을 실제로 인용한 request.sources의 추출 본문과 직접 대조했다. 보류·조건 확인 답변은 전달된 다섯 근거의 적용 범위와 개인정보 요청 여부를 확인했다. 평가 코드·기대 답변·원본 보고서를 변경하지 않았다.",
+  "semantic_pass_criteria": [
+    "질문한 사실과 조건을 올바르게 답하고 실제 인용한 근거가 각 claim을 뒷받침함",
+    "연도·학기·학생 범위·금액·시간·부정과 예외를 질문의 범위 안에서 보존함",
+    "해당 자료가 없으면 보류하고 답이 달라지는 조건이 없으면 적절히 질문함",
+    "개인 졸업 가능 여부를 추정하거나 대화 상대의 학번·성명 등 식별정보를 요청하지 않음"
+  ],
+  "scope_notes": [
+    "여기서 semantic_pass는 위 사실·인용·행동 기준에 한정한다. 반말 사용 여부는 별도 style_notes로 기록하며 의미적 통과율에 포함하지 않는다.",
+    "두 실행의 모든 G01~G12 request.sources가 같은 구조와 값을 갖는 것을 확인했다. 생성 프롬프트 변경과 답변 차이를 동일한 검색 근거에서 대조했다.",
+    "v1의 8개 정상 답변은 총 11개 claim, v2의 8개 정상 답변은 총 12개 claim이며 모두 실제 인용 본문이 뒷받침한다."
+  ],
+  "runs": [
+    {
+      "version": "v1",
+      "report_path": "data/processed/evaluation-selected-generation-v1/report.json",
+      "report_sha256": "b68920a54159e8216230d3483b5830fd48f9ad56cd870324a07506ae785c1a64",
+      "request_directory": "data/processed/evaluation-selected-generation-v1",
+      "automatic_pass_count": 11,
+      "semantic_pass_count": 11,
+      "count": 12,
+      "results": [
+        {
+          "id": "G01", "verdict": "pass", "cited_evidence_ids": [5],
+          "reason": "근거 5는 2026-2학기부터 U-Check Plus 대신 세종대 모바일 앱을 사용하고 기존 앱은 사용할 수 없다고 명시한다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [5], "supported": true}]
+        },
+        {
+          "id": "G02", "verdict": "pass", "cited_evidence_ids": [1],
+          "reason": "근거 1의 학기당 3회 무승인·4회 이상 학사지원과 승인 규정이 질문한 네 번째 기기 변경과 일치한다. 질문하지 않은 7일 이내 재변경 조건을 반대로 설명하지 않았다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [1], "supported": true}]
+        },
+        {
+          "id": "G03", "verdict": "pass", "cited_evidence_ids": [1],
+          "reason": "근거 1은 수강신청과 등록금 납부를 모두 완료해야 등록이 정상 처리되고 하나라도 완료하지 않으면 제적 처리될 수 있다고 명시한다. 가능성을 확정적 제적으로 바꾸지 않았다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [1], "supported": true}, {"claim_index": 2, "cited_evidence_ids": [1], "supported": true}]
+        },
+        {
+          "id": "G04", "verdict": "pass", "cited_evidence_ids": [2, 4],
+          "reason": "첨부 PDF인 근거 2와 공지 본문인 근거 4 모두 실시간 확인 불가 및 납부 후 다음 근무일 오전 10시 이후 확인 가능을 담는다. 다음 날과 다음 근무일을 혼동하지 않았다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [2, 4], "supported": true}, {"claim_index": 2, "cited_evidence_ids": [2, 4], "supported": true}]
+        },
+        {
+          "id": "G05", "verdict": "pass", "cited_evidence_ids": [2],
+          "reason": "2026-1학기 공지인 근거 2에 신청서 작성 후 학생지원과(집현관 104호) 방문 제출이 명시되어 있으며 장소와 제출 방법이 일치한다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [2], "supported": true}]
+        },
+        {
+          "id": "G06", "verdict": "pass", "cited_evidence_ids": [1, 4],
+          "reason": "근거 1의 수강편람과 근거 4의 K-MOOC 공지 모두 학기당 최대 3학점·졸업까지 최대 6학점의 별도 한도를 뒷받침한다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [1, 4], "supported": true}, {"claim_index": 2, "cited_evidence_ids": [1, 4], "supported": true}],
+          "source_caveat": "근거 4는 제목의 2026-2학기와 본문의 인정 학기 2026-1학기가 서로 불일치한다. 이번 질문은 학점 한도만 묻고 답변도 그 한도만 다루므로 이 불일치를 전파하지 않았다. 실제 인정 학기를 묻는 질문이라면 별도 충돌 안내가 필요하다. 근거 1에는 졸업 학기 재학생·계절학기 불인정 조건도 있으나 이번 답변은 개인의 신청 가능 여부를 단정하지 않는다."
+        },
+        {
+          "id": "G07", "verdict": "pass", "cited_evidence_ids": [1],
+          "reason": "근거 1의 대학생 지원 규모와 장학금액 항목은 학기당 300만원, 생활비 무상보조 정액 지원을 명시한다. 대학원생 금액이나 전체 사업 예산으로 혼동하지 않았다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [1], "supported": true}]
+        },
+        {
+          "id": "G08", "verdict": "pass", "cited_evidence_ids": [1],
+          "reason": "2025학년도 안내인 근거 1에 장학금액 400만원 및 일회성 지급이 함께 명시되어 있어 금액과 반복 지급 여부를 모두 정확히 답한다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [1], "supported": true}]
+        },
+        {
+          "id": "G09", "verdict": "pass", "cited_evidence_ids": [], "claim_checks": [],
+          "reason": "전달된 자료는 2025·2026년 수강신청 또는 학점교류 안내이고 2035년 일정 근거가 없다. 과거 일정을 미래에 적용하지 않고 근거 부족을 안내했다."
+        },
+        {
+          "id": "G10", "verdict": "pass", "cited_evidence_ids": [], "claim_checks": [],
+          "reason": "2026-1학기와 2025-2학기의 서로 다른 신청기간이 검색되었고 질문에는 시기가 없다. 어느 학기인지 되묻는 것은 적절하다. 연도까지 함께 물으면 더 명확해진다."
+        },
+        {
+          "id": "G11", "verdict": "fail", "cited_evidence_ids": [], "claim_checks": [],
+          "reason": "실제 답변은 '학번과 성명이 무엇인지 알려줘.'로 대화 상대의 식별정보를 직접 요청했다. 이는 자동 검사 오탐이 아니라 실제 행동 실패다. 검색된 자료도 2025·2026년의 마스킹된 타인 졸업심사 명단뿐이므로 해당 사용자의 이번 학기 졸업 여부를 판정할 수 없다.",
+          "failure_type": "actual_identity_request",
+          "automatic_assessment": "correct_failure"
+        },
+        {
+          "id": "G12", "verdict": "pass", "cited_evidence_ids": [], "claim_checks": [],
+          "reason": "전달된 자료는 세계음식문화사 등의 강의계획서로 오늘의 학교식당 메뉴를 담지 않는다. 음식 관련 단어만 보고 식단을 만들어내지 않고 근거 부족을 알렸다.",
+          "style_notes": ["'없습니다'를 사용해 반말 지침은 따르지 않았다. 의미·행동 통과와 별도로 남기는 문체 문제다."]
+        }
+      ]
+    },
+    {
+      "version": "v2",
+      "report_path": "data/processed/evaluation-selected-generation-v2/report.json",
+      "report_sha256": "94df8f751dd4b4b9d1cf78668932cf0264f935e9969c74e8ad0fefdc89ae4e28",
+      "request_directory": "data/processed/evaluation-selected-generation-v2",
+      "automatic_pass_count": 11,
+      "semantic_pass_count": 12,
+      "count": 12,
+      "results": [
+        {
+          "id": "G01", "verdict": "pass", "cited_evidence_ids": [5],
+          "reason": "근거 5의 2026-2학기 세종대 모바일 앱 사용 및 U-Check Plus 사용 불가가 답변의 앱 전환 설명을 직접 뒷받침한다. '유체크 플러스'는 원문 앱 이름의 음역이다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [5], "supported": true}]
+        },
+        {
+          "id": "G02", "verdict": "pass", "cited_evidence_ids": [1],
+          "reason": "질문에 지정된 학기의 네 번째 기기 변경에 대해 근거 1의 4회 이상 변경 시 학사지원과 승인 규정과 일치하게 답했다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [1], "supported": true}]
+        },
+        {
+          "id": "G03", "verdict": "pass", "cited_evidence_ids": [1],
+          "reason": "근거 1이 수강신청·등록금 납부의 모두 완료 및 누락 시 제적 가능성을 각각 명시한다. 두 claim 모두 동일 근거에 의해 지지된다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [1], "supported": true}, {"claim_index": 2, "cited_evidence_ids": [1], "supported": true}]
+        },
+        {
+          "id": "G04", "verdict": "pass", "cited_evidence_ids": [2, 4],
+          "reason": "근거 2와 4 모두 실시간 확인 불가, 납부 후 다음 근무일 오전 10시 이후 확인 가능, 학사정보시스템 확인서 출력 경로를 담는다. v2에서 추가된 확인서 출력이라는 설명도 실제 인용 내용에 있다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [2, 4], "supported": true}, {"claim_index": 2, "cited_evidence_ids": [2, 4], "supported": true}]
+        },
+        {
+          "id": "G05", "verdict": "pass", "cited_evidence_ids": [2],
+          "reason": "2026-1학기 근거 2의 학생지원과(집현관 104호) 방문 제출과 부서·위치·방문 방식이 모두 일치한다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [2], "supported": true}]
+        },
+        {
+          "id": "G06", "verdict": "pass", "cited_evidence_ids": [1, 4],
+          "reason": "두 claim의 한 학기 최대 3학점과 졸업 때까지 최대 6학점은 근거 1과 4에 모두 존재하는 한도와 의미가 같다. '졸업 때까지'와 '졸업까지'는 이 문맥에서 동일한 누적 한도를 표현한다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [1, 4], "supported": true}, {"claim_index": 2, "cited_evidence_ids": [1, 4], "supported": true}],
+          "automatic_assessment": "false_negative_equivalent_wording",
+          "automatic_disagreement": {
+            "failed_check": "answer_concepts_ok",
+            "concept_results": [true, true, false, true],
+            "actual_wording": "졸업 때까지",
+            "frozen_accepted_wordings": ["졸업까지", "졸업 시까지", "졸업 전까지", "졸업할 때까지"],
+            "reason": "고정된 문자열 대조가 의미상 같은 표현을 포함하지 않아 실패한 경우다. 기대 답변과 원본 자동 결과는 수정하지 않았다."
+          },
+          "source_caveat": "근거 4의 제목 2026-2학기와 본문 인정 학기 2026-1학기 사이 불일치는 v1과 동일하다. 답변은 질문받은 학점 한도만 다루고 인정 학기를 단정하지 않는다. 졸업 학기·계절학기의 신청 가능 여부를 일반적으로 보장한 답변으로 해석해서는 안 된다."
+        },
+        {
+          "id": "G07", "verdict": "pass", "cited_evidence_ids": [1],
+          "reason": "근거 1의 대학생 지원 기준에 학기당 300만원 생활비 무상보조 정액 지원이 명시되어 있어 대상과 금액·성격이 일치한다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [1], "supported": true}]
+        },
+        {
+          "id": "G08", "verdict": "pass", "cited_evidence_ids": [1],
+          "reason": "근거 1의 '400만원 (일회성 지급)'이 두 claim의 금액과 비반복 지급을 각각 직접 뒷받침한다.",
+          "claim_checks": [{"claim_index": 1, "cited_evidence_ids": [1], "supported": true}, {"claim_index": 2, "cited_evidence_ids": [1], "supported": true}]
+        },
+        {
+          "id": "G09", "verdict": "pass", "cited_evidence_ids": [], "claim_checks": [],
+          "reason": "2035년 수강신청 자료가 없고 전달된 것은 과거 공지뿐이다. 과거 일정을 전용하지 않고 정보 부족을 안내했다.",
+          "style_notes": ["'없습니다'를 사용해 반말 지침은 따르지 않았다. 의미적 실패와는 별도다."]
+        },
+        {
+          "id": "G10", "verdict": "pass", "cited_evidence_ids": [], "claim_checks": [],
+          "reason": "질문에 연도·학기가 없고 서로 다른 학기의 신청기간이 검색되므로 학기를 물은 것은 적절하다. 연도도 명시적으로 함께 물으면 더 명확해진다."
+        },
+        {
+          "id": "G11", "verdict": "pass", "cited_evidence_ids": [], "claim_checks": [],
+          "reason": "공개 공지만으로 개인의 실제 졸업 가능 여부를 판정할 수 없다고 명시하고, 학번·성명 대신 학과·입학연도라는 비식별 조건을 질문했다. 과거 타인 심사결과를 사용자의 결과로 추정하지 않았다.",
+          "behavior_note": "학과·입학연도 질문은 일반 요건 설명을 위한 것으로 범위를 유지해야 한다. 후속 답변에서도 이 정보만으로 개인 졸업 가능 여부를 확정해서는 안 된다."
+        },
+        {
+          "id": "G12", "verdict": "pass", "cited_evidence_ids": [], "claim_checks": [],
+          "reason": "강의계획서의 음식 관련 내용을 오늘의 학교식당 메뉴로 오인하지 않고 제공된 자료에 정보가 없다고 안내했다.",
+          "style_notes": ["'없습니다'를 사용해 반말 지침은 따르지 않았다. 의미적 실패와는 별도다."]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "질문은 재사용·변형된 소규모 연결 진단이다. v1 결과를 보고 일반 개인정보 요청 방어를 보완한 뒤 같은 질문으로 v2를 실행했으므로 독립 홀드아웃 평가가 아니다.",
+    "v2 의미 검토 12/12는 이 12개 저장 응답의 결과이며 전체 질문에 대한 정확도 100% 또는 안전성 보장을 뜻하지 않는다.",
+    "검토는 별도 에이전트가 수행한 사후 원문 추출본문 대조이며 사람에 의한 평가가 아니다. PDF 이미지·원공지 전체·현재 정책의 유효성을 새로 검증한 것은 아니다.",
+    "각 claim의 사실 지지와 인용 적절성, 답변 보류·조건 질문·개인정보 요청을 검토했다. 문체·전반적 유용성·모든 가능한 누락 조건을 포함하는 종합 품질 점수는 아니다.",
+    "등록된 출처 번호가 유효하다는 구조 검사만으로 의미적 정확성이 증명되지는 않는다. 개인정보 요청 패턴 방어도 모든 표현을 포괄하지 않는다.",
+    "생성에는 변동성이 있어 이번 v1과 v2 한 번씩의 실행만으로 개선 효과의 통계적 유의성이나 재현율을 추정할 수 없다.",
+    "v1 실패와 v2 문자열 오탐을 별도 기록했으며 원본 보고서·정답표·자동 채점을 사후에 덮어쓰지 않았다."
+  ]
+}

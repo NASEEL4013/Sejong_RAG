@@ -26,8 +26,14 @@ def select_unified_context(results: list[dict[str, object]], all_chunks: list[di
         raise ValueError("문맥 제한값은 모두 1 이상이어야 합니다.")
     by_file_index = {}
     by_file_page = defaultdict(list)
+    by_notice = defaultdict(list)
     for chunk in all_chunks:
         document_id = str(chunk.get("document_id", ""))
+        if chunk.get("file_type") == "html" or any(
+            location.get("section") in {"notice_body", "notice_title_only"}
+            for location in chunk.get("locators", [])
+        ):
+            by_notice[_parent_id(chunk)].append(chunk)
         pages = {locator.get("page") for locator in chunk.get("locators", []) if locator.get("page") is not None}
         for page in pages:
             by_file_page[(document_id, page)].append(chunk)
@@ -43,7 +49,7 @@ def select_unified_context(results: list[dict[str, object]], all_chunks: list[di
         if not chunk_id or chunk_id in selected_ids:
             return True
         text_length = len(str(chunk.get("text", "")))
-        if len(selected) >= max_chunks or (selected and used_chars + text_length > max_chars):
+        if len(selected) >= max_chunks or used_chars + text_length > max_chars:
             return False
         enriched = dict(chunk)
         enriched.update(context_relation=relation, retrieval_rank=rank)
@@ -63,6 +69,32 @@ def select_unified_context(results: list[dict[str, object]], all_chunks: list[di
             break
         retrieved_per_notice[parent] += 1
         retained.append((rank, chunk))
+    # 직접 검색 근거를 유지한 뒤 공지별로 한 조각씩 고르게 보충한다.
+    parent_requests = []
+    for rank, chunk in retained:
+        if chunk.get("attachment_url") or chunk.get("file_type") == "image":
+            parents = {parent}
+            parents.update(str(alias["parent_document_id"]) for alias in chunk.get("source_aliases", [])
+                           if alias.get("parent_document_id"))
+            bodies = []
+            for parent_id in sorted(parents):
+                body_chunks = sorted(by_notice.get(parent_id, []), key=lambda item: (
+                    not any(word in str(item.get("text", "")) for word in ("정정", "변경", "수정", "취소", "연장")),
+                    _chunk_index(item) or 0,
+                ))
+                bodies.append(body_chunks)
+            parent_requests.append((rank, chunk, bodies))
+    rounds = max((len(body) for _, _, groups in parent_requests for body in groups), default=0)
+    for index in range(rounds):
+        for rank, _, groups in parent_requests:
+            for body in groups:
+                if index < len(body):
+                    add(body[index], "parent_notice", rank)
+    for _, chunk, groups in parent_requests:
+        if any(not body or any(item["chunk_id"] not in selected_ids for item in body) for body in groups):
+            for item in selected:
+                if item["chunk_id"] == chunk["chunk_id"]:
+                    item["evidence_warning"] = "원래 공지 본문을 전부 확인하지 못했습니다. 첨부의 일정·조건을 확정하지 말고 공지 원문 확인이 필요함을 안내하세요."
     # 직접 검색된 근거를 먼저 확보한 뒤 남은 예산에만 이웃을 넣는다.
     # 같은 PDF 페이지가 여러 청크로 나뉜 경우 다른 페이지보다 먼저 보충한다.
     for rank, chunk in retained:
@@ -93,6 +125,7 @@ def source_records(chunks: Iterable[dict[str, object]]) -> list[dict[str, str]]:
             "location": format_locations(chunk) or "문서",
             "source_url": str(chunk.get("source_url") or ""),
             "attachment_url": str(chunk.get("attachment_url") or ""),
+            "image_url": next((str(location["image_url"]) for location in chunk.get("locators", []) if location.get("image_url")), ""),
         }
         key = (record["source_url"], record["filename"], record["location"])
         if key not in seen:

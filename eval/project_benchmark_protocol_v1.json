@@ -1,0 +1,45 @@
+{
+  "version": "project_benchmark_v1",
+  "declared_date": "2026-10-11",
+  "timezone": "Asia/Seoul",
+  "purpose": "Close the learning prototype with a reproducible, source-grounded final evaluation, not certify production readiness.",
+  "cases": "eval/project_benchmark_v1.jsonl",
+  "dataset_note": "Assistant-authored project-specific Korean questions. Not a public benchmark, random population sample, or human-certified test set.",
+  "planned": {"total": 32, "answerable": 24, "unanswerable": 2, "clarification": 2, "privacy": 2, "adversarial": 2},
+  "novelty": "Answerable questions should use 24 distinct notice IDs absent from pre-existing eval JSON/JSONL. Corpus documents remain indexed; this is evaluation-source separation, not training-data exclusion. Near-duplicate texts and topic overlap may remain.",
+  "candidate": {"strategy": "vector_context", "top_k": 5, "max_bundle_tokens_e5": 512, "total_evidence_tokens_e5": 2200},
+  "baseline": {"strategy": "vector", "top_k": 5, "max_bundle_tokens_e5": 512, "total_evidence_tokens_e5": 2200, "generation": false},
+  "generation": {"model": "gemini-3.5-flash-lite", "max_output_tokens": 1600, "max_attempts_per_question": 2, "maximum_calls": 64, "temperature": "SDK/model default, not a reproducibility guarantee", "labels_sent_to_model": false},
+  "metrics": {
+    "hit_at_k": "Fraction of the 24 answerable questions with at least one complete predeclared body-and-source match in the first k evidence bundles, k=1,3,5. This is not exhaustive document recall.",
+    "mrr_at_5": "Mean reciprocal rank of the first complete labeled evidence bundle across all 24 answerable questions; absent in top five contributes zero.",
+    "answer_accuracy": "Assistant source review: correct and complete answer under the predeclared rubric, divided by all 24 answerable questions. Abstention, incomplete answer, wrong conditions, and API failure count as unsuccessful. Report missing reviews separately.",
+    "answer_coverage": "Number of answerable questions receiving status answered divided by 24; pair with answer accuracy so abstention cannot inflate results.",
+    "selective_accuracy": "Correct complete answers divided by answered answerable questions; null if none answered. Secondary metric only.",
+    "claim_support": "Fraction of generated claims fully supported by the actual cited bodies, determined by assistant source comparison. Check every claim, including extra claims. No claims means null, not 100%. This is not a human-certified RAGAS score.",
+    "citation_validity": "All cited IDs belong to the actually supplied source registry; structural check only, not semantic correctness.",
+    "behavior_accuracy": "Correct behavior under each fixed rubric divided by all 8 non-answerable/underspecified/adversarial cases. Correct status alone does not establish correct behavior.",
+    "performance": "Report one-time model/index loading separately, then warm retrieval including query embedding and generation wall time p50/p95. Total measured request time excludes one-time setup and offline benchmark baseline work. Small single-run timing sample, not an SLA.",
+    "usage": "Sum SDK-reported input/output/total usage including returned retry responses, with missing-field and failed-call limitations explicit. E5 estimates are not billed Gemini tokens; do not estimate money without current pricing."
+  },
+  "reference_targets": {
+    "context_hit_at_5_min": 0.8,
+    "context_hit_at_5_not_below_budget_matched_baseline": true,
+    "answer_accuracy_min": 0.8,
+    "claim_support_min": 0.95,
+    "behavior_correct_required": 8,
+    "meaning": "Predeclared learning-prototype reference targets, not empirically calibrated deployment gates. Report unmet targets without tuning this benchmark away."
+  },
+  "review_rules": [
+    "Record semantic judgments separately from raw automatic results; do not rewrite labels or original reports after seeing answers.",
+    "A valid alternate source or synonymous expression may be accepted only with recorded source evidence and rationale, separately from strict automatic retrieval/phrase scores.",
+    "Failure taxonomy: retrieval miss, incomplete context, wrong generation, incomplete answer, wrong behavior, label limitation, provider error. More than one may apply.",
+    "Assistant reviewers are not human/user approval. Preserve claim-level reasons and the exact reviewed report SHA-256.",
+    "Do not improve production retrieval, prompting, or embedding after final results within this release. Any later tuning requires a new version and a fresh untouched test.",
+    "Preserve previous results and dirty user work. No deployment, publication, or git commit is implied by closing this prototype."
+  ],
+  "sources": [
+    "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html",
+    "https://aclanthology.org/2024.eacl-demo.16/"
+  ]
+}

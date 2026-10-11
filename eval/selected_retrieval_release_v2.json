@@ -1,0 +1,31 @@
+{
+  "version": "selected_context_v1",
+  "selected_strategy": "vector_context",
+  "search_code_sha256": "d4f6cfb1c4eea6567d6ccfe7cabbe11f70c7818ef44cf7f1b547256252cd6656",
+  "evaluation_code_sha256": "4d9fad863dd4947f7af928184ad2b1450f43e54396d804b3479ed25abe5e937b",
+  "index_sha256": "6c0abe238ee35effc784d24793675be5c814db18773aa477d15918ac11641570",
+  "development_report": "data/processed/evaluation-selected-compare-v1/report.json",
+  "validation_report": "data/processed/evaluation-selected-validation-context-v1/report.json",
+  "previous_candidate": "eval/selected_retrieval_release_v1.json",
+  "selection_reason": "Hybrid-context kept validation hit@5 at 80% but lost a baseline success and lowered hit@1 from 55% to 50%. Vector-context preserved every validation success and rank, was faster, and fixed both development misses. Prefer the conservative strategy as default; retain hybrid variants as experiments.",
+  "validation_reclassification": "The first 20 heldout questions were used for strategy selection and are now validation data, not the final untouched test.",
+  "final_heldout_cases": "eval/selected_retrieval_final_holdout_v1.jsonl",
+  "final_heldout_sha256": "b93ffcac7aa3da851f1874a88790f8dbbdad11ad12a1ce03d20173c5a3ae3341",
+  "settings": {
+    "top_k": 5,
+    "candidate_k": 100,
+    "ranking": "unchanged normalized vector cosine similarity",
+    "expand_anchor_at_most_tokens": 100,
+    "max_bundle_tokens": 512,
+    "total_evidence_tokens": 2200,
+    "adjacency": "same normalized record, gap at most 10 characters, next then previous",
+    "deduplication": "same notice scopes and identical assembled body, at least 80 normalized characters"
+  },
+  "predeclared_final_validation": {
+    "baseline": "unchanged original vector top5 chunks",
+    "primary": "actual context hit@5 must not fall below baseline",
+    "secondary": "actual context MRR@5 must not fall below baseline",
+    "no_post_final_test_tuning": true,
+    "limitations": "Small assistant-authored question sets; no answer generation or abstention evaluation"
+  }
+}

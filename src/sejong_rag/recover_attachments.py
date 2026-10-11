@@ -95,9 +95,9 @@ def recover_pdf(metadata: dict[str, object], output_dir: Path, dpi: int = 300, m
                 results.append({"page": page, "text_length": len(text), "mean_confidence": confidence})
             except Exception as exc: failures.append({"page": page, "error": f"{type(exc).__name__}: {exc}"})
     _write_records(records_path, document_id, existing)
-    unresolved = {x["page"] for x in failures}
-    other_warnings = [w for w in report.get("warnings", []) if not (m := EMPTY_PAGE_PATTERN.search(str(w))) or int(m.group(1)) in unresolved]
-    other_warnings.extend(f"page {x['page']}: OCR text requires source verification (mean confidence {x['mean_confidence']:.1f})" for x in results if x["mean_confidence"] is not None)
+    completed_pages = {x["page"] for x in results}
+    other_warnings = [w for w in report.get("warnings", []) if not (m := EMPTY_PAGE_PATTERN.search(str(w))) or int(m.group(1)) not in completed_pages]
+    other_warnings.extend(f"page {x['page']}: OCR text requires source verification (mean confidence {x['mean_confidence']})" for x in results)
     report.update({"status": "review_required" if other_warnings or failures else "success", "record_count": len(existing), "text_length": sum(int(x["text_length"]) for x in existing), "warnings": other_warnings, "error": None if not failures else f"OCR failed on {len(failures)} page(s)", "recovery": {"method": "pdftoppm_300dpi+tesseract_kor_eng", "ocr_pages": previous_results + results, "failures": previous_failures + failures, "source_preserved": True}})
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     return report

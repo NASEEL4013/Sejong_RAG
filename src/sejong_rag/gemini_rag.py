@@ -168,6 +168,7 @@ def main() -> None:
         print(f"- {source['title']} / {source['filename']} / {source['location']}")
         print(f"  공지: {source['source_url']}")
         if source["attachment_url"]: print(f"  첨부: {source['attachment_url']}")
+        if source.get("image_url"): print(f"  본문 이미지: {source['image_url']}")
     if usage is not None:
         prompt_tokens = getattr(usage, "prompt_token_count", None)
         answer_tokens = getattr(usage, "candidates_token_count", None)

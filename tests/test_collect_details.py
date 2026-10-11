@@ -67,6 +67,7 @@ def test_content_hash_changes_only_when_notice_content_changes():
     original = notice()
     assert content_hash(original) == content_hash(replace(original, source_url=URL + "&x=1"))
     assert content_hash(original) != content_hash(replace(original, body="수정 내용"))
+    assert content_hash(original) != content_hash(replace(original, body_images=[{"url": "https://www.sejong.ac.kr/new.png"}]))
 
 
 def test_save_detail_detects_new_unchanged_and_updated(tmp_path):

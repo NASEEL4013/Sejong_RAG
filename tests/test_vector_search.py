@@ -3,6 +3,13 @@ import pytest
 
 from sejong_rag.embed_chunks import build_passages
 from sejong_rag.vector_search import rank_by_similarity
+from sejong_rag.vector_search import chunk_locations
+
+
+def test_locations_accepts_structured_and_legacy_chunks():
+    assert chunk_locations({'page': 3}) == 'page=3'
+    assert chunk_locations({'source_spans': [{'locator': {'sheet': 'A', 'row': 2}}]}) == 'sheet=A, row=2'
+    assert chunk_locations({}) == 'document'
 
 
 def test_build_passages_adds_e5_prefix():

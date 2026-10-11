@@ -37,3 +37,65 @@ def test_same_page_sibling_is_added_before_adjacent_chunk():
     selected = select_unified_context([{"chunk": base}], [base, sibling, neighbor], max_chunks=2)
     assert [item["chunk_id"] for item in selected] == [base["chunk_id"], sibling["chunk_id"]]
     assert selected[1]["context_relation"] == "same_page"
+
+
+def body_chunk(number=1, parent="notice-1", text="첨부의 마감일을 8월 20일로 정정합니다."):
+    return {**chunk(number, parent=parent, document=parent), "chunk_id": f"body-{parent}-{number}",
+            "filename": None, "attachment_url": None, "file_type": "html",
+            "locators": [{"section": "notice_body"}], "text": text}
+
+
+def test_parent_correction_precedes_file_neighbor():
+    attachment, neighbor, body = chunk(1), chunk(2), body_chunk()
+    selected = select_unified_context([{"chunk": attachment}],
+                                     [attachment, neighbor, body], max_chunks=2)
+    assert [item["chunk_id"] for item in selected] == [attachment["chunk_id"], body["chunk_id"]]
+    assert selected[1]["context_relation"] == "parent_notice"
+
+
+def test_long_parent_does_not_displace_direct_answer_evidence():
+    attachment = chunk(1)
+    other = chunk(1, parent="notice-2", document="attachment-2")
+    bodies = [body_chunk(i) for i in range(1, 10)]
+    second_body = body_chunk(parent="notice-2")
+    selected = select_unified_context([{"chunk": attachment}, {"chunk": other}],
+        [attachment, other, *bodies, second_body], max_chunks=4)
+    assert [c["chunk_id"] for c in selected[:2]] == [attachment["chunk_id"], other["chunk_id"]]
+    assert second_body["chunk_id"] in {c["chunk_id"] for c in selected}
+
+
+def test_shared_attachment_includes_both_parent_notices():
+    attachment = chunk(1)
+    attachment["source_aliases"] = [{"parent_document_id": "notice-2"}]
+    bodies = [body_chunk(), body_chunk(parent="notice-2")]
+    selected = select_unified_context([{"chunk": attachment}], [attachment, *bodies])
+    assert {item["document_id"] for item in selected} == {"attachment-1", "notice-1", "notice-2"}
+
+
+def test_budget_omission_and_missing_parent_are_explicit():
+    attachment, body = chunk(1), body_chunk()
+    selected = select_unified_context([{"chunk": attachment}], [attachment, body], max_chunks=1)
+    assert selected[0]["evidence_warning"]
+    selected = select_unified_context([{"chunk": attachment}], [attachment])
+    assert selected[0]["evidence_warning"]
+    assert select_unified_context([{"chunk": body}], [body], max_chars=1) == []
+
+
+def test_correction_at_end_of_long_notice_is_prioritized_and_warns_if_partial():
+    attachment = chunk(1)
+    opening = body_chunk(text="일반 안내")
+    correction = body_chunk(9)
+    selected = select_unified_context([{"chunk": attachment}], [attachment, opening, correction], max_chunks=2)
+    assert selected[1]["chunk_id"] == correction["chunk_id"]
+    assert selected[0]["evidence_warning"]
+
+
+def test_parent_warnings_and_relationship_reach_prompt():
+    from sejong_rag.prompt_builder import build_messages
+    attachment, body = chunk(1), body_chunk()
+    body["evidence_warning"] = "본문 이미지 미검증"
+    selected = select_unified_context([{"chunk": attachment}], [attachment, body])
+    messages = build_messages("신청 마감일?", selected)
+    assert "본문 이미지 미검증" in messages[1]["content"]
+    assert "context_relation: parent_notice" in messages[1]["content"]
+    assert "명시적으로 정정" in messages[0]["content"]

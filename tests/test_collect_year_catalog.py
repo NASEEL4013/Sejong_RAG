@@ -54,6 +54,16 @@ def test_collect_year_rejects_non_descending_page():
         )
 
 
-def test_real_collection_requires_ten_seconds():
-    with pytest.raises(ValueError, match="10초 이상"):
-        collect_year_board("academic_notice", URL, 2026, delay_seconds=1)
+@pytest.mark.parametrize("delay", [-1, float("nan"), float("inf")])
+def test_collection_rejects_invalid_delay(delay):
+    with pytest.raises(ValueError, match="0 이상"):
+        collect_year_board("academic_notice", URL, 2026, delay_seconds=delay)
+
+
+def test_zero_delay_does_not_sleep(monkeypatch):
+    monkeypatch.setattr("sejong_rag.collect_year_catalog.time.sleep",
+                        lambda seconds: pytest.fail("zero delay must not sleep"))
+    page = html([("90", "2025.12.31", "과거", False)])
+    items, count = collect_year_board("academic_notice", URL, 2026,
+        delay_seconds=0, wait_before_first=True, fetcher=lambda url: (page, url))
+    assert items == [] and count == 1
