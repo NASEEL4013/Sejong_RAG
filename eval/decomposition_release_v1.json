@@ -1,0 +1,271 @@
+{
+  "eval/decomposition_development_review_v1.json": {
+    "retrieval_proxy": {
+      "a": {
+        "prepared": 32,
+        "evidence_items": 58,
+        "covered_items": 51,
+        "complete_evidence_questions": 19,
+        "answerable_questions": 24,
+        "generation_completed": 32,
+        "semantic_accuracy": null,
+        "evidence_tokens": 39263
+      },
+      "b": {
+        "prepared": 32,
+        "evidence_items": 58,
+        "covered_items": 50,
+        "complete_evidence_questions": 19,
+        "answerable_questions": 24,
+        "generation_completed": 31,
+        "semantic_accuracy": null,
+        "evidence_tokens": 40165
+      }
+    },
+    "arms": {
+      "a": {
+        "answerable": 24,
+        "full_correct": 18,
+        "grounded_full_correct": 18,
+        "generation_missing": 0,
+        "paired_answerable": 23,
+        "paired_full_correct": 17,
+        "behavior": 8,
+        "behavior_correct": 8,
+        "claims": 47,
+        "supported_claims": 47,
+        "unsupported_claims": []
+      },
+      "b": {
+        "answerable": 24,
+        "full_correct": 16,
+        "grounded_full_correct": 16,
+        "generation_missing": 1,
+        "paired_answerable": 23,
+        "paired_full_correct": 16,
+        "behavior": 8,
+        "behavior_correct": 7,
+        "claims": 45,
+        "supported_claims": 42,
+        "unsupported_claims": [
+          "B05:claim1",
+          "B12:claim1",
+          "B18:claim1"
+        ]
+      }
+    },
+    "usage_by_stage": {
+      "plan": {
+        "api_call_count": 32,
+        "response_count": 30,
+        "missing_count": {
+          "prompt_token_count": 2,
+          "candidates_token_count": 2,
+          "total_token_count": 2
+        },
+        "reported_count": {
+          "prompt_token_count": 30,
+          "candidates_token_count": 30,
+          "total_token_count": 30
+        },
+        "prompt_token_count": 7697,
+        "candidates_token_count": 2046,
+        "total_token_count": 9743,
+        "complete": false,
+        "response_ms_median": 1097.9523556306958
+      },
+      "a": {
+        "api_call_count": 36,
+        "response_count": 33,
+        "missing_count": {
+          "prompt_token_count": 3,
+          "candidates_token_count": 3,
+          "total_token_count": 3
+        },
+        "reported_count": {
+          "prompt_token_count": 33,
+          "candidates_token_count": 33,
+          "total_token_count": 33
+        },
+        "prompt_token_count": 89200,
+        "candidates_token_count": 3979,
+        "total_token_count": 93179,
+        "complete": false,
+        "response_ms_median": 1508.8565130718052
+      },
+      "b": {
+        "api_call_count": 35,
+        "response_count": 31,
+        "missing_count": {
+          "prompt_token_count": 4,
+          "candidates_token_count": 4,
+          "total_token_count": 4
+        },
+        "reported_count": {
+          "prompt_token_count": 31,
+          "candidates_token_count": 31,
+          "total_token_count": 31
+        },
+        "prompt_token_count": 85913,
+        "candidates_token_count": 3835,
+        "total_token_count": 89748,
+        "complete": false,
+        "response_ms_median": 1522.441173903644
+      }
+    },
+    "planner_fallbacks": [
+      {
+        "id": "B12",
+        "reason": "planner_service_error"
+      },
+      {
+        "id": "B17",
+        "reason": "invalid_plan"
+      },
+      {
+        "id": "B18",
+        "reason": "planner_service_error"
+      }
+    ],
+    "identical_input_cases": [
+      "B06",
+      "B12",
+      "B17",
+      "B18",
+      "B29",
+      "B30",
+      "B31",
+      "B32"
+    ],
+    "report_integrity": true
+  },
+  "eval/decomposition_holdout_review_v1.json": {
+    "retrieval_proxy": {
+      "a": {
+        "prepared": 12,
+        "evidence_items": 21,
+        "covered_items": 17,
+        "complete_evidence_questions": 7,
+        "answerable_questions": 10,
+        "generation_completed": 12,
+        "semantic_accuracy": null,
+        "evidence_tokens": 14365
+      },
+      "b": {
+        "prepared": 12,
+        "evidence_items": 21,
+        "covered_items": 18,
+        "complete_evidence_questions": 8,
+        "answerable_questions": 10,
+        "generation_completed": 12,
+        "semantic_accuracy": null,
+        "evidence_tokens": 15445
+      }
+    },
+    "arms": {
+      "a": {
+        "answerable": 10,
+        "full_correct": 9,
+        "grounded_full_correct": 7,
+        "generation_missing": 0,
+        "paired_answerable": 10,
+        "paired_full_correct": 9,
+        "behavior": 2,
+        "behavior_correct": 2,
+        "claims": 21,
+        "supported_claims": 18,
+        "unsupported_claims": [
+          "D04:claim3",
+          "D07:claim1",
+          "D08:claim3"
+        ]
+      },
+      "b": {
+        "answerable": 10,
+        "full_correct": 9,
+        "grounded_full_correct": 8,
+        "generation_missing": 0,
+        "paired_answerable": 10,
+        "paired_full_correct": 9,
+        "behavior": 2,
+        "behavior_correct": 2,
+        "claims": 21,
+        "supported_claims": 20,
+        "unsupported_claims": [
+          "D08:claim3"
+        ]
+      }
+    },
+    "usage_by_stage": {
+      "plan": {
+        "api_call_count": 12,
+        "response_count": 12,
+        "missing_count": {
+          "prompt_token_count": 0,
+          "candidates_token_count": 0,
+          "total_token_count": 0
+        },
+        "reported_count": {
+          "prompt_token_count": 12,
+          "candidates_token_count": 12,
+          "total_token_count": 12
+        },
+        "prompt_token_count": 3005,
+        "candidates_token_count": 750,
+        "total_token_count": 3755,
+        "complete": true,
+        "response_ms_median": 1132.396321510896
+      },
+      "a": {
+        "api_call_count": 12,
+        "response_count": 12,
+        "missing_count": {
+          "prompt_token_count": 0,
+          "candidates_token_count": 0,
+          "total_token_count": 0
+        },
+        "reported_count": {
+          "prompt_token_count": 12,
+          "candidates_token_count": 12,
+          "total_token_count": 12
+        },
+        "prompt_token_count": 31439,
+        "candidates_token_count": 1491,
+        "total_token_count": 32930,
+        "complete": true,
+        "response_ms_median": 1464.7575251292437
+      },
+      "b": {
+        "api_call_count": 12,
+        "response_count": 12,
+        "missing_count": {
+          "prompt_token_count": 0,
+          "candidates_token_count": 0,
+          "total_token_count": 0
+        },
+        "reported_count": {
+          "prompt_token_count": 12,
+          "candidates_token_count": 12,
+          "total_token_count": 12
+        },
+        "prompt_token_count": 32799,
+        "candidates_token_count": 1450,
+        "total_token_count": 34249,
+        "complete": true,
+        "response_ms_median": 1518.4093830175698
+      }
+    },
+    "planner_fallbacks": [
+      {
+        "id": "D05",
+        "reason": "invalid_plan"
+      }
+    ],
+    "identical_input_cases": [
+      "D05",
+      "D09",
+      "D10"
+    ],
+    "report_integrity": true
+  }
+}

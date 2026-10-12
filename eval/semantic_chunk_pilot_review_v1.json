@@ -1,0 +1,380 @@
+{
+  "evaluation_sha256": "4bab2c7d7a5ad9fb4b31ff31259235ffb8d89e917698ff2a92dfe32a69ca93e1",
+  "reviewer": "assistant",
+  "human_approved": false,
+  "summary": {
+    "before_complete": 19,
+    "after_complete": 21,
+    "total": 24,
+    "target_before": 0,
+    "target_after": 2,
+    "target_total": 5,
+    "regressed": [],
+    "improved": [
+      "B01",
+      "B12"
+    ],
+    "before_supported_items": 52,
+    "after_supported_items": 55,
+    "total_items": 58
+  },
+  "results": [
+    {
+      "id": "B01",
+      "before_complete": false,
+      "after_complete": true,
+      "before_items": [
+        false,
+        false
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "성공으로 개선. 환불 표를 반환금액 항목으로 분리하자 해당 근거의 벡터 순위가 7위→1위가 됐다. 변경 후 Top5 #1에서 12/28 취소 시 2/3 반환과 1/3 0시 이후 취소·환불 불가를 모두 확인했다."
+    },
+    {
+      "id": "B02",
+      "before_complete": false,
+      "after_complete": false,
+      "before_items": [
+        false,
+        true
+      ],
+      "after_items": [
+        false,
+        true
+      ],
+      "reason": "미충족 유지. 신청 메뉴 경로는 원래도 69토큰의 독립 청크였고 이 구간은 본문·제목 그대로다. 벡터 순위 16위→18위로 Top5에 들지 못했다. 당일 대여 불가 조건은 #1에 있다. 다른 청크를 세분화한 것만으로 메뉴 검색 문제를 해결하지 못했다."
+    },
+    {
+      "id": "B03",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B04",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B05",
+      "before_complete": false,
+      "after_complete": false,
+      "before_items": [
+        false,
+        true
+      ],
+      "after_items": [
+        false,
+        true
+      ],
+      "reason": "부분 개선이나 완전 성공은 아님. 공과대학 2학기 수강생도 레벨테스트를 봐야 한다는 2025년 조건이 변경 후 #1에 들어왔다. 일괄 수강신청은 #2에 있다. 그러나 「상기 기간」이 가리키는 2/14~2/19 근거가 빠졌다. #5는 추가합격자의 다른 응시기간이라 대신 쓸 수 없다. 단일 청크로 항목 전체를 지원하는 순위 없음은 상호참조 문장이 여러 청크에 나뉘어 있기 때문이다."
+    },
+    {
+      "id": "B06",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B07",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B08",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B09",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B10",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B11",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B12",
+      "before_complete": false,
+      "after_complete": true,
+      "before_items": [
+        true,
+        false
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "성공으로 개선. 전화·이메일이 있는 공지 본문 청크를 구비서류·우편주소에서 분리하자 연락처 청크의 벡터 순위가 6위→1위가 됐다. 변경 후 #1에서 2025년 전화와 이메일을 모두 확인했다. 기존 전화는 첨부 #3에도 있었으므로 기존 전화 항목은 의미 검토에서 지원됨으로 인정한다."
+    },
+    {
+      "id": "B13",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B14",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B15",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B16",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B17",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B18",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B19",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B20",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B21",
+      "before_complete": false,
+      "after_complete": false,
+      "before_items": [
+        true,
+        false
+      ],
+      "after_items": [
+        true,
+        false
+      ],
+      "reason": "미충족 유지. 가구원 재동의 예외는 이미 서류제출 항목의 179토큰 청크에 있으며 이번 규칙으로 해당 구간은 더 나뉘지 않았다. 벡터 순위도 17위 그대로다. Top5 #1에 신청 마감은 있지만 예외는 없다. 추가 의미 분할 또는 항목별 검색은 이번 실험에서 시험하지 않았다."
+    },
+    {
+      "id": "B22",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B23",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    },
+    {
+      "id": "B24",
+      "before_complete": true,
+      "after_complete": true,
+      "before_items": [
+        true,
+        true
+      ],
+      "after_items": [
+        true,
+        true
+      ],
+      "reason": "기존 성공 문항. 실제 전달 본문의 항목별 문구 일치를 확인했으며 완전 근거 확보 판정이 유지된다."
+    }
+  ],
+  "criterion_note": "Top5 union with matching year/entity/conditions. B05 explicitly requires February reference-period evidence; 2/14 phrase was added to both arms in cases.json before embeddings and comparison. No query/answer labels enter splitting."
+}

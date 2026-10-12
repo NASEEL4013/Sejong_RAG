@@ -1,0 +1,23 @@
+{
+  "experiment": "decomposition_v1",
+  "date_kst": "2026-10-12",
+  "status": "frozen_before_execution",
+  "hypothesis": "Question-only decomposition improves complete evidence and answer coverage under the same final context budget.",
+  "arms": {
+    "a": "Current vector_context retrieval with original query",
+    "b": "Original query plus at most four question-only subqueries; original first result then subquery round-robin and original list; deduplicate exact spans and body within notice scope"
+  },
+  "shared": {"top_k": 5, "max_bundle_tokens": 512, "total_e5_tokens": 2200, "max_output_tokens": 1600, "generator": "gemini-3.5-flash-lite", "embedding": "intfloat/multilingual-e5-small", "generation_attempts_max": 2},
+  "planner": {"attempts_max": 1, "max_output_tokens": 1600, "temperature": 0, "inputs": ["original query only"], "invalid_or_single_item_fallback": "original query"},
+  "development": {"file": "eval/decomposition_development_v1.jsonl", "answerable": 24, "behavior": 8, "prior_exposure": true},
+  "heldout": {"file": "eval/decomposition_holdout_v1.jsonl", "compound": 8, "simple": 2, "behavior": 2, "new_gold_notice_ids": 10, "source_format": "HTML", "similar_topics_remain_in_corpus": true},
+  "evaluation": {
+    "retrieval": "Each predeclared answer item requires its source-scoped phrase group across the union of actual supplied bodies. Report item and complete-question coverage as automatic proxies, not semantic accuracy.",
+    "generation": "Assistant compares all output facts and completeness against fixed rubric and supplied citations for both arms. Partial/abstained answer on answerable question is not full success. Separate message facts are included. Human approval is absent.",
+    "planner": "Review loss or invention of constraints separately; no evidence or labels in model input.",
+    "cost": "Report planning plus both arms' generation SDK usage, per-stage latency and errors. Final evidence cap is equal; total compute budget is not equal.",
+    "decision": "Retain as experimental unless heldout complete evidence and full-answer count improve, simple and behavior cases do not regress, and no new unsupported answer claims appear. Small sample is not a production gate.",
+    "no_posthoc_tuning": "No algorithm/prompt/label tuning after observing experiment outcomes; any subsequent tuning requires a fresh heldout set. Preserve proxy errors and add semantic review separately."
+  },
+  "limitations": ["Assistant-authored and reviewed small set", "Single stochastic generation sample per arm", "No OCR or attachment-only gold", "Round-robin represents candidate lists, not verified answer-item coverage", "Question decomposition can omit constraints or introduce semantic drift even after structural validation"]
+}

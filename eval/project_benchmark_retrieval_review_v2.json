@@ -1,0 +1,1469 @@
+{
+  "version": "top5_union_semantic_v2",
+  "source_report_sha256": "98d8ee1ec7664e6c24737023b7f987fa586dd3c8dc01bc5c01b121ec2868d11b",
+  "reviewer": "assistant",
+  "human_approved": false,
+  "definition": "Top5에 실제 전달된 본문을 합쳐 모든 질문 항목에 답할 수 있으면 성공. 연도·대상·조건 유지. 각 항목의 지원 순위를 별도 기록.",
+  "results": [
+    {
+      "id": "B01",
+      "query": "2025학년도 동계 계절학기 운영 안내 기준으로 12월 28일에 수강을 취소하면 얼마를 돌려받고, 언제부터는 취소와 환불이 모두 안 돼?",
+      "complete": false,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-859241",
+              "evidence_any": [
+                [
+                  "2025. 12 .28.",
+                  "수강료의 2/3"
+                ]
+              ]
+            }
+          ],
+          "supported": false,
+          "supporting_ranks": []
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-859241",
+              "evidence_any": [
+                [
+                  "2026. 01. 03.",
+                  "수강취소 및 환불 불가"
+                ]
+              ]
+            }
+          ],
+          "supported": false,
+          "supporting_ranks": []
+        }
+      ],
+      "reason": "Top5에 동계 등록·변경 안내는 있으나 해당 날짜의 반환 비율과 환불 불가 시점은 없다.",
+      "previous_single_bundle_success": false,
+      "phrase_proxy": {
+        "items": [
+          false,
+          false
+        ],
+        "covered": 0,
+        "total": 2,
+        "complete": false
+      }
+    },
+    {
+      "id": "B02",
+      "query": "2025년 2학기에 강의실을 빌리려면 포털에서 어느 메뉴로 들어가고, 사용 당일에 신청해도 돼?",
+      "complete": false,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-855929",
+              "evidence_any": [
+                [
+                  "학생서비스",
+                  "대여가능시설물조회 및 시설물사용신청"
+                ]
+              ]
+            }
+          ],
+          "supported": false,
+          "supporting_ranks": []
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-855929",
+              "evidence_any": [
+                [
+                  "사용일 하루 전 날 가능",
+                  "당일 대여 불가"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "#1에 사전 신청·당일 대여 불가가 있으나 학생서비스 → 시설물 신청 메뉴 경로는 없다.",
+      "previous_single_bundle_success": false,
+      "phrase_proxy": {
+        "items": [
+          false,
+          true
+        ],
+        "covered": 1,
+        "total": 2,
+        "complete": false
+      }
+    },
+    {
+      "id": "B03",
+      "query": "2025년에 올라온 생리공결 안내에서 한 학기에 최대 며칠 쓸 수 있어? 중간고사 때도 쓸 수 있는지와 결석 후 신청기한도 알려줘.",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-805981",
+              "evidence_any": [
+                [
+                  "학기당 4일 이내"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            3
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-805981",
+              "evidence_any": [
+                [
+                  "시험(중간,기말)기간에는 사용 불가"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            3
+          ]
+        },
+        {
+          "name": "item_3",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-805981",
+              "evidence_any": [
+                [
+                  "결석 후 1주일 이내에만 신청 및 출력 가능"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            3
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true,
+          true
+        ],
+        "covered": 3,
+        "total": 3,
+        "complete": true
+      }
+    },
+    {
+      "id": "B04",
+      "query": "2025학년도 1차 교내 모의 TOEIC Speaking 시험에 대해 문의할 테스트센터 이메일과 전화번호를 알려줘.",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-805977",
+              "evidence_any": [
+                [
+                  "geptest@sejong.ac.kr"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-805977",
+              "evidence_any": [
+                [
+                  "02-3408-4472"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true
+        ],
+        "covered": 2,
+        "total": 2,
+        "complete": true
+      }
+    },
+    {
+      "id": "B05",
+      "query": "2025학년도 공과대학 신입생인데 대학영어를 2학기에 듣는 경우도 2월에 레벨테스트를 봐야 해? 대학영어 수강신청은 내가 직접 하는 거야?",
+      "complete": false,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-805913",
+              "evidence_any": [
+                [
+                  "2 학기에 < 대학영어 > 를 수강하는 학생들도 모두 상기 기간 중에 레벨테스트를 실시"
+                ]
+              ]
+            }
+          ],
+          "supported": false,
+          "supporting_ranks": []
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-805913",
+              "evidence_any": [
+                [
+                  "교양영어실에서 일괄적으로 수강신청",
+                  "수강생이 직접 수강신청을 하지 않습니다"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "#1에 2025년 2월 응시기간과 일괄 수강신청이 있다. 2학기 공과대학 신입생도 같은 기간 응시해야 한다는 명시적 조건은 #2·#4의 2026년 자료에만 있어 2025년 조건의 근거로 인정하지 않는다.",
+      "previous_single_bundle_success": false,
+      "phrase_proxy": {
+        "items": [
+          false,
+          true
+        ],
+        "covered": 1,
+        "total": 2,
+        "complete": false
+      }
+    },
+    {
+      "id": "B06",
+      "query": "2025년 2월 교직이수 졸업예정자의 교원자격증은 어디에서 몇 시 사이에 받을 수 있고, 대리인이 대신 가도 돼?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-805912",
+              "evidence_any": [
+                [
+                  "교무처 교직과",
+                  "학생회관 205 호"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-805912",
+              "evidence_any": [
+                [
+                  "오전 10 시 ~ 오후 4 시 30 분"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_3",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-805912",
+              "evidence_any": [
+                [
+                  "신분증 지참 후 본인이 방문"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true,
+          true
+        ],
+        "covered": 3,
+        "total": 3,
+        "complete": true
+      }
+    },
+    {
+      "id": "B07",
+      "query": "2025년 유한재단 결손·다문화 가정 장학금은 얼마야? 다른 외부재단에서 생활비를 이미 받은 학생은 아예 지원할 수 없어?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-810924",
+              "evidence_any": [
+                [
+                  "생활비성 장학금 3백만원"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            2
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-810924",
+              "evidence_any": [
+                [
+                  "타 재단 생활비를 받았어도 지원 가능",
+                  "차순위 심사 예정"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "2025년 공지 #2의 300만원과 #1의 타 재단 생활비 수혜자 지원 가능·차순위 심사를 합쳐 완전한 답변이 가능하다.",
+      "previous_single_bundle_success": false,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true
+        ],
+        "covered": 2,
+        "total": 2,
+        "complete": true
+      }
+    },
+    {
+      "id": "B08",
+      "query": "2025년 푸른등대 삼성기부장학금을 1학기에 받았다면 2학기에도 받으려면 어떤 두 조건을 유지해야 해? 둘 중 하나만 맞으면 돼?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-810927",
+              "evidence_any": [
+                [
+                  "사회적배려계층 자격을 유지"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-810927",
+              "evidence_any": [
+                [
+                  "2025-1 학기 백분위 성적 70 점 이상"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_3",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-810927",
+              "evidence_any": [
+                [
+                  "두 기준 미충족될 경우 장학금 지원중단 및 장학생 자격상실"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true,
+          true
+        ],
+        "covered": 3,
+        "total": 3,
+        "complete": true
+      }
+    },
+    {
+      "id": "B09",
+      "query": "2025년 국가이공계 재학중우수자 2년지원 장학금의 계속지원 성적 기준은 평점과 백분위를 둘 다 넘어야 해? 이수학점 기준과 졸업학기 직전 예외도 알려줘.",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-810929",
+              "evidence_any": [
+                [
+                  "평점 3.5 이상 또는 백분위 87 점 이상"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            2
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-810929",
+              "evidence_any": [
+                [
+                  "직전학기 12 학점 이상"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            2
+          ]
+        },
+        {
+          "name": "item_3",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-810929",
+              "evidence_any": [
+                [
+                  "졸업학기 직전학기의 경우 3 학점 이상"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            2
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true,
+          true
+        ],
+        "covered": 3,
+        "total": 3,
+        "complete": true
+      }
+    },
+    {
+      "id": "B10",
+      "query": "2025년 2학기 어학우수장학금 기준으로 영어 비전공자가 TOEIC 920점으로 100만원을 받은 뒤 960점을 취득했어. 같은 규정의 상위구간 차액 지급 대상이라면 150만원을 다시 전액 받는 거야, 얼마나 추가로 받아?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-855191",
+              "evidence_any": [
+                [
+                  "900 이상 – 950 미만",
+                  "100 만원"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            4
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-855191",
+              "evidence_any": [
+                [
+                  "950 이상",
+                  "150 만원"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            4
+          ]
+        },
+        {
+          "name": "item_3",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-855191",
+              "evidence_any": [
+                [
+                  "하위점수구간 취득 후 상위점수구간 취득시 차액지급"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "2025-2 공지 #4의 비전공자 지급 구간과 #1의 차액 지급 규칙을 합쳐 150-100=50만원이 도출된다. 질문하지 않은 1회 제한은 필수 답변 항목이 아니다.",
+      "previous_single_bundle_success": false,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true,
+          true
+        ],
+        "covered": 3,
+        "total": 3,
+        "complete": true
+      }
+    },
+    {
+      "id": "B11",
+      "query": "2025년 2학기 국가장학금·에델바이스Ⅱ 지급 안내에서 한국장학재단 대출과 한국전력공사 대출은 장학금으로 상환하는 방식이 같아? 누가 상환해야 해?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-858649",
+              "evidence_any": [
+                [
+                  "한국장학재단 학자금대출 및 공무원연금공단 대출금으로 자동상환처리"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-858649",
+              "evidence_any": [
+                [
+                  "그 외 기관은 본인이 직접상환처리",
+                  "한국전력공사"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true
+        ],
+        "covered": 2,
+        "total": 2,
+        "complete": true
+      }
+    },
+    {
+      "id": "B12",
+      "query": "2025학년도 신라문화장학재단 공개선발에 문의할 전화번호와 이메일 주소를 모두 알려줘.",
+      "complete": false,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-810913",
+              "evidence_any": [
+                [
+                  "02-413-0795/6"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            3
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-810913",
+              "evidence_any": [
+                [
+                  "silla_yujin@naver.com"
+                ]
+              ]
+            }
+          ],
+          "supported": false,
+          "supporting_ranks": []
+        }
+      ],
+      "reason": "2025년 첨부 #3에 사무국 02-413-0795가 있으므로 전화 항목은 성공이다. 이메일은 #5의 2026년 공지에만 있어 2025년 공개선발의 이메일을 확정하는 근거로 인정하지 않는다. 기존 전화 문구 0795/6의 문자열 불일치는 의미 검토로 보정한다.",
+      "previous_single_bundle_success": false,
+      "phrase_proxy": {
+        "items": [
+          false,
+          false
+        ],
+        "covered": 0,
+        "total": 2,
+        "complete": false
+      }
+    },
+    {
+      "id": "B13",
+      "query": "2026년 평점평균 백분율 환산방식 개정 안내에서 새 계산식은 뭐고, 평점 3.35는 몇 점으로 바뀌어? 2020년에 졸업한 사람은 언제 적용돼?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-892429",
+              "evidence_any": [
+                [
+                  "평점평균 *10)+55"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-892429",
+              "evidence_any": [
+                [
+                  "환산점수 88.5"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_3",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-892429",
+              "evidence_any": [
+                [
+                  "2021년 이전 졸업자 및 제적생",
+                  "9월 중 순차적으로 적용 예정"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true,
+          true
+        ],
+        "covered": 3,
+        "total": 3,
+        "complete": true
+      }
+    },
+    {
+      "id": "B14",
+      "query": "시간이 정정된 2026년 5월 16일 증명 발급 중지 공지에서 최종 중지 시간은 언제부터 언제까지야? 인터넷 출력만 안 되고 학생회관 발급기는 쓸 수 있어?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-866906",
+              "evidence_any": [
+                [
+                  "07 : 00 ~ 17 : 00"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-866906",
+              "evidence_any": [
+                [
+                  "인터넷 증명서 직접출력 및 자동발급기(학생회관 지하 1층) 사용이 일시 중지"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "#1에 정정 후 07:00~17:00과 두 발급수단 중지가 있다. 원 HTML의 08시 취소선·07시 수정값과 대조했다. 전달 텍스트에는 취소선 서식이 소실되어 이전·수정 시각이 병기되는 한계가 남는다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true
+        ],
+        "covered": 2,
+        "total": 2,
+        "complete": true
+      }
+    },
+    {
+      "id": "B15",
+      "query": "2026년 학부 학사정보시스템 개선 안내에서, 수강할 때 전선으로 표시됐어도 입학 당시 전필이었던 과목은 과목이수점검 화면의 어느 탭·항목으로 졸업 적용 구분을 확인하고, 공지의 예시에서는 어떤 구분으로 표시돼?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-862274",
+              "evidence_any": [
+                [
+                  "과목이수점검",
+                  "성적정보 탭",
+                  "졸업심사용이수구분"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-862274",
+              "evidence_any": [
+                [
+                  "입학 당시 전필이었던 교과목",
+                  "전필 학점으로 인정되어 표시"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            2
+          ]
+        }
+      ],
+      "reason": "#1의 성적정보 탭·졸업심사용이수구분과 #2의 전필 인정 예시를 합쳐 답할 수 있다.",
+      "previous_single_bundle_success": false,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true
+        ],
+        "covered": 2,
+        "total": 2,
+        "complete": true
+      }
+    },
+    {
+      "id": "B16",
+      "query": "2026학년도 학부생 성폭력·가정폭력 예방교육은 언제까지 들을 수 있어? 비교과 마일리지 50포인트를 받으려면 몇 시간 들어야 하고 기간이 지난 다음 추가 수강도 가능해?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-866954",
+              "evidence_any": [
+                [
+                  "11월 30일"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-866954",
+              "evidence_any": [
+                [
+                  "마일리지 50포인트",
+                  "전체 교육 2시간 이상"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_3",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-866954",
+              "evidence_any": [
+                [
+                  "기간 종료 후에는 추가 수강 및 이수가 불가"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true,
+          true
+        ],
+        "covered": 3,
+        "total": 3,
+        "complete": true
+      }
+    },
+    {
+      "id": "B17",
+      "query": "2026년 교양영어실 스피킹 시험 1:1 대비반은 어느 건물의 어느 공간에서 진행하고, 총 몇 시간을 어떻게 참여해야 수료해?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-885701",
+              "evidence_any": [
+                [
+                  "광개토관 지하 1층 SEZ"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            3
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-885701",
+              "evidence_any": [
+                [
+                  "총 8 시간 세션 100% 출석",
+                  "1:1 코칭 성실 참여",
+                  "부여된 과제 제출 완료"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            2
+          ]
+        }
+      ],
+      "reason": "#3의 광개토관 지하1층 SEZ 강의실과 #2의 총8시간·100%출석·코칭·과제 조건을 합쳐 답할 수 있다.",
+      "previous_single_bundle_success": false,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true
+        ],
+        "covered": 2,
+        "total": 2,
+        "complete": true
+      }
+    },
+    {
+      "id": "B18",
+      "query": "2026년 교직과정 신청자의 적·인성 검사는 어디에서 응시해? 집현캠퍼스로 시험을 본다던데 학과면접 장소도 같은 곳으로 정해진 거야?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-864814",
+              "evidence_any": [
+                [
+                  "대양AI센터 B111호 전산실습실",
+                  "세종대학교 집현캠퍼스"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            2
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice3-864814",
+              "evidence_any": [
+                [
+                  "학과에서 직접 신청자들에게 면접시간 및 장소 통지예정"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            2
+          ]
+        }
+      ],
+      "reason": "#2가 실제 응시장소 B111호, 집현캠퍼스 시험 플랫폼, 학과별 면접 장소 별도 통지를 구분하여 제공한다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true
+        ],
+        "covered": 2,
+        "total": 2,
+        "complete": true
+      }
+    },
+    {
+      "id": "B19",
+      "query": "2026년 2학기 대학생 청소년교육지원사업은 시간당 얼마를 줘? 한 학기 8시간만 활동해도 돈을 받는지, 학기 중과 방학 중의 주당 최대시간도 알려줘.",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-892390",
+              "evidence_any": [
+                [
+                  "시간당 12 ,790 원"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-892390",
+              "evidence_any": [
+                [
+                  "최소 10 시간"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_3",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-892390",
+              "evidence_any": [
+                [
+                  "학기중",
+                  "최대 2 0 시간"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_4",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-892390",
+              "evidence_any": [
+                [
+                  "방학중",
+                  "최대 4 0 시간"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "covered": 4,
+        "total": 4,
+        "complete": true
+      }
+    },
+    {
+      "id": "B20",
+      "query": "2026년 2학기 희망사다리Ⅱ유형 고졸후학습지원 장학금을 문의할 때 한국장학재단과 세종대 학생지원과 전화번호는 각각 뭐야?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-892517",
+              "evidence_any": [
+                [
+                  "한국장학재단 1800-0499"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-892517",
+              "evidence_any": [
+                [
+                  "학생지원과 02-3408-4355"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true
+        ],
+        "covered": 2,
+        "total": 2,
+        "complete": true
+      }
+    },
+    {
+      "id": "B21",
+      "query": "2026년 2학기 푸른등대 기부장학사업 신청은 언제 몇 시까지야? 예전에 가구원 동의를 했고 가족 구성도 그대로면 다시 동의해야 해?",
+      "complete": false,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-892486",
+              "evidence_any": [
+                [
+                  "2026 년 9 월 10",
+                  "오후 6 시까지"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-892486",
+              "evidence_any": [
+                [
+                  "기존 가구원 동의를 한 후 가구원 변동이 없는 경우 불필요"
+                ]
+              ]
+            }
+          ],
+          "supported": false,
+          "supporting_ranks": []
+        }
+      ],
+      "reason": "#1에 2026년 9월10일 18시 마감은 있으나 기존 동의·가구원 무변동 시 재동의 불필요 규칙은 없다.",
+      "previous_single_bundle_success": false,
+      "phrase_proxy": {
+        "items": [
+          true,
+          false
+        ],
+        "covered": 1,
+        "total": 2,
+        "complete": false
+      }
+    },
+    {
+      "id": "B22",
+      "query": "2026년 2학기 특기장학금 공지에서 팀으로 수상했는데 팀원 한 명이 휴학 중이면 그 사람은 복학할 때 따로 신청해야 해, 아니면 이번에 같이 신청해야 해? 돈을 받는 학기도 알려줘.",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-892119",
+              "evidence_any": [
+                [
+                  "휴학중인 팀원은 재학중인 팀원과 함께 반드시 이번 학기에 신청"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-892119",
+              "evidence_any": [
+                [
+                  "장학금은 복학학기에 지급"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true
+        ],
+        "covered": 2,
+        "total": 2,
+        "complete": true
+      }
+    },
+    {
+      "id": "B23",
+      "query": "2026년 예술체육비전 장학금에서 1학년 전공탐색유형과 3학년 전공확립유형은 각각 몇 년 동안 등록금을 지원해? 기초생활수급자에게는 어떤 추가 지원이 있어?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-864174",
+              "evidence_any": [
+                [
+                  "전공탐색유형",
+                  "4 년 등록금 전액 지원",
+                  "계속지원기준을 충족"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-864174",
+              "evidence_any": [
+                [
+                  "전공확립유형",
+                  "2 년 등록금 전액 지원",
+                  "계속지원기준을 충족"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_3",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-864174",
+              "evidence_any": [
+                [
+                  "생활비 250 만원 추가 지원"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true,
+          true
+        ],
+        "covered": 3,
+        "total": 3,
+        "complete": true
+      }
+    },
+    {
+      "id": "B24",
+      "query": "2026학년도 정수장학회 장학금 서류 제출은 언제 몇 시까지이고, 학교에 문의할 전화번호는 뭐야?",
+      "complete": true,
+      "items": [
+        {
+          "name": "item_1",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-861807",
+              "evidence_any": [
+                [
+                  "2026년 1월 20일 15시까지"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        },
+        {
+          "name": "item_2",
+          "expected_evidence": [
+            {
+              "notice_id": "notice7-861807",
+              "evidence_any": [
+                [
+                  "02)3408-3056"
+                ]
+              ]
+            }
+          ],
+          "supported": true,
+          "supporting_ranks": [
+            1
+          ]
+        }
+      ],
+      "reason": "같은 연도·대상 공지의 해당 순위 본문에서 질문이 요구한 모든 항목을 확인했다.",
+      "previous_single_bundle_success": true,
+      "phrase_proxy": {
+        "items": [
+          true,
+          true
+        ],
+        "covered": 2,
+        "total": 2,
+        "complete": true
+      }
+    }
+  ],
+  "summary": {
+    "complete": 19,
+    "total": 24,
+    "supported_items": 52,
+    "total_items": 58,
+    "newly_successful": [
+      "B07",
+      "B10",
+      "B15",
+      "B17"
+    ],
+    "failed": [
+      "B01",
+      "B02",
+      "B05",
+      "B12",
+      "B21"
+    ]
+  }
+}

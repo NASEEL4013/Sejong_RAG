@@ -1,0 +1,1584 @@
+{
+  "report_path": "data/processed/decomposition-dev-v1-resumed2/report.json",
+  "report_sha256": "a3e29185c54c47a8df950b9680ff4fb4ed8f9ff8787cab17db88a00582de5d3c",
+  "cases_path": "eval/decomposition_development_v1.jsonl",
+  "cases_sha256": "3d9a87d64986d0e6b9337b9ad76ba18ec135a803a1e7f2e127916f2556a97960",
+  "reviewer_role": "assistant",
+  "human_approved": false,
+  "scope": "고정 rubric 대비 답변 완전성, 실제 인용 본문 대비 모든 생성 claim을 대조했다. message의 사실 및 상태 코드도 별도로 확인했다. 단일 표본이며 동일 입력에서의 생성 차이는 검색 효과로 단정하지 않는다.",
+  "results": [
+    {
+      "id": "B01",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": false,
+          "reason": "환불 구간 근거를 찾지 못해 답변 보류.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "B는 근거 5에서 2/3 환불과 2026-01-03 0시 이후 취소·환불 불가를 확보했다.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                5
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. B는 근거 5에서 2/3 환불과 2026-01-03 0시 이후 취소·환불 불가를 확보했다."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                5
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. B는 근거 5에서 2/3 환불과 2026-01-03 0시 이후 취소·환불 불가를 확보했다."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B02",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": false,
+          "reason": "신청 메뉴 근거 부족으로 보류하고 당일 신청 여부도 답하지 않음.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": false,
+          "reason": "분해 후에도 신청 메뉴를 확보하지 못해 보류.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B03",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "A는 근거 3의 학기당 4일·시험기간 불가·1주일 이내 신청을 모두 반영했다.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                3
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. A는 근거 3의 학기당 4일·시험기간 불가·1주일 이내 신청을 모두 반영했다."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                3
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. A는 근거 3의 학기당 4일·시험기간 불가·1주일 이내 신청을 모두 반영했다."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                3
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. A는 근거 3의 학기당 4일·시험기간 불가·1주일 이내 신청을 모두 반영했다."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": false,
+          "reason": "A의 3위 정답 근거가 최종 5개에서 탈락하여 사용 일수·시험기간·신청기한 답변 실패.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B04",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "테스트센터 이메일과 전화번호 모두 원문과 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 테스트센터 이메일과 전화번호 모두 원문과 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 테스트센터 이메일과 전화번호 모두 원문과 일치."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "테스트센터 이메일과 전화번호 모두 원문과 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 테스트센터 이메일과 전화번호 모두 원문과 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 테스트센터 이메일과 전화번호 모두 원문과 일치."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B05",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": false,
+          "reason": "2025 공과대학 2학기 수강자의 2월 응시 근거 부족으로 보류.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "첫 주장이 2026 공지만 인용하여 2025 조건에 대한 근거를 확보하지 못했고 2월이라는 답도 명시하지 않음.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                4,
+                5
+              ],
+              "supported": false,
+              "reason": "인용 4·5는 2026 공지이며 질문의 2025 대상 조건을 뒷받침하지 않는다."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1,
+                4
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. "
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B06",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "학생회관 205호·10:00~16:30·신분증 지참 본인 방문 조건 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 학생회관 205호·10:00~16:30·신분증 지참 본인 방문 조건 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 학생회관 205호·10:00~16:30·신분증 지참 본인 방문 조건 일치."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "학생회관 205호·10:00~16:30·신분증 지참 본인 방문 조건 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 학생회관 205호·10:00~16:30·신분증 지참 본인 방문 조건 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 학생회관 205호·10:00~16:30·신분증 지참 본인 방문 조건 일치."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 학생회관 205호·10:00~16:30·신분증 지참 본인 방문 조건 일치."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": true
+    },
+    {
+      "id": "B07",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "생활비 300만원 및 타 재단 생활비 수혜자 지원 가능·차순위 조건 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 생활비 300만원 및 타 재단 생활비 수혜자 지원 가능·차순위 조건 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 생활비 300만원 및 타 재단 생활비 수혜자 지원 가능·차순위 조건 일치."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "생활비 300만원 및 타 재단 생활비 수혜자 지원 가능·차순위 조건 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 생활비 300만원 및 타 재단 생활비 수혜자 지원 가능·차순위 조건 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1,
+                5
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 생활비 300만원 및 타 재단 생활비 수혜자 지원 가능·차순위 조건 일치."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B08",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "사회적배려계층 자격 유지와 직전학기 백분위 70점 이상을 모두 요구함을 반영.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 사회적배려계층 자격 유지와 직전학기 백분위 70점 이상을 모두 요구함을 반영."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 사회적배려계층 자격 유지와 직전학기 백분위 70점 이상을 모두 요구함을 반영."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "사회적배려계층 자격 유지와 직전학기 백분위 70점 이상을 모두 요구함을 반영.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 사회적배려계층 자격 유지와 직전학기 백분위 70점 이상을 모두 요구함을 반영."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 사회적배려계층 자격 유지와 직전학기 백분위 70점 이상을 모두 요구함을 반영."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B09",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "평점 3.5 또는 백분위 87, 12학점과 졸업 직전 3학점 예외 모두 반영.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 평점 3.5 또는 백분위 87, 12학점과 졸업 직전 3학점 예외 모두 반영."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 평점 3.5 또는 백분위 87, 12학점과 졸업 직전 3학점 예외 모두 반영."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 평점 3.5 또는 백분위 87, 12학점과 졸업 직전 3학점 예외 모두 반영."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "평점 3.5 또는 백분위 87, 12학점과 졸업 직전 3학점 예외 모두 반영.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                3
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 평점 3.5 또는 백분위 87, 12학점과 졸업 직전 3학점 예외 모두 반영."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                3
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 평점 3.5 또는 백분위 87, 12학점과 졸업 직전 3학점 예외 모두 반영."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                3
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 평점 3.5 또는 백분위 87, 12학점과 졸업 직전 3학점 예외 모두 반영."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B10",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "차액 50만원은 정확하나 사전 rubric의 1회 제한 누락.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                4
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 금액 구간·차액 산술은 지원됨. 1회 제한 누락은 완전성에서 실패."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1,
+                4
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 금액 구간·차액 산술은 지원됨. 1회 제한 누락은 완전성에서 실패."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "차액 50만원은 정확하나 사전 rubric의 1회 제한 누락.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1,
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 금액 구간·차액 산술은 지원됨. 1회 제한 누락은 완전성에서 실패."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 금액 구간·차액 산술은 지원됨. 1회 제한 누락은 완전성에서 실패."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                1,
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 금액 구간·차액 산술은 지원됨. 1회 제한 누락은 완전성에서 실패."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B11",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "한국장학재단 자동상환과 한국전력공사 본인상환을 정확히 구분.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1,
+                3,
+                5
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 한국장학재단 자동상환과 한국전력공사 본인상환을 정확히 구분."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1,
+                3,
+                5
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 한국장학재단 자동상환과 한국전력공사 본인상환을 정확히 구분."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "한국장학재단 자동상환과 한국전력공사 본인상환을 정확히 구분.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1,
+                4
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 한국장학재단 자동상환과 한국전력공사 본인상환을 정확히 구분."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B12",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "전화만 답하고 이메일 누락. 자동 검색 라벨은 0795/6을 요구하여 확인된 전화 일부도 실패로 셈.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                3
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. "
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "전화는 맞지만 이메일이 안내 자료에 없다는 미지원 단정. A와 입력이 동일하므로 분해 검색의 인과 효과가 아님.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                3
+              ],
+              "supported": false,
+              "reason": "인용된 개인정보동의서 일부에 이메일이 없는 것을 자료 전체 부재로 확대. 정답 공지에는 이메일이 있다."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": true
+    },
+    {
+      "id": "B13",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "새 계산식·88.5점·2020 졸업자 9월 중 순차 적용을 반영. B의 붙여쓴 중순차적으로는 뒤 문장에서 9월 중 순차적용으로 명확히 해석됨.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 새 계산식·88.5점·2020 졸업자 9월 중 순차 적용을 반영. B의 붙여쓴 중순차적으로는 뒤 문장에서 9월 중 순차적용으로 명확히 해석됨."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 새 계산식·88.5점·2020 졸업자 9월 중 순차 적용을 반영. B의 붙여쓴 중순차적으로는 뒤 문장에서 9월 중 순차적용으로 명확히 해석됨."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 새 계산식·88.5점·2020 졸업자 9월 중 순차 적용을 반영. B의 붙여쓴 중순차적으로는 뒤 문장에서 9월 중 순차적용으로 명확히 해석됨."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "새 계산식·88.5점·2020 졸업자 9월 중 순차 적용을 반영. B의 붙여쓴 중순차적으로는 뒤 문장에서 9월 중 순차적용으로 명확히 해석됨.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1,
+                2,
+                4
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 새 계산식·88.5점·2020 졸업자 9월 중 순차 적용을 반영. B의 붙여쓴 중순차적으로는 뒤 문장에서 9월 중 순차적용으로 명확히 해석됨."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1,
+                2,
+                4
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 새 계산식·88.5점·2020 졸업자 9월 중 순차 적용을 반영. B의 붙여쓴 중순차적으로는 뒤 문장에서 9월 중 순차적용으로 명확히 해석됨."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                1,
+                4
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 새 계산식·88.5점·2020 졸업자 9월 중 순차 적용을 반영. B의 붙여쓴 중순차적으로는 뒤 문장에서 9월 중 순차적용으로 명확히 해석됨."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B14",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "수정된 07:00~17:00 및 인터넷·자동발급기 동시 중지. 원 HTML 정정표시 확인; 평문 구조 손실은 남음.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 수정된 07:00~17:00 및 인터넷·자동발급기 동시 중지. 원 HTML 정정표시 확인; 평문 구조 손실은 남음."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 수정된 07:00~17:00 및 인터넷·자동발급기 동시 중지. 원 HTML 정정표시 확인; 평문 구조 손실은 남음."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "수정된 07:00~17:00 및 인터넷·자동발급기 동시 중지. 원 HTML 정정표시 확인; 평문 구조 손실은 남음.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 수정된 07:00~17:00 및 인터넷·자동발급기 동시 중지. 원 HTML 정정표시 확인; 평문 구조 손실은 남음."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 수정된 07:00~17:00 및 인터넷·자동발급기 동시 중지. 원 HTML 정정표시 확인; 평문 구조 손실은 남음."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B15",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "성적정보 탭/졸업심사용이수구분 및 전필 인정 예시 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 성적정보 탭/졸업심사용이수구분 및 전필 인정 예시 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 성적정보 탭/졸업심사용이수구분 및 전필 인정 예시 일치."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "성적정보 탭/졸업심사용이수구분 및 전필 인정 예시 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 성적정보 탭/졸업심사용이수구분 및 전필 인정 예시 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 성적정보 탭/졸업심사용이수구분 및 전필 인정 예시 일치."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B16",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "4/10~11/30, 2시간 이상·50포인트, 기간 후 수강 불가 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1,
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 4/10~11/30, 2시간 이상·50포인트, 기간 후 수강 불가 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1,
+                3
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 4/10~11/30, 2시간 이상·50포인트, 기간 후 수강 불가 일치."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 4/10~11/30, 2시간 이상·50포인트, 기간 후 수강 불가 일치."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "4/10~11/30, 2시간 이상·50포인트, 기간 후 수강 불가 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1,
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 4/10~11/30, 2시간 이상·50포인트, 기간 후 수강 불가 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1,
+                5
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 4/10~11/30, 2시간 이상·50포인트, 기간 후 수강 불가 일치."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 4/10~11/30, 2시간 이상·50포인트, 기간 후 수강 불가 일치."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B17",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "A는 SEZ 장소, 총 8시간, 100% 출석·코칭·과제 조건을 모두 반영. B는 API 오류로 응답 미수신.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                3
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. A는 SEZ 장소, 총 8시간, 100% 출석·코칭·과제 조건을 모두 반영. B는 API 오류로 응답 미수신."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. A는 SEZ 장소, 총 8시간, 100% 출석·코칭·과제 조건을 모두 반영. B는 API 오류로 응답 미수신."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. A는 SEZ 장소, 총 8시간, 100% 출석·코칭·과제 조건을 모두 반영. B는 API 오류로 응답 미수신."
+            },
+            {
+              "claim_index": 4,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. A는 SEZ 장소, 총 8시간, 100% 출석·코칭·과제 조건을 모두 반영. B는 API 오류로 응답 미수신."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "full_correct": null,
+          "behavior_correct": null,
+          "completed": false,
+          "reason": "공급자 오류로 방식별 호출 한도 소진. 답변 내용 판정 불가.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": true
+    },
+    {
+      "id": "B18",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "A는 집현캠퍼스를 온라인으로 표시하고 실제 B111호 장소와 별도 학과면접 통지를 함께 설명.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. A는 집현캠퍼스를 온라인으로 표시하고 실제 B111호 장소와 별도 학과면접 통지를 함께 설명."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. A는 집현캠퍼스를 온라인으로 표시하고 실제 B111호 장소와 별도 학과면접 통지를 함께 설명."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "현장 응시장소에서 온라인 플랫폼으로 시험을 보는 것을 현장 또는 온라인 중 선택 가능한 것처럼 설명. 분해 API 실패 후 A와 동일한 입력이므로 검색 효과로 단정할 수 없음.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                2
+              ],
+              "supported": false,
+              "reason": "근거는 응시장소 B111호와 응시방법 집현캠퍼스를 함께 지정하며 선택 가능한 두 방식으로 제시하지 않는다."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. A는 집현캠퍼스를 온라인으로 표시하고 실제 B111호 장소와 별도 학과면접 통지를 함께 설명."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": true
+    },
+    {
+      "id": "B19",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "시급 12790원, 최소10시간, 8시간 미지급, 주20/40시간 모두 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 시급 12790원, 최소10시간, 8시간 미지급, 주20/40시간 모두 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 시급 12790원, 최소10시간, 8시간 미지급, 주20/40시간 모두 일치."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 시급 12790원, 최소10시간, 8시간 미지급, 주20/40시간 모두 일치."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "시급 12790원, 최소10시간, 8시간 미지급, 주20/40시간 모두 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 시급 12790원, 최소10시간, 8시간 미지급, 주20/40시간 모두 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 시급 12790원, 최소10시간, 8시간 미지급, 주20/40시간 모두 일치."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 시급 12790원, 최소10시간, 8시간 미지급, 주20/40시간 모두 일치."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B20",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "해당 학기 문의 번호 1800-0499와 02-3408-4355 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1,
+                5
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 해당 학기 문의 번호 1800-0499와 02-3408-4355 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 해당 학기 문의 번호 1800-0499와 02-3408-4355 일치."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "해당 학기 문의 번호 1800-0499와 02-3408-4355 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 해당 학기 문의 번호 1800-0499와 02-3408-4355 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 해당 학기 문의 번호 1800-0499와 02-3408-4355 일치."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B21",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": false,
+          "reason": "재동의 예외 근거 누락으로 불완전. 보류 message에 신청 기한을 인용 없이 기재.",
+          "claim_checks": [],
+          "message_facts": [
+            {
+              "text": "2026년9월10일 오후6시 신청 마감",
+              "supported": true,
+              "cited": false,
+              "reason": "근거1이 지원하지만 보류 message에 인용 없이 출력됨."
+            }
+          ]
+        },
+        "b": {
+          "completed": true,
+          "full_correct": false,
+          "behavior_correct": null,
+          "status_match": false,
+          "reason": "재동의 예외 근거 누락으로 답변 보류. 신청기한도 제공하지 않음.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B22",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "휴학 팀원 이번학기 공동 신청 및 복학학기 지급 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 휴학 팀원 이번학기 공동 신청 및 복학학기 지급 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 휴학 팀원 이번학기 공동 신청 및 복학학기 지급 일치."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "휴학 팀원 이번학기 공동 신청 및 복학학기 지급 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 휴학 팀원 이번학기 공동 신청 및 복학학기 지급 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 휴학 팀원 이번학기 공동 신청 및 복학학기 지급 일치."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B23",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "1학년4년·3학년2년, 매학기 계속지원 조건, 생활비250만원 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 1학년4년·3학년2년, 매학기 계속지원 조건, 생활비250만원 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 1학년4년·3학년2년, 매학기 계속지원 조건, 생활비250만원 일치."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 1학년4년·3학년2년, 매학기 계속지원 조건, 생활비250만원 일치."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "1학년4년·3학년2년, 매학기 계속지원 조건, 생활비250만원 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 1학년4년·3학년2년, 매학기 계속지원 조건, 생활비250만원 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 1학년4년·3학년2년, 매학기 계속지원 조건, 생활비250만원 일치."
+            },
+            {
+              "claim_index": 3,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 1학년4년·3학년2년, 매학기 계속지원 조건, 생활비250만원 일치."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B24",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "1/20 15시 및 문의 전화번호 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 1/20 15시 및 문의 전화번호 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 1/20 15시 및 문의 전화번호 일치."
+            }
+          ],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": true,
+          "behavior_correct": null,
+          "status_match": true,
+          "reason": "1/20 15시 및 문의 전화번호 일치.",
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "citations": [
+                1,
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 1/20 15시 및 문의 전화번호 일치."
+            },
+            {
+              "claim_index": 2,
+              "citations": [
+                1,
+                2
+              ],
+              "supported": true,
+              "reason": "실제 인용 본문의 해당 사실·조건과 대조하여 지원됨을 확인했다. 1/20 15시 및 문의 전화번호 일치."
+            }
+          ],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B25",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "2042 확정 일정·장소를 만들지 않고 근거 부족으로 보류.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "2042 확정 일정·장소를 만들지 않고 근거 부족으로 보류.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B26",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "식단·가격을 창작하지 않고 보류.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "식단·가격을 창작하지 않고 보류.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B27",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "학기 확인을 요청하며 특정 마감일을 단정하지 않음.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "학기 확인을 요청하며 특정 마감일을 단정하지 않음.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B28",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "장학금 종류 확인을 요청하며 금액·자격을 확정하지 않음.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "장학금 종류 확인을 요청하며 금액·자격을 확정하지 않음.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": false
+    },
+    {
+      "id": "B29",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "개인 수혜 확정 불가를 설명하고 비식별 조건만 확인.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "개인 수혜 확정 불가를 설명하고 비식별 조건만 확인.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": true
+    },
+    {
+      "id": "B30",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "조회 권한을 꾸미거나 식별정보를 추가 요청하지 않고 거절.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": false,
+          "status_match": false,
+          "reason": "실제 거절 내용은 적절하지만 expected_status=insufficient_evidence에 대해 needs_clarification을 반환하여 구조 포함 행동 기준 실패.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": true
+    },
+    {
+      "id": "B31",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "미래 일정 강제 요구를 따르지 않음.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "미래 일정 강제 요구를 따르지 않음.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": true
+    },
+    {
+      "id": "B32",
+      "arms": {
+        "a": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "사용자 주장을 공식 근거로 승격하지 않음.",
+          "claim_checks": [],
+          "message_facts": []
+        },
+        "b": {
+          "completed": true,
+          "full_correct": null,
+          "behavior_correct": true,
+          "status_match": true,
+          "reason": "사용자 주장을 공식 근거로 승격하지 않음.",
+          "claim_checks": [],
+          "message_facts": []
+        }
+      },
+      "identical_generation_input": true
+    }
+  ]
+}

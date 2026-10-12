@@ -1,0 +1,602 @@
+{
+  "report_sha256": "f4752acf0309821928f12f9b8d1020864fa50d4161289c6de245d7d3aa092d76",
+  "reviewer": "assistant",
+  "human_approved": false,
+  "results": [
+    {
+      "id": "B01",
+      "answer_correct": false,
+      "behavior_correct": null,
+      "reason": "필수 근거가 Top5에 없어 자료 부족을 명시하고 보류했다. 근거 준수 행동은 적절하지만 답이 있는 질문의 완전한 답변으로는 실패다.",
+      "failure_types": [
+        "retrieval_miss",
+        "abstention"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B02",
+      "answer_correct": false,
+      "behavior_correct": null,
+      "reason": "필수 근거가 Top5에 없어 자료 부족을 명시하고 보류했다. 근거 준수 행동은 적절하지만 답이 있는 질문의 완전한 답변으로는 실패다.",
+      "failure_types": [
+        "retrieval_miss",
+        "abstention"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B03",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B04",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B05",
+      "answer_correct": false,
+      "behavior_correct": null,
+      "reason": "두 응답 모두 JSON 검증을 통과하지 못해 시스템이 보류 메시지를 반환했다. 질문에 대한 완전한 답변이 아니다. 추론 토큰이 출력 한도 대부분을 차지했으나 원시 종료 사유는 저장되지 않아 원인을 단정하지 않는다.",
+      "failure_types": [
+        "generation_validation_failed"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B06",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B07",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "#2의 300만원과 #1의 타 재단 생활비 수혜자 지원 가능·차순위 심사를 모두 정확히 답했다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "text": "2025년 유한재단 결손 및 다문화 가정 장학금의 장학금액은 생활비성 장학금 3백만 원이야.",
+          "citations": [
+            2
+          ],
+          "supported": true,
+          "reason": "#2에 생활비성 장학금3백만원이 명시돼 있다."
+        },
+        {
+          "claim_index": 2,
+          "text": "다른 외부재단에서 생활비를 이미 받았더라도 지원할 수 있으며, 이 경우 차순위로 심사될 예정이야.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1에 타재단 생활비 수혜자도 지원가능하며 차순위심사한다고 명시돼 있다."
+        }
+      ],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B08",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "#1에 따라 사회적배려계층 자격 유지와 2025-1 백분위70점 이상이 모두 필요함을 답했다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "text": "2025년 2학기 수혜를 위해 유지해야 하는 두 조건은 사회적배려계층 자격 유지와 2025년 1학기 백분위 성적 70점 이상 취득이야.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1에 사회적배려계층 유지와2025-1 백분위70점 이상이 명시돼 있다."
+        },
+        {
+          "claim_index": 2,
+          "text": "둘 중 하나만 만족해서는 안 되며, 두 기준이 미충족되면 장학금 지원이 중단되고 장학생 자격이 상실돼.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1의 두 수혜기준을 모두 요구하는 문맥과 미충족 시 지원중단·자격상실이 지원한다."
+        }
+      ],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B09",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "#2에 따라 평점3.5 또는 백분위87의 OR 조건, 12학점 및 졸업 직전3학점 예외를 답했다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "text": "2025년 국가이공계 재학중우수자(2년지원) 장학금의 계속지원 성적 기준은 직전학기 평점 3.5 이상 또는 백분위 87점 이상으로, 둘 다 넘을 필요 없이 둘 중 하나만 충족하면 돼.",
+          "citations": [
+            2
+          ],
+          "supported": true,
+          "reason": "#2의 평점3.5 이상 또는 백분위87점 이상과 일치한다."
+        },
+        {
+          "claim_index": 2,
+          "text": "이수학점 기준은 직전학기 12학점 이상 이수해야 하지만, 졸업학기 직전학기인 경우에는 예외로 3학점 이상만 이수하면 돼.",
+          "citations": [
+            2
+          ],
+          "supported": true,
+          "reason": "#2에12학점 및 졸업학기 직전3학점 예외가 있다."
+        }
+      ],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B10",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "#1과 #4로 추가50만원을 정확히 계산했다. 자발적으로 덧붙인 1회 제한도 #1에 있으며, 이 제한 언급은 정답 필수조건이 아니다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "text": "150만원을 전액 다시 받는 것이 아니라, 상위구간 금액과의 차액인 50만원을 추가로 받아.",
+          "citations": [
+            1,
+            4
+          ],
+          "supported": true,
+          "reason": "#1의차액지급과 #4의100만원·150만원으로50만원이 도출된다."
+        },
+        {
+          "claim_index": 2,
+          "text": "2025학년도 2학기 어학우수장학금 기준 영어 비전공자의 TOEIC 장학금은 900점 이상~950점 미만이 100만원, 950점 이상이 150만원이야.",
+          "citations": [
+            4
+          ],
+          "supported": true,
+          "reason": "#4의비전공자 TOEIC 구간별 금액과 일치한다."
+        },
+        {
+          "claim_index": 3,
+          "text": "하위점수구간 취득 후 상위점수구간을 취득했을 때 차액 지급은 1회에 한해 적용돼.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1에차액지급은1회에 한한다는 규정이 있다."
+        }
+      ],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B11",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "#1에 따라 한국장학재단 자동상환과 한국전력공사 학생 직접상환을 구분했다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "text": "2025년 2학기 국가장학금 및 에델바이스Ⅱ 지급 안내에 따르면 두 기관 대출의 상환 방식은 서로 달라.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1은한국장학재단 자동상환과 나머지기관 직접상환을 구분한다."
+        },
+        {
+          "claim_index": 2,
+          "text": "한국장학재단 학자금대출은 대출금으로 자동상환 처리돼.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1에한국장학재단 학자금대출 자동상환처리가 명시돼 있다."
+        },
+        {
+          "claim_index": 3,
+          "text": "한국전력공사 대출은 자동상환되지 않고 본인이 직접 상환 처리해야 해.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1의직접상환 기관목록에한국전력공사가 있다."
+        }
+      ],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B12",
+      "answer_correct": false,
+      "behavior_correct": null,
+      "reason": "두 응답 모두 JSON 검증을 통과하지 못해 시스템이 보류 메시지를 반환했다. 질문에 대한 완전한 답변이 아니다. 추론 토큰이 출력 한도 대부분을 차지했으나 원시 종료 사유는 저장되지 않아 원인을 단정하지 않는다.",
+      "failure_types": [
+        "generation_validation_failed"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B13",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "#1의 변경 후 공식 (GPA×10)+55, 88.5점, 2021년 이전 졸업자9월 순차 적용을 답했다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "text": "개정된 평점평균 백분율 환산 계산식은 (평점평균 * 10) + 55야.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1의변경후계산식과 일치한다."
+        },
+        {
+          "claim_index": 2,
+          "text": "개정 후 평점 3.35의 환산점수는 88.5점으로 바뀌어.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1의개정후예시88.5와 일치한다."
+        },
+        {
+          "claim_index": 3,
+          "text": "2021년 이전 졸업자에 해당하는 2020년 졸업자는 9월 중 순차적으로 적용될 예정이야.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1에2021년이전졸업자9월중순차적용이 있어2020년졸업자에도 적용된다."
+        }
+      ],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B14",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "#1의 수정된07:00~17:00과 인터넷·자동발급기 모두 중지를 답했다. 원 HTML 수정값과 일치한다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "text": "시간이 정정된 2026년 5월 16일 공지의 최종 중지 시간은 07:00부터 17:00까지야.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1의두시간 중 후행 수정값07:00~17:00을 선택했으며 원HTML 취소선·수정값과 일치한다."
+        },
+        {
+          "claim_index": 2,
+          "text": "인터넷 증명서 직접출력뿐만 아니라 학생회관 지하 1층의 자동발급기도 함께 사용이 일시 중지돼.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1에인터넷직접출력 및 학생회관지하1층자동발급기의중지가 명시돼 있다."
+        }
+      ],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B15",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "#1의 성적정보 탭·졸업심사용이수구분과 #2의 전필 인정 예시를 합쳐 정확히 답했다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "text": "과목이수점검 화면의 '성적정보' 탭에 추가된 '졸업심사용이수구분' 컬럼에서 확인한다.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1에성적정보탭의졸업심사용이수구분컬럼추가가 있다."
+        },
+        {
+          "claim_index": 2,
+          "text": "공지의 예시에서는 수강 당시에 전선으로 수강했더라도 졸업심사용 이수구분에는 전필 학점으로 인정되어 표시된다.",
+          "citations": [
+            2
+          ],
+          "supported": true,
+          "reason": "#2의예시2에입학당시전필→수강당시전선인과목이졸업심사에서전필로인정됨이 있다."
+        }
+      ],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B16",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "#1의11월30일, 2시간 이상·50포인트, 종료 후 추가수강 불가를 정확히 답했다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "text": "2026학년도 학부생 성폭력·가정폭력 예방교육은 2026년 11월 30일까지 들을 수 있어.",
+          "citations": [
+            1,
+            2
+          ],
+          "supported": true,
+          "reason": "인용집합 중 #1에2026년11월30일기한이 있다."
+        },
+        {
+          "claim_index": 2,
+          "text": "비교과 마일리지 50포인트를 받으려면 전체 교육을 2시간 이상 수강해야 해.",
+          "citations": [
+            1,
+            3
+          ],
+          "supported": true,
+          "reason": "인용집합 중 #1에전체교육2시간이상·50포인트가 있다."
+        },
+        {
+          "claim_index": 3,
+          "text": "정해진 기간이 종료된 후에는 추가 수강 및 이수가 불가능해.",
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "#1에기간종료후추가수강및이수불가가 있다."
+        }
+      ],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B17",
+      "answer_correct": true,
+      "behavior_correct": null,
+      "reason": "#3의광개토관 지하1층SEZ와 #2의8시간·100%출석·코칭·참관·과제 조건을 답했다.",
+      "failure_types": [],
+      "claim_checks": [
+        {
+          "claim_index": 1,
+          "text": "광개토관 지하 1층 SEZ(Sejong English Zone, 카페 딕셔너리 지나 왼편에 위치) 강의실에서 진행해.",
+          "citations": [
+            3
+          ],
+          "supported": true,
+          "reason": "#3에광개토관지하1층SEZ및카페딕셔너리왼편위치가 있다."
+        },
+        {
+          "claim_index": 2,
+          "text": "총 8시간 세션에 100% 출석하고, 회당 30분의 1:1 코칭 성실 참여 및 나머지 시간 참관, 부여된 과제 제출을 완료해야 수료할 수 있어.",
+          "citations": [
+            2
+          ],
+          "supported": true,
+          "reason": "#2의운영방식과수료조건에8시간100%출석, 회당30분코칭, 나머지시간참관, 과제제출이 있다."
+        }
+      ],
+      "message_fact_leak": false,
+      "review_state": "reviewed"
+    },
+    {
+      "id": "B18",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B19",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B20",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B21",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B22",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B23",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B24",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B25",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B26",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B27",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B28",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B29",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B30",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B31",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    },
+    {
+      "id": "B32",
+      "answer_correct": null,
+      "behavior_correct": null,
+      "reason": "공급자 API 오류로 모델 답변을 확보하지 못했다. 실제 답변의 의미·행동 정확도는 미검토이며 전체 성공률에서는 미성공으로 포함한다.",
+      "failure_types": [
+        "provider_error"
+      ],
+      "claim_checks": [],
+      "message_fact_leak": false,
+      "review_state": "not_available"
+    }
+  ]
+}

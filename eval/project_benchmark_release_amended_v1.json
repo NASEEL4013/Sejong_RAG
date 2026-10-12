@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "project_benchmark_v1",
+  "finalized_date": "2026-10-11",
+  "date_timezone": "Asia/Seoul",
+  "status": "learning_cli_project_evaluated_and_documented",
+  "learning_scope_complete": true,
+  "deployment_ready": false,
+  "human_approved": false,
+  "reviewer_role": "assistant",
+  "scope": {
+    "years": [
+      2025,
+      2026
+    ],
+    "selected_chunk_count": 33734,
+    "questions": 32,
+    "answerable": 24,
+    "behavior": 8,
+    "gold_notice_ids": 24,
+    "overlap_with_prior_gold_notice_ids": 0,
+    "gold_source_format": "HTML notice bodies",
+    "excluded": [
+      "Web UI",
+      "Public deployment",
+      "Personal academic-record access",
+      "Live school-data updates"
+    ],
+    "production_code_changed_after_execution": false
+  },
+  "settings": {
+    "model": "gemini-3.5-flash-lite",
+    "embedding_model": "intfloat/multilingual-e5-small",
+    "baseline_strategy": "vector",
+    "current_strategy": "vector_context",
+    "top_k": 5,
+    "candidate_k": 100,
+    "max_bundle_tokens": 512,
+    "total_tokens": 2200,
+    "max_output_tokens": 1600,
+    "max_attempts_per_case": 2,
+    "max_api_calls": 64
+  },
+  "strict_retrieval": {
+    "definition": "All predeclared answer concepts must match a single evidence body bundle in a relevant notice scope; distributed multi-bundle answers can be false negatives.",
+    "baseline": {
+      "questions": 24,
+      "hit_at_1": 0.3333333333333333,
+      "hit_at_3": 0.4583333333333333,
+      "hit_at_5": 0.4583333333333333,
+      "mrr_at_5": 0.38888888888888884
+    },
+    "current": {
+      "questions": 24,
+      "hit_at_1": 0.5,
+      "hit_at_3": 0.625,
+      "hit_at_5": 0.625,
+      "mrr_at_5": 0.5555555555555555
+    },
+    "newly_successful_case_ids": [
+      "B13",
+      "B14",
+      "B16",
+      "B24"
+    ],
+    "lost_case_ids": []
+  },
+  "reviewed_generation": {
+    "answerable_questions": 24,
+    "correct_answers": 19,
+    "answer_accuracy": 0.7916666666666666,
+    "answered_questions": 20,
+    "answer_coverage": 0.8333333333333334,
+    "selective_accuracy": 0.95,
+    "behavior_questions": 8,
+    "correct_behaviors": 8,
+    "behavior_accuracy": 1,
+    "generated_claims": 47,
+    "supported_claims": 46,
+    "claim_support": 0.9787234042553191,
+    "claims_with_valid_citations": 47,
+    "claim_citation_coverage": 1,
+    "failed_case_ids": [
+      "B01",
+      "B02",
+      "B05",
+      "B12",
+      "B21"
+    ],
+    "message_fact_leak_count": 1,
+    "message_fact_leak_case_ids": [
+      "B21"
+    ],
+    "message_fact_leak_note": "One factual deadline appears uncited outside the claims array; it is not included in the claim-support denominator."
+  },
+  "automatic_proxy": {
+    "passed": 21,
+    "total": 32,
+    "pass_rate": 0.65625,
+    "is_semantic_accuracy": false
+  },
+  "reference_targets": {
+    "thresholds": {
+      "context_hit_at_5": 0.8,
+      "answer_accuracy": 0.8,
+      "claim_support": 0.95,
+      "behavior_accuracy": 1
+    },
+    "outcomes": {
+      "context_hit_at_5": false,
+      "retrieval_not_below_baseline": true,
+      "answer_accuracy": false,
+      "claim_support": true,
+      "behavior": true,
+      "complete_live_run": true,
+      "planned_distribution": true
+    },
+    "all_met": false,
+    "is_deployment_gate": false
+  },
+  "operation": {
+    "completed_cases": 32,
+    "api_calls": 33,
+    "returned_responses": 32,
+    "failed_calls": 1,
+    "original_failure_type": "ClientError",
+    "original_failure_cause": "Unknown: detailed provider code was not captured.",
+    "resumed_case_ids": [
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26",
+      "B27",
+      "B28",
+      "B29",
+      "B30",
+      "B31",
+      "B32"
+    ],
+    "completed_cases_regenerated": 0,
+    "observed_usage": {
+      "prompt_tokens": 85623,
+      "output_tokens": 3906,
+      "total_tokens": 89529,
+      "missing_usage_calls": 1,
+      "complete": false
+    },
+    "latency_ms": {
+      "initial_load": 19677.29532858357,
+      "current_retrieval_with_embedding": {
+        "p50": 83.56310497038066,
+        "p95": 95.7291079685092
+      },
+      "retrieval_plus_generation": {
+        "p50": 1649.3203891441226,
+        "p95": 2186.313739465549
+      }
+    },
+    "latency_note": "Warm single-process measurements. CLI startup loading and between-run investigation/backoff are excluded from per-question latency; active failed-call time is included."
+  },
+  "verification": {
+    "test_command": ".venv/bin/python -m pytest -q",
+    "tests_passed": 456,
+    "frozen_inputs_and_code_integrity": true,
+    "original_completed_generations_preserved": true
+  },
+  "sha256": {
+    "eval/project_benchmark_v1.jsonl": "f1a8585ab37d57a69ce05dcd53cd1bfe129f5c01269e8c3cc44bb51134c3200e",
+    "eval/project_benchmark_protocol_v1.json": "0a46e3042a7461b60c213bb3e3cca5b2b1727927130c447c500482b325e64816",
+    "eval/project_benchmark_dataset_v1.json": "b5403bd85db701efdad36fbc03cc2d898bf1b2dc7168e6722e351f02eadfcd40",
+    "eval/project_benchmark_review_a_v1.json": "6fb348d3533ba37d0012788bb730a4e474b4f97fa5cc7bdd2870707dc7c36890",
+    "eval/project_benchmark_review_b_v1.json": "185090ec0078756baa24d393a8e9f17e214d489617ab0c0473af14ad12c6e2e0",
+    "data/processed/project-benchmark-v1/report.json": "4cd056c6f59a0653dab28756fe3cf49799b4c3fd65822a3d86277a14178982fa",
+    "data/processed/project-benchmark-v1-resumed/report.json": "98d8ee1ec7664e6c24737023b7f987fa586dd3c8dc01bc5c01b121ec2868d11b",
+    "data/processed/project-benchmark-v1-reviewed/reviewed-report.json": "b45e39042d2cf3d577d31cfc19820fcd0f09927051d4fa2aee6190bf9f53b245",
+    "data/index/sejong-2025-2026-selected-e5-small.npz": "6c0abe238ee35effc784d24793675be5c814db18773aa477d15918ac11641570",
+    "src/sejong_rag/selected_search.py": "d4f6cfb1c4eea6567d6ccfe7cabbe11f70c7818ef44cf7f1b547256252cd6656",
+    "src/sejong_rag/selected_generation.py": "2d1f9a86d0ff2a379c9c67491f4e870de22d71b703ca56dea811289cf36a7e6b",
+    "src/sejong_rag/ask_selected.py": "454e5681e128fb1ac1715b4ab82fdcfc8073416a87a0ad4af221c225e557f141",
+    "scripts/resume_frozen_benchmark.py": "509057aded2f6fecd8551ce681784e656c10f865ea37e63d76a5351c122b735f"
+  },
+  "local_artifacts": {
+    "final_answers_and_evidence": "data/processed/project-benchmark-v1-resumed/index.html",
+    "initial_freeze": "data/processed/project-benchmark-v1/frozen.json",
+    "resume_freeze": "data/processed/project-benchmark-v1-resumed/resume-frozen.json",
+    "note": "data/processed artifacts are gitignored. Preserve this workspace's data and local model to reproduce the same inputs. All original/source/request/code hashes are in the frozen and final reports."
+  },
+  "limitations": [
+    "Small assistant-authored and assistant-reviewed project-specific benchmark, not human-approved or a public/population accuracy estimate.",
+    "Gold notice IDs are disjoint from prior evaluation, but similar subjects and corpus text remain; behavioral scenario families were previously exercised.",
+    "All gold originals are HTML notice bodies. Attachment-only answers and OCR extraction accuracy are not independently evaluated.",
+    "Strict single-bundle phrase matching can miss valid evidence distributed across bundles or equivalent wording.",
+    "B10 is correct under the user-amended rubric: the question asks the additional amount, not the one-time limit.",
+    "Claim-support and valid-citation metrics do not cover uncited facts in the message field; B21 exposes this blind spot.",
+    "Observed API usage excludes unknown usage from one failed call; latency is not a production SLA.",
+    "Only current retrieval generated answers; no baseline generation-accuracy improvement claim is supported.",
+    "External-model output can vary on rerun. Further tuning on these results requires a new held-out test set."
+  ],
+  "amendment_source": "eval/project_benchmark_amendments_v1.json",
+  "amended_date": "2026-10-12"
+}

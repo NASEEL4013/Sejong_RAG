@@ -10,6 +10,10 @@
 4. [정확도·버전 정책](ACCURACY_AND_VERSION_POLICY.md): 최신 문서와 입학연도 규칙
 5. [프로젝트 최종 벤치마크](PROJECT_BENCHMARK.md): 현재 경로의 평가 기준·결과·한계
 
+## 추가 실험
+
+- [복합 질문 분해 검색 A/B 실험](DECOMPOSITION_EXPERIMENT.md): 2026-10-12 개발·새 검증 비교와 회귀 분석; 기본 경로에는 미적용
+
 ## 현재 시스템 설명
 
 - [2025·2026 선별 인덱스 검색 개선](EMBEDDING_BASELINE.md): 최신 검색 경로와 전략 비교

@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "status": "user_confirmed_example",
+  "scope": "A document only; example for future common-rule implementation",
+  "source_record_id": "notice3-805912-body",
+  "source_text_sha256": "a661b8e1c78e7da228f56711faa8ea7b21ddad7b3981db83962e963b0ab3e001",
+  "document_title": "2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내",
+  "rules": [
+    "제목을 모든 검색용 청크에 포함한다.",
+    "대상·교부일자·교부처·방문시간·본인 수령 조건을 각각 검색한다.",
+    "교부처·방문시간·본인 수령 조건 중 하나가 검색되면 세 항목 전체를 한 번씩 전달한다.",
+    "정보가 중복되는 도입문은 이 예시의 검색 청크에서 제외하되 원문은 보존한다."
+  ],
+  "facts": [
+    {
+      "id": "A3",
+      "label": "대상",
+      "source_span": {
+        "record_id": "notice3-805912-body",
+        "start": 107,
+        "end": 138
+      },
+      "text": "1.\n대 상\n: 2025\n년\n2\n월 교직이수 졸업예정자\n"
+    },
+    {
+      "id": "A4",
+      "label": "교부일자",
+      "source_span": {
+        "record_id": "notice3-805912-body",
+        "start": 138,
+        "end": 169
+      },
+      "text": "2.\n교부일자\n: 2025. 02. 14(\n금\n)\n부터\n"
+    },
+    {
+      "id": "A5",
+      "label": "교부처",
+      "source_span": {
+        "record_id": "notice3-805912-body",
+        "start": 169,
+        "end": 203
+      },
+      "text": "3.\n교 부 처\n:\n교무처 교직과\n(\n학생회관\n205\n호\n)\n"
+    },
+    {
+      "id": "A6",
+      "label": "방문시간",
+      "source_span": {
+        "record_id": "notice3-805912-body",
+        "start": 203,
+        "end": 238
+      },
+      "text": "※\n사무실 방문시간\n:\n오전\n10\n시\n~\n오후\n4\n시\n30\n분\n"
+    },
+    {
+      "id": "A7",
+      "label": "본인 수령 조건",
+      "source_span": {
+        "record_id": "notice3-805912-body",
+        "start": 238,
+        "end": 280
+      },
+      "text": "*\n본인확인 가능한\n신분증\n지참 후 본인이 방문하여 수령하시기 바랍니다\n.\n"
+    }
+  ],
+  "chunks": [
+    {
+      "id": "A3",
+      "retrieval_text": "문서 제목: 2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내\n\n1.\n대 상\n: 2025\n년\n2\n월 교직이수 졸업예정자\n",
+      "retrieval_source_spans": [
+        {
+          "record_id": "notice3-805912-body",
+          "start": 107,
+          "end": 138
+        }
+      ],
+      "context_fact_ids": [
+        "A3"
+      ],
+      "context_text": "문서 제목: 2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내\n\n1.\n대 상\n: 2025\n년\n2\n월 교직이수 졸업예정자\n",
+      "context_source_spans": [
+        {
+          "record_id": "notice3-805912-body",
+          "start": 107,
+          "end": 138
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "retrieval_text": "문서 제목: 2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내\n\n2.\n교부일자\n: 2025. 02. 14(\n금\n)\n부터\n",
+      "retrieval_source_spans": [
+        {
+          "record_id": "notice3-805912-body",
+          "start": 138,
+          "end": 169
+        }
+      ],
+      "context_fact_ids": [
+        "A4"
+      ],
+      "context_text": "문서 제목: 2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내\n\n2.\n교부일자\n: 2025. 02. 14(\n금\n)\n부터\n",
+      "context_source_spans": [
+        {
+          "record_id": "notice3-805912-body",
+          "start": 138,
+          "end": 169
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "retrieval_text": "문서 제목: 2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내\n\n3.\n교 부 처\n:\n교무처 교직과\n(\n학생회관\n205\n호\n)\n",
+      "retrieval_source_spans": [
+        {
+          "record_id": "notice3-805912-body",
+          "start": 169,
+          "end": 203
+        }
+      ],
+      "context_fact_ids": [
+        "A5",
+        "A6",
+        "A7"
+      ],
+      "context_text": "문서 제목: 2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내\n\n3.\n교 부 처\n:\n교무처 교직과\n(\n학생회관\n205\n호\n)\n※\n사무실 방문시간\n:\n오전\n10\n시\n~\n오후\n4\n시\n30\n분\n*\n본인확인 가능한\n신분증\n지참 후 본인이 방문하여 수령하시기 바랍니다\n.\n",
+      "context_source_spans": [
+        {
+          "record_id": "notice3-805912-body",
+          "start": 169,
+          "end": 203
+        },
+        {
+          "record_id": "notice3-805912-body",
+          "start": 203,
+          "end": 238
+        },
+        {
+          "record_id": "notice3-805912-body",
+          "start": 238,
+          "end": 280
+        }
+      ]
+    },
+    {
+      "id": "A6",
+      "retrieval_text": "문서 제목: 2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내\n\n※\n사무실 방문시간\n:\n오전\n10\n시\n~\n오후\n4\n시\n30\n분\n",
+      "retrieval_source_spans": [
+        {
+          "record_id": "notice3-805912-body",
+          "start": 203,
+          "end": 238
+        }
+      ],
+      "context_fact_ids": [
+        "A5",
+        "A6",
+        "A7"
+      ],
+      "context_text": "문서 제목: 2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내\n\n3.\n교 부 처\n:\n교무처 교직과\n(\n학생회관\n205\n호\n)\n※\n사무실 방문시간\n:\n오전\n10\n시\n~\n오후\n4\n시\n30\n분\n*\n본인확인 가능한\n신분증\n지참 후 본인이 방문하여 수령하시기 바랍니다\n.\n",
+      "context_source_spans": [
+        {
+          "record_id": "notice3-805912-body",
+          "start": 169,
+          "end": 203
+        },
+        {
+          "record_id": "notice3-805912-body",
+          "start": 203,
+          "end": 238
+        },
+        {
+          "record_id": "notice3-805912-body",
+          "start": 238,
+          "end": 280
+        }
+      ]
+    },
+    {
+      "id": "A7",
+      "retrieval_text": "문서 제목: 2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내\n\n*\n본인확인 가능한\n신분증\n지참 후 본인이 방문하여 수령하시기 바랍니다\n.\n",
+      "retrieval_source_spans": [
+        {
+          "record_id": "notice3-805912-body",
+          "start": 238,
+          "end": 280
+        }
+      ],
+      "context_fact_ids": [
+        "A5",
+        "A6",
+        "A7"
+      ],
+      "context_text": "문서 제목: 2025년 2월 교직이수 졸업예정자의 교원자격증 교부 안내\n\n3.\n교 부 처\n:\n교무처 교직과\n(\n학생회관\n205\n호\n)\n※\n사무실 방문시간\n:\n오전\n10\n시\n~\n오후\n4\n시\n30\n분\n*\n본인확인 가능한\n신분증\n지참 후 본인이 방문하여 수령하시기 바랍니다\n.\n",
+      "context_source_spans": [
+        {
+          "record_id": "notice3-805912-body",
+          "start": 169,
+          "end": 203
+        },
+        {
+          "record_id": "notice3-805912-body",
+          "start": 203,
+          "end": 238
+        },
+        {
+          "record_id": "notice3-805912-body",
+          "start": 238,
+          "end": 280
+        }
+      ]
+    }
+  ],
+  "production_applied": false
+}

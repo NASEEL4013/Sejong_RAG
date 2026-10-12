@@ -25,7 +25,7 @@ from sejong_rag.prompt_builder import build_messages
 from sejong_rag.vector_search import load_index
 
 DEFAULT_EXPECTATIONS = Path("eval/generation_expectations.jsonl")
-DEFAULT_OUTPUT = Path("data/evaluation/gemini-3.5-flash-lite-answers.jsonl")
+DEFAULT_OUTPUT = Path(f"data/evaluation/{DEFAULT_GENERATION_MODEL}-answers.jsonl")
 
 
 def load_expectations(path: Path) -> dict[str, list[list[str]]]:

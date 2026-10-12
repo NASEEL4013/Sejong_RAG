@@ -1,0 +1,20 @@
+{
+  "benchmark_id": "project_benchmark_v1",
+  "date": "2026-10-12",
+  "authority": "user_requested_correction",
+  "report_sha256": "98d8ee1ec7664e6c24737023b7f987fa586dd3c8dc01bc5c01b121ec2868d11b",
+  "scope": "Original benchmark review; historical frozen evaluations remain preserved.",
+  "results": [
+    {
+      "id": "B10",
+      "answer_correct": true,
+      "failure_types": [],
+      "answer_note": "비전공자 TOEIC 920점은 100만원, 960점은 150만원 구간이다. 차액 지급 대상이라면 150만원을 다시 전액 받는 것이 아니라 차액 50만원을 추가로 받는다.",
+      "rubric": "차액 지급 대상이라는 질문의 전제를 적용한다. 150-100=50만원의 추가 지급을 답하면 정답이다. 질문하지 않은 지급 횟수 제한은 필수 답변 항목이 아니다. 150만원 전액 재지급은 오답이다.",
+      "reason": "사용자 정정: 질문은 차액 지급 대상임을 가정하고 추가 금액을 물었다. 모델은 근거에 따라 차액 50만원을 정확히 답했으므로 정답이다. 지급 횟수를 묻지 않았으므로 1회 제한을 생략했다는 이유로 감점하지 않는다.",
+      "claim_reason_overrides": {
+        "2": "#1의 하위→상위 구간 차액 지급 규칙과 #4의 금액으로 50만원이 도출된다. 질문에서 차액 지급 대상임을 가정했으므로 질문에 필요한 답변과 인용 근거를 충족한다."
+      }
+    }
+  ]
+}

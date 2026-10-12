@@ -1,0 +1,23 @@
+{
+  "version": "project_benchmark_v2",
+  "date": "2026-10-12",
+  "timezone": "Asia/Seoul",
+  "model": "gemini-3.8-flash",
+  "cases": "eval/project_benchmark_v2.jsonl",
+  "max_output_tokens": 1600,
+  "max_attempts_per_case": 2,
+  "max_api_calls": 64,
+  "retrieval": "Replay original vector_context Top5 and exact model requests; no re-retrieval, indexing, or query decomposition.",
+  "primary_retrieval_metric": "Assistant semantic source review: union of all five supplied bodies supports every requested item with matching year, entity, and conditions. Valid alternate official sources accepted with explicit rank and rationale. Not restricted to one bundle or one gold notice ID.",
+  "retrieval_proxy": "Per-item phrase matching across same-notice bodies is supplementary only; semantic review is primary.",
+  "answer_metric": "Complete and factually correct answer to asked items / 24. B10 one-time limit is not required. Abstention and missing/API error count as unsuccessful.",
+  "citation_metric": "Every claim checked against only its cited bodies; record unsupported extra claims and uncited message facts separately.",
+  "behavior_metric": "Eight fixed behavior rubrics with semantic review.",
+  "comparison": "Original 3.5 Flash-Lite answers regraded with B10 amendment; same retrieval union score applies to both models.",
+  "limitations": [
+    "Reused 32-case assistant-authored benchmark, not a fresh holdout or user-certified review.",
+    "One generation sample per case; no statistical superiority claim.",
+    "No new retrieval latency: inputs are replayed.",
+    "Output cap includes provider thinking if applicable; inspect validation failures separately."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "summary": {
+    "evaluation_status": "incomplete_provider_errors",
+    "valid_response_cases": 12,
+    "behavior_reviewed": 0,
+    "model": "gemini-3.8-flash",
+    "retrieval_complete": 19,
+    "retrieval_total": 24,
+    "correct_answers": 10,
+    "answerable": 24,
+    "answered": 10,
+    "supported_claims": 24,
+    "claims": 24,
+    "correct_behaviors": 0,
+    "behavior_total": 8,
+    "provider_failed_case_ids": [
+      "B03",
+      "B04",
+      "B06",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26",
+      "B27",
+      "B28",
+      "B29",
+      "B30",
+      "B31",
+      "B32"
+    ],
+    "format_failed_case_ids": [
+      "B05",
+      "B12"
+    ],
+    "paired_valid_response_count": 12,
+    "paired_old_correct": 10,
+    "paired_new_correct": 10,
+    "usage": {
+      "api_call_count": 55,
+      "response_count": 16,
+      "missing_count": {
+        "prompt_token_count": 39,
+        "candidates_token_count": 39,
+        "total_token_count": 39
+      },
+      "reported_count": {
+        "prompt_token_count": 16,
+        "candidates_token_count": 16,
+        "total_token_count": 16
+      },
+      "prompt_token_count": 40933,
+      "candidates_token_count": 1945,
+      "total_token_count": 53494,
+      "complete": false
+    },
+    "provider_error_counts": {
+      "503": 9,
+      "429": 30
+    },
+    "failed_answer_case_ids": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B12",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24"
+    ]
+  },
+  "source_report_sha256": "f4752acf0309821928f12f9b8d1020864fa50d4161289c6de245d7d3aa092d76",
+  "review_sha256": "f12ab6beb729d1e9e813bab8e9de2eb69dbdd95ed0ce05b9822fb70c276db908"
+}
