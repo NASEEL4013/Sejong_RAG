@@ -311,6 +311,14 @@ def generate_answer(client: Any, request: dict[str, Any], model: str,
         raise ValueError("max_attempts는 1 또는 2여야 해.")
     if type(max_output_tokens) is not int or max_output_tokens <= 0:
         raise ValueError("max_output_tokens는 양의 정수여야 해.")
+    if 'original_document_response' in request:
+        guidance=request['original_document_response']
+        result=_result(dict(status=guidance['status'],claims=[],message=guidance['message']),
+                       [],[],validation_passed=True,reason='syllabus_original_document_only')
+        result['answer']=guidance['message']
+        result['usage']={name:0 for name in _USAGE_FIELDS}
+        result['original_documents']=deepcopy(guidance['documents'])
+        return result
     sources = request["sources"]
     if not sources:
         payload = {"status": "insufficient_evidence", "claims": [],

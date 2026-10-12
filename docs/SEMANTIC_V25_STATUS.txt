@@ -1,0 +1,30 @@
+Semantic chunking and RAG evaluation checkpoint — 2026-10-12
+
+Accepted semantic rules and examples: eval/chunking_user_example_*_v1.json.
+New completed chunks only: 44,766. Pending document sections remain deferred.
+Syllabuses use original-document guidance instead of detailed content retrieval.
+
+Current user-approved RAG metric: each required item must be supported within
+at least one subquestion Top 5; all items required for original-question success.
+Several chunks in that Top 5 may jointly support an item.
+S02 alternative confirmation-application interpretation remains accepted.
+Result: 22/24 questions (91.7%), 52/55 items (94.5%). Missing: S04 QR,
+S13 monitoring and enforcement. Both source notices and answer chunks are indexed.
+S10 succeeds under the subquestion metric; its monthly-limit evidence had been
+omitted by the earlier merged-Top-5 selection.
+This rescoring changes the total context budget, not the saved retrieval results.
+No answer-generation rerun. Per-subquestion answer generation is not implemented.
+Production default retrieval is not switched to decomposition by this evaluation.
+
+Versioned result: eval/semantic_v25_subquery_top5_review_v1.json
+Local full evidence: data/processed/semantic-v25-subquery-top5-review-v1/review.html
+Saved retrieval: data/processed/semantic-v25-decomposition-recheck-v1/report.json
+Regrade/render: .venv/bin/python scripts/regrade_semantic_subquery.py
+This requires the local saved retrieval and prior review artifacts.
+
+Local embedding index: data/index/sejong-semantic-v25-e5-small.npz (143 MiB).
+The generated index is excluded from Git; raw/processed data and backups remain
+excluded under existing repository policy. Existing tracked indexes unchanged.
+Index source: data/processed/semantic-rechunk-v25-originals-only/chunks.jsonl.
+
+Validation: 577 pytest tests passed before checkpoint commit.

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "status": "user_confirmed_example",
+  "source_document_id": "notice3-805908-attachment-217258",
+  "document_title": "교직과정 학과별 기본이수영역 및 교과목 변경",
+  "scope": "Before/after table with merged cells whose coordinates can be verified in the original file",
+  "rules": [
+    "행마다 기본이수영역·변경 전·변경 후·비고를 함께 묶는다.",
+    "문서 제목과 적용 입학년도·학과·표시과목을 각 청크에 붙인다.",
+    "HWPX 원본 셀 좌표와 병합 범위를 확인해 행별 공통 정보를 연결한다.",
+    "변경없음 등 원문의 표현을 그대로 유지한다.",
+    "정규화된 원문 문단과 연결하고 원본 파일 해시·셀 좌표·병합 범위를 보존한다."
+  ],
+  "production_applied": false
+}

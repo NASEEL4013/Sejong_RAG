@@ -1,0 +1,1377 @@
+{
+  "protocol": {
+    "metric": "Each required item must be supported within at least one subquery Top 5; all items required for question success. Multiple chunks within that Top 5 may jointly support the item.",
+    "rule_change_authorized_by_user": true,
+    "semantic_reviewer": "assistant",
+    "unsplit_questions": "Original query Top 5",
+    "merged_top5_not_primary": true,
+    "retrieval_rerun": false,
+    "answer_generation_run": false,
+    "limitation": "Different total context budget from merged Top 5; this is rescoring saved retrieval, not a same-budget improvement."
+  },
+  "report_sha256": "67f2f8026a171286450839c33f032e08635223f506d763721d9a2d36f34f8e42",
+  "prior_review_sha256": "8e80c542be89336ef3f2cd1029a0c3f36275c11d96d0ee687e203fa64d8001bf",
+  "summary": {
+    "questions": 24,
+    "complete": 22,
+    "items": 55,
+    "supported_items": 52,
+    "failed": [
+      "S04",
+      "S13"
+    ]
+  },
+  "rows": [
+    {
+      "id": "S01",
+      "query": "2025년 1월 예비대학 접수·환불 공지에서 환불은 언제까지이고, 온라인 수업이 시작된 뒤에는 부분 환불이라도 가능해?",
+      "answer_note": "2025년 1월 9일 16시까지. 온라인 수업 시작 후 환불 불가이며 부분 환불도 없다.",
+      "complete": true,
+      "items": [
+        {
+          "name": "환불기한",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "환불 마감 2025.1.9 16시를 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "수업 시작 후",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "온라인 시작 후 환불 불가와 부분 환불 없음 모두 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2025년 1월 예비대학 환불 마감일",
+        "2025년 1월 예비대학 온라인 수업 시작 후 부분 환불 가능 여부"
+      ]
+    },
+    {
+      "id": "S02",
+      "query": "2025-1 조기졸업 신청은 시스템에서 신청만 하면 끝나? 출력한 다음 제출까지 순서와 제출서류를 알려줘.",
+      "answer_note": "시스템 신청·출력 → 학생 조건 확인·날인 → 학과장·학장 확인·날인 → 학사지원과 제출. 질문이 최초 신청과 확인신청을 구분하지 않았으므로, 확인신청 해석의 조기졸업확인신청서·성적증명서 각 1부도 정답으로 인정한다. 최초 신청 해석의 조기졸업신청서·성적증명서 각 1부도 유효하다.",
+      "complete": true,
+      "items": [
+        {
+          "name": "신청·확인",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 2,
+              "ranks": [
+                4
+              ]
+            }
+          ],
+          "reason": "Rank 4의 확인신청 절차에서 시스템 신청·출력 후 학생 조건 확인·날인을 확인. 사용자 승인한 확인신청 해석 유지.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "추천·제출",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 2,
+              "ranks": [
+                4
+              ]
+            }
+          ],
+          "reason": "Rank 4에서 학과장·학장 확인·날인 후 학사지원과 서류 제출 확인.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "서류",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 2,
+              "ranks": [
+                3
+              ]
+            }
+          ],
+          "reason": "Rank 1에서 조기졸업확인신청서·성적증명서 각 1부 확인. Rank 2에는 최초 조기졸업 신청서류도 있음.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2025-1 조기졸업 신청 방법",
+        "2025-1 조기졸업 신청 절차 및 제출 서류"
+      ]
+    },
+    {
+      "id": "S03",
+      "query": "2025-1 등록금 추가 납부 공지 기준으로 전액 장학생도 등록해야 해? 납부 여부는 언제 확인할 수 있어?",
+      "answer_note": "전액 장학생도 0원 등록 필수. 미등록 시 제적. 납부 다음 날 오전 10시 이후 확인 가능.",
+      "complete": true,
+      "items": [
+        {
+          "name": "0원등록",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                3
+              ]
+            }
+          ],
+          "reason": "전액 장학생도 0원 등록 필수이며 미등록 제적 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "확인시점",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                3
+              ]
+            }
+          ],
+          "reason": "납부 다음 날 오전 10시 이후 확인 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2025-1 등록금 추가 납부 공지 전액 장학생 등록 여부",
+        "2025-1 등록금 추가 납부 공지 납부 여부 확인 시기"
+      ]
+    },
+    {
+      "id": "S04",
+      "query": "2025학년도 학교현장실습 수강생 응급처치·심폐소생술 교육은 언제 어디서 열리고, 당일 QR 출석은 몇 번 해야 해?",
+      "answer_note": "2025년 3월 14일 16:30~19:30 집현관 302호. 시작·종료 시 총 2회 QR 출석.",
+      "complete": false,
+      "items": [
+        {
+          "name": "일시",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                2
+              ]
+            }
+          ],
+          "reason": "2025년 3월 14일 16:30~19:30 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "장소",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                3
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                4
+              ]
+            }
+          ],
+          "reason": "2025 교육장소 집현관 302호 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "QR",
+          "supported": false,
+          "evidence": [],
+          "reason": "2025년 교육의 QR 시작·종료 출석 횟수 근거가 최종 Top 5와 QR 하위질문 Top 5에 모두 없음. 교육 2회 이수 의무는 QR 출석 횟수와 다름.",
+          "previous_merged_top5_supported": false
+        }
+      ],
+      "subquestions": [
+        "2025학년도 학교현장실습 수강생 응급처치·심폐소생술 교육 일정과 장소",
+        "2025학년도 학교현장실습 수강생 응급처치·심폐소생술 교육 당일 QR 출석 횟수"
+      ]
+    },
+    {
+      "id": "S05",
+      "query": "전자출결 단말기를 바꿨는데 아직 승인이 안 났어. 수업 출석은 어떻게 확인받고, 변경 승인은 어디에서 무엇을 확인받아야 해?",
+      "answer_note": "수업에서 교수님께 대면 출석 확인. 학사지원과 방문하여 변경 전·후 기기를 확인받아 승인 처리.",
+      "complete": true,
+      "items": [
+        {
+          "name": "출석",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                4
+              ]
+            }
+          ],
+          "reason": "미승인 상태에서는 교수님 대면 출석 확인 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "승인",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "학사지원과 방문, 변경 전·후 기기 확인 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "전자출결 단말기 변경 후 승인 전 수업 출석 확인 방법",
+        "전자출결 단말기 변경 승인 장소 및 확인 사항"
+      ]
+    },
+    {
+      "id": "S06",
+      "query": "2025 하계 계절학기 기초미적분학이 3학점이고 이론 3시간·실습 1시간이면 수강료가 얼마야? 학점으로 계산하는지도 설명해줘.",
+      "answer_note": "학점이 아니라 이론+실습 시간. 시간당 75,000원 × 4시간 = 300,000원.",
+      "complete": true,
+      "items": [
+        {
+          "name": "단가",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "시간당 75,000원 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "시간기준",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "이론+실습 합계 시간으로 계산 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "대상과목",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "기초미적분학 3/3/1은 4시간으로 계산. 질문의 4시간×75,000=300,000원 도출 가능.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2025 하계 계절학기 기초미적분학이 3학점이고 이론 3시간·실습 1시간이면 수강료가 얼마야? 학점으로 계산하는지도 설명해줘."
+      ]
+    },
+    {
+      "id": "S07",
+      "query": "2025 정수장학회 장학생 신청서류는 어느 이메일로 언제까지 내고, 문의 전화는 뭐야?",
+      "answer_note": "2025년 1월 17일 12시까지 yjh0702@sejong.ac.kr. 학생지원과 02-3408-4355.",
+      "complete": true,
+      "items": [
+        {
+          "name": "제출",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "1월 17일 12시와 yjh0702@sejong.ac.kr 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "문의",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "학생지원과 02)3408-4355 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2025 정수장학회 장학생 신청서류 제출 이메일",
+        "2025 정수장학회 장학생 신청서류 제출 마감일",
+        "2025 정수장학회 장학생 문의 전화번호"
+      ]
+    },
+    {
+      "id": "S08",
+      "query": "2025-1 주거안정지원장학금은 월 얼마까지 지원하고, 등록금이 발생하는 초과학기생도 받을 수 있어?",
+      "answer_note": "주거 관련 지출 월 20만원 한도. 등록금 발생 초과학기자도 수혜 가능.",
+      "complete": true,
+      "items": [
+        {
+          "name": "금액",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1,
+                2
+              ]
+            }
+          ],
+          "reason": "Rank 2의 동일 학기 지급 안내와 Rank 5의 신청 안내에서 월 최대 20만원 및 주거 관련 지출 지원을 확인. 금액 하위질문 1위 후보가 최종 2위로 들어옴.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "초과학기",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 2,
+              "ranks": [
+                1,
+                3
+              ]
+            }
+          ],
+          "reason": "Rank 1·4의 2025-1 안내에서 등록금 발생 초과학기자 수혜 가능 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2025-1 주거안정지원장학금 월 지원 금액",
+        "2025-1 주거안정지원장학금 초과학기생 수혜 가능 여부"
+      ]
+    },
+    {
+      "id": "S09",
+      "query": "2025 인문100년 전공확립유형에 신청하려는 3학년이야. 직전 2년 성적과 취득학점 요건은 각각 얼마야?",
+      "answer_note": "직전 2년 총 평균 백분위 90점 이상, 소속학과 졸업이수학점의 40% 이상 취득.",
+      "complete": true,
+      "items": [
+        {
+          "name": "성적",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "전공확립유형 직전 2년 총 평균 백분위 90 이상 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "학점",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "졸업이수학점 40% 이상 취득 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2025년 인문100년장학금 전공확립유형 3학년 직전 2년 성적 요건",
+        "2025년 인문100년장학금 전공확립유형 3학년 직전 2년 취득학점 요건"
+      ]
+    },
+    {
+      "id": "S10",
+      "query": "2025-1 주거안정지원장학금 지급 안내에서 4~6월분은 얼마를 언제 지급할 예정이고, 지급요청서는 언제부터 매월 내야 해?",
+      "answer_note": "4~6월분은 월 최대 20만원 실비로 7월 초 지급 예정. 4월분부터 매월 지급요청서 작성·제출 필수.",
+      "complete": true,
+      "items": [
+        {
+          "name": "지급",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1,
+                5
+              ]
+            }
+          ],
+          "reason": "금액·지급시기 하위질문의 1위 지급표와 5위 월 최대20만원 근거를 함께 사용하면 지급 금액·월 단위·7월 초 지급을 모두 확보함.",
+          "previous_merged_top5_supported": false
+        },
+        {
+          "name": "요청서",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "4월분부터 매월 지급요청서 작성·제출 필수 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2025-1 주거안정지원장학금 4~6월분 지급 금액과 지급 시기는?",
+        "2025-1 주거안정지원장학금 지급요청서는 언제부터 매월 제출해야 하는지?"
+      ]
+    },
+    {
+      "id": "S11",
+      "query": "2025-2 특기장학금 팀 수상자 중 한 명이 휴학 중이면 그 팀원은 언제 신청하고 언제 지급받아?",
+      "answer_note": "재학 중인 팀원과 함께 이번 학기에 반드시 신청하고 장학금은 복학학기에 지급.",
+      "complete": true,
+      "items": [
+        {
+          "name": "신청",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "팀 수상 휴학자는 재학생 팀원과 이번 학기에 신청하는 예외 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "지급",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "휴학 팀원 장학금은 복학학기 지급 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2025-2 특기장학금 팀 수상자 중 팀원이 휴학 중인 경우 신청 시기",
+        "2025-2 특기장학금 팀 수상자 중 팀원이 휴학 중인 경우 지급 시기"
+      ]
+    },
+    {
+      "id": "S12",
+      "query": "2026 한국지도자육성장학재단 장학금 중 생활비 유형은 학기당 얼마이고 최대 얼마 동안 지원돼? 등록금 유형에도 동시에 지원할 수 있어?",
+      "answer_note": "생활비 학기당 350만원, 최대 2년(정규 4개학기). 둘 중 하나만 선택, 동시지원 불가.",
+      "complete": true,
+      "items": [
+        {
+          "name": "생활비",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "생활비 학기당 350만원, 최대2년 정규4학기 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "동시지원",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "가·나 중 하나 선택하며 동시지원 및 변경 불가 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2026 한국지도자육성장학재단 장학금 생활비 유형 지원 금액",
+        "2026 한국지도자육성장학재단 장학금 생활비 유형 최대 지원 기간",
+        "2026 한국지도자육성장학재단 장학금 등록금 유형과 생활비 유형 동시 지원 가능 여부"
+      ]
+    },
+    {
+      "id": "S13",
+      "query": "2026년 3월 수강 변경 부정 접속 공지에서 어떤 접근을 모니터링하고 있고, 적발되면 어떤 조치가 가능하다고 했어?",
+      "answer_note": "매크로 사용·우회 접속 등 비정상적 접근을 로그 분석으로 모니터링. 적발 시 학칙에 따라 엄중한 조치 가능. 구체적 처벌 수위를 만들어내지 않음.",
+      "complete": false,
+      "items": [
+        {
+          "name": "접근",
+          "supported": false,
+          "evidence": [],
+          "reason": "Top 5는 학점교류 수강변경·코딩 분반·예비대학 분반 자료로 부정접속 로그 분석·우회접속 관련 근거가 없음.",
+          "previous_merged_top5_supported": false
+        },
+        {
+          "name": "조치",
+          "supported": false,
+          "evidence": [],
+          "reason": "부정접속 적발 시 학칙상 엄중 조치한다는 근거가 없음.",
+          "previous_merged_top5_supported": false
+        }
+      ],
+      "subquestions": [
+        "2026년 3월 수강 변경 부정 접속 공지 모니터링 접근",
+        "2026년 3월 수강 변경 부정 접속 공지 적발 조치"
+      ]
+    },
+    {
+      "id": "S14",
+      "query": "2027 학교현장실습은 통상 몇 월에 몇 주간 하고, 학교 사정으로 일정을 바꾸더라도 언제 전까지 끝내야 해?",
+      "answer_note": "2027년 4~5월 중 4주. 일정 변경 가능하지만 2027년 6월 4일 전까지 종료.",
+      "complete": true,
+      "items": [
+        {
+          "name": "기간",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                2
+              ]
+            }
+          ],
+          "reason": "2027년4~5월 4주 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "최종종료",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                2
+              ]
+            }
+          ],
+          "reason": "일정 변경 시에도 2027.06.04 전 종료 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2027 학교현장실습 통상 실시 월과 기간",
+        "2027 학교현장실습 일정 변경 시 종료 기한"
+      ]
+    },
+    {
+      "id": "S15",
+      "query": "2026-2 수강편람에 있는 특수교육학개론은 몇 학점이고, 평생교육사 자격증 취득 인정 과목이야?",
+      "answer_note": "2학점이며 평생교육사 자격증 취득 인정 교과목이 아니다.",
+      "complete": true,
+      "items": [
+        {
+          "name": "학점",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "특수교육학개론 2학점 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "인정여부",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "평생교육사 인정 교과목이 아니라는 정정 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2026-2 수강편람 특수교육학개론 학점",
+        "2026-2 수강편람 특수교육학개론 평생교육사 자격증 취득 인정 과목"
+      ]
+    },
+    {
+      "id": "S16",
+      "query": "2026-2 마지막·초과학기생 기초코딩 수강여석 증원 요청은 어느 이메일로 언제까지 보내야 하고, 이미 보낸 사람도 다시 보내야 해?",
+      "answer_note": "sw6@sejong.ac.kr로 2026년 8월 28일 13시까지. 기존 제출자는 중복 제출 불필요.",
+      "complete": true,
+      "items": [
+        {
+          "name": "이메일",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                2
+              ]
+            }
+          ],
+          "reason": "회신주소 sw6@sejong.ac.kr가 공백 포함해 적혀 있음.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "기한",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                2
+              ]
+            }
+          ],
+          "reason": "2026.08.28 13시 기한 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "중복",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                3
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                3
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                3
+              ]
+            }
+          ],
+          "reason": "이미 이메일을 제출한 학생은 중복 제출 불필요 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2026-2학기 마지막 초과학기생 기초코딩 수강여석 증원 요청 이메일 제출 기한",
+        "2026-2학기 마지막 초과학기생 기초코딩 수강여석 증원 요청 제출 이메일 주소",
+        "2026-2학기 마지막 초과학기생 기초코딩 수강여석 증원 요청 이미 보낸 사람 재제출 여부"
+      ]
+    },
+    {
+      "id": "S17",
+      "query": "2026-2 교육봉사활동2·3 일괄 수강신청에 이상이 있으면 어디서 확인하고 언제까지 어느 부서로 문의해야 해?",
+      "answer_note": "학사정보시스템에서 확인. 2026년 9월 2일까지 교직과 사무실(02-3408-4168, 3429) 문의. 전화번호 자체는 필수 아님.",
+      "complete": true,
+      "items": [
+        {
+          "name": "확인",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "학사정보시스템 확인 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "기한·부서",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "2026.9.2까지 교직과 사무실 문의 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2026-2 교육봉사활동2·3 일괄 수강신청 이상 확인 장소",
+        "2026-2 교육봉사활동2·3 일괄 수강신청 문의 기한 및 부서"
+      ]
+    },
+    {
+      "id": "S18",
+      "query": "2026 수업실연 경진대회는 신청서와 수업지도안을 어떻게 제출해? 지도안 분량과 파일 형식, 보내는 곳을 알려줘.",
+      "answer_note": "45~50분 분량 지도안. 신청서와 지도안을 각각 별도 PDF로 teaching@sejong.ac.kr에 제출.",
+      "complete": true,
+      "items": [
+        {
+          "name": "분량",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                2
+              ]
+            }
+          ],
+          "reason": "수업지도안 45~50분 분량 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "형식",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                2
+              ]
+            }
+          ],
+          "reason": "신청서와 지도안을 각각 별도 PDF로 제출 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "메일",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                2
+              ]
+            }
+          ],
+          "reason": "teaching@sejong.ac.kr 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2026 수업실연 경진대회 신청서 및 수업지도안 제출 방법",
+        "2026 수업실연 경진대회 지도안 분량 및 파일 형식",
+        "2026 수업실연 경진대회 제출처"
+      ]
+    },
+    {
+      "id": "S19",
+      "query": "2026 신라문화장학재단 서류 접수는 방문해도 돼? 접수 마감일 우편 소인도 인정하는지 알려줘.",
+      "answer_note": "등기우편 발송만 가능하며 방문 접수는 불가. 2026년 1월 29일 마감일 등기우편 발송 소인 인정. 날짜 언급은 필수 아님.",
+      "complete": true,
+      "items": [
+        {
+          "name": "방식",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                4
+              ]
+            }
+          ],
+          "reason": "등기우편 발송만 가능 명시. 방문접수는 허용하지 않는다는 해석 가능.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "소인",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "마감일 등기우편 발송 소인 유효 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2026 신라문화장학재단 서류 접수 방문 제출 가능 여부",
+        "2026 신라문화장학재단 서류 접수 마감일 우편 소인 인정 여부"
+      ]
+    },
+    {
+      "id": "S20",
+      "query": "2026-1 주거안정지원장학금 2차 신청 마감과 서류제출·가구원 동의 마감은 같은 날이야? 각각 알려줘.",
+      "answer_note": "신청 2026년 3월 17일 18시. 서류제출·가구원동의 3월 24일 18시로 서로 다름.",
+      "complete": true,
+      "items": [
+        {
+          "name": "신청",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "2026.3.17 18시 신청 마감 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "서류동의",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                3
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "2026.3.24 18시 서류·동의 마감 명시. 두 청크를 합쳐 서로 다른 기한 확인 가능.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2026학년도 1학기 주거안정지원장학금 2차 신청 마감일",
+        "2026학년도 1학기 주거안정지원장학금 2차 서류제출 및 가구원 동의 마감일"
+      ]
+    },
+    {
+      "id": "S21",
+      "query": "2026 인문100년 장학금 서류를 인문대학과 호텔관광대학 학생은 각각 어느 건물 몇 호에 내야 해?",
+      "answer_note": "인문대학 집현관 801호, 호텔관광대학 광개토관 501호.",
+      "complete": true,
+      "items": [
+        {
+          "name": "인문",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "인문대학장실 집현관801호 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "호텔",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "호텔관광대학장실 광개토관501호 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2026 인문100년 장학금 서류 인문대학 제출 장소 건물 호실",
+        "2026 인문100년 장학금 서류 호텔관광대학 학생 제출 장소 건물 호실"
+      ]
+    },
+    {
+      "id": "S22",
+      "query": "2026-1 기숙지원장학금은 교내 행복기숙사와 교외 행복기숙사 입주자에게 각각 얼마를 주고 어떤 방식으로 지급해?",
+      "answer_note": "교내 기숙사비 30%, 교외 학기당 30만원. 학생 계좌 입금.",
+      "complete": true,
+      "items": [
+        {
+          "name": "교내",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "교내 기숙사비30% 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "교외",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "교외 학기당30만원 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "지급",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                3
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                2
+              ]
+            }
+          ],
+          "reason": "학생 계좌 입금 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2026-1 기숙지원장학금 교내 행복기숙사 입주자 지급 금액 및 지급 방식",
+        "2026-1 기숙지원장학금 교외 행복기숙사 입주자 지급 금액 및 지급 방식"
+      ]
+    },
+    {
+      "id": "S23",
+      "query": "2026-2 국가장학금·에델바이스Ⅱ 2차 공지 기준으로 초과학기 등록예정자는 국가Ⅰ유형과 에델바이스Ⅱ를 둘 다 받을 수 있어?",
+      "answer_note": "초과학기 등록예정자는 국가Ⅰ유형 수혜 가능, 에델바이스Ⅱ는 불가. 다른 요건 충족 여부까지 확정할 필요 없음.",
+      "complete": true,
+      "items": [
+        {
+          "name": "국가",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "초과학기 등록예정자 국가Ⅰ유형 가능 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "에델",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                2
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "같은 조건의 에델바이스Ⅱ 불가 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2026-2 국가장학금 2차 초과학기 등록예정자 국가장학금 Ⅰ유형 수혜 가능 여부",
+        "2026-2 에델바이스Ⅱ 2차 공지 초과학기 등록예정자 에델바이스Ⅱ 수혜 가능 여부"
+      ]
+    },
+    {
+      "id": "S24",
+      "query": "2027 미래인재육성재단 장학생 지원은 등록금 지원이야 생활비 지원이야? 학기당 금액과 최대 지원 학기를 알려줘.",
+      "answer_note": "생활비성 학업장려금, 매학기 300만원 정액, 선발부터 6개학기 지원.",
+      "complete": true,
+      "items": [
+        {
+          "name": "성격",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "생활비성 학업장려금 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "금액",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "매학기3백만원 정액 명시.",
+          "previous_merged_top5_supported": true
+        },
+        {
+          "name": "학기",
+          "supported": true,
+          "evidence": [
+            {
+              "subquery": 1,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 2,
+              "ranks": [
+                1
+              ]
+            },
+            {
+              "subquery": 3,
+              "ranks": [
+                1
+              ]
+            }
+          ],
+          "reason": "선발시부터6개학기만 지원 명시.",
+          "previous_merged_top5_supported": true
+        }
+      ],
+      "subquestions": [
+        "2027 미래인재육성재단 장학생 지원 등록금 생활비 구분",
+        "2027 미래인재육성재단 장학생 학기당 지원 금액",
+        "2027 미래인재육성재단 장학생 최대 지원 학기"
+      ]
+    }
+  ],
+  "local_report_sha256": "85d19a17b6635c9e5b646c86f27df6d8316e19f06c0c5a6e3eb6c0cb4a54c243"
+}

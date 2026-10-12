@@ -1,0 +1,668 @@
+{
+  "report_sha256": "67f2f8026a171286450839c33f032e08635223f506d763721d9a2d36f34f8e42",
+  "baseline_review_sha256": "79366fb700b86d90cd071335e338a1d1b81abda40eecb581cbd0d3430014f93b",
+  "reviewer_role": "assistant",
+  "human_approved": false,
+  "method": "Semantic union of final Top 5, matching year/entity/conditions; preserve S02 user-approved amendment. Explicit monthly amount required for S10 as in baseline semantic review. Frozen phrase proxy reported separately.",
+  "summary": {
+    "before_complete": 21,
+    "after_complete": 21,
+    "before_items": 51,
+    "after_items": 51,
+    "improved": [
+      "S08"
+    ],
+    "regressed": [
+      "S10"
+    ],
+    "failed": [
+      "S04",
+      "S10",
+      "S13"
+    ],
+    "questions": 24,
+    "items": 55
+  },
+  "cases": [
+    {
+      "id": "S01",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "환불기한",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "환불 마감 2025.1.9 16시를 명시."
+        },
+        {
+          "name": "수업 시작 후",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "온라인 시작 후 환불 불가와 부분 환불 없음 모두 명시."
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "plan_review": "신청방법과 절차·서류 질문이 일부 겹치지만 필요한 항목을 포함함.",
+      "items": [
+        {
+          "name": "신청·확인",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            4
+          ],
+          "reason": "Rank 4의 확인신청 절차에서 시스템 신청·출력 후 학생 조건 확인·날인을 확인. 사용자 승인한 확인신청 해석 유지."
+        },
+        {
+          "name": "추천·제출",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            4
+          ],
+          "reason": "Rank 4에서 학과장·학장 확인·날인 후 학사지원과 서류 제출 확인."
+        },
+        {
+          "name": "서류",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "Rank 1에서 조기졸업확인신청서·성적증명서 각 1부 확인. Rank 2에는 최초 조기졸업 신청서류도 있음."
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "0원등록",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "전액 장학생도 0원 등록 필수이며 미등록 제적 명시."
+        },
+        {
+          "name": "확인시점",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "납부 다음 날 오전 10시 이후 확인 명시."
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "일시",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "2025년 3월 14일 16:30~19:30 명시."
+        },
+        {
+          "name": "장소",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            4
+          ],
+          "reason": "2025 교육장소 집현관 302호 명시."
+        },
+        {
+          "name": "QR",
+          "before_supported": false,
+          "supported": false,
+          "ranks": [],
+          "reason": "2025년 교육의 QR 시작·종료 출석 횟수 근거가 최종 Top 5와 QR 하위질문 Top 5에 모두 없음. 교육 2회 이수 의무는 QR 출석 횟수와 다름."
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "출석",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "미승인 상태에서는 교수님 대면 출석 확인 명시."
+        },
+        {
+          "name": "승인",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "학사지원과 방문, 변경 전·후 기기 확인 명시."
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "plan_review": "단가·시간·계산이 연결된 질문으로 원질문 하나를 유지함. 분해 오류 대체는 아님.",
+      "items": [
+        {
+          "name": "단가",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "시간당 75,000원 명시."
+        },
+        {
+          "name": "시간기준",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "이론+실습 합계 시간으로 계산 명시."
+        },
+        {
+          "name": "대상과목",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "기초미적분학 3/3/1은 4시간으로 계산. 질문의 4시간×75,000=300,000원 도출 가능."
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "제출",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "1월 17일 12시와 yjh0702@sejong.ac.kr 명시."
+        },
+        {
+          "name": "문의",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "학생지원과 02)3408-4355 명시."
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "plan_review": "금액과 초과학기 수혜 여부를 분리함. 하위질문에 등록금 발생 조건이 생략되었지만 실제 최종 근거에는 해당 조건이 남아 있음.",
+      "items": [
+        {
+          "name": "금액",
+          "before_supported": false,
+          "supported": true,
+          "ranks": [
+            2,
+            5
+          ],
+          "reason": "Rank 2의 동일 학기 지급 안내와 Rank 5의 신청 안내에서 월 최대 20만원 및 주거 관련 지출 지원을 확인. 금액 하위질문 1위 후보가 최종 2위로 들어옴."
+        },
+        {
+          "name": "초과학기",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1,
+            4
+          ],
+          "reason": "Rank 1·4의 2025-1 안내에서 등록금 발생 초과학기자 수혜 가능 명시."
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "성적",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "전공확립유형 직전 2년 총 평균 백분위 90 이상 명시."
+        },
+        {
+          "name": "학점",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "졸업이수학점 40% 이상 취득 명시."
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "plan_review": "금액·지급시기와 요청서 제출을 분리함. 최종 합치기에서 월 단위 금액 근거가 빠짐.",
+      "items": [
+        {
+          "name": "지급",
+          "before_supported": true,
+          "supported": false,
+          "ranks": [],
+          "reason": "Rank 2에는 4~6월분 최대20만원 실비·7월 초 지급, Rank 1에는 매월 요청서 제출이 있음. 그러나 월 최대20만원인지 4~6월 합산 한도인지 직접 구별하는 월 단위 금액 근거는 없음. 기존 Top 5의 명시적 월 금액 청크가 탈락했으므로 완전 확보로 인정하지 않음. 고정 문자열 검사에서는 통과하지만 의미 검토에서는 미흡."
+        },
+        {
+          "name": "요청서",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "4월분부터 매월 지급요청서 작성·제출 필수 명시."
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "신청",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "팀 수상 휴학자는 재학생 팀원과 이번 학기에 신청하는 예외 명시."
+        },
+        {
+          "name": "지급",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "휴학 팀원 장학금은 복학학기 지급 명시."
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "생활비",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "생활비 학기당 350만원, 최대2년 정규4학기 명시."
+        },
+        {
+          "name": "동시지원",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "가·나 중 하나 선택하며 동시지원 및 변경 불가 명시."
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "plan_review": "접근 모니터링과 적발 조치로 분리했으나 관련 근거를 확보하지 못함.",
+      "items": [
+        {
+          "name": "접근",
+          "before_supported": false,
+          "supported": false,
+          "ranks": [],
+          "reason": "Top 5는 학점교류 수강변경·코딩 분반·예비대학 분반 자료로 부정접속 로그 분석·우회접속 관련 근거가 없음."
+        },
+        {
+          "name": "조치",
+          "before_supported": false,
+          "supported": false,
+          "ranks": [],
+          "reason": "부정접속 적발 시 학칙상 엄중 조치한다는 근거가 없음."
+        }
+      ]
+    },
+    {
+      "id": "S14",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "기간",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "2027년4~5월 4주 명시."
+        },
+        {
+          "name": "최종종료",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "일정 변경 시에도 2027.06.04 전 종료 명시."
+        }
+      ]
+    },
+    {
+      "id": "S15",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "학점",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "특수교육학개론 2학점 명시."
+        },
+        {
+          "name": "인정여부",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "평생교육사 인정 교과목이 아니라는 정정 명시."
+        }
+      ]
+    },
+    {
+      "id": "S16",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "이메일",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "회신주소 sw6@sejong.ac.kr가 공백 포함해 적혀 있음."
+        },
+        {
+          "name": "기한",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "2026.08.28 13시 기한 명시."
+        },
+        {
+          "name": "중복",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            3
+          ],
+          "reason": "이미 이메일을 제출한 학생은 중복 제출 불필요 명시."
+        }
+      ]
+    },
+    {
+      "id": "S17",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "확인",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "학사정보시스템 확인 명시."
+        },
+        {
+          "name": "기한·부서",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "2026.9.2까지 교직과 사무실 문의 명시."
+        }
+      ]
+    },
+    {
+      "id": "S18",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "분량",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "수업지도안 45~50분 분량 명시."
+        },
+        {
+          "name": "형식",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "신청서와 지도안을 각각 별도 PDF로 제출 명시."
+        },
+        {
+          "name": "메일",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "teaching@sejong.ac.kr 명시."
+        }
+      ]
+    },
+    {
+      "id": "S19",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "방식",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "등기우편 발송만 가능 명시. 방문접수는 허용하지 않는다는 해석 가능."
+        },
+        {
+          "name": "소인",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "마감일 등기우편 발송 소인 유효 명시."
+        }
+      ]
+    },
+    {
+      "id": "S20",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "신청",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "2026.3.17 18시 신청 마감 명시."
+        },
+        {
+          "name": "서류동의",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "2026.3.24 18시 서류·동의 마감 명시. 두 청크를 합쳐 서로 다른 기한 확인 가능."
+        }
+      ]
+    },
+    {
+      "id": "S21",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "인문",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "인문대학장실 집현관801호 명시."
+        },
+        {
+          "name": "호텔",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "호텔관광대학장실 광개토관501호 명시."
+        }
+      ]
+    },
+    {
+      "id": "S22",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "교내",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "교내 기숙사비30% 명시."
+        },
+        {
+          "name": "교외",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "교외 학기당30만원 명시."
+        },
+        {
+          "name": "지급",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            3
+          ],
+          "reason": "학생 계좌 입금 명시."
+        }
+      ]
+    },
+    {
+      "id": "S23",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "국가",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "초과학기 등록예정자 국가Ⅰ유형 가능 명시."
+        },
+        {
+          "name": "에델",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "같은 조건의 에델바이스Ⅱ 불가 명시."
+        }
+      ]
+    },
+    {
+      "id": "S24",
+      "plan_review": "질문한 항목별로 검색 질문을 나누고 연도·대상 문맥을 유지함.",
+      "items": [
+        {
+          "name": "성격",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "생활비성 학업장려금 명시."
+        },
+        {
+          "name": "금액",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "매학기3백만원 정액 명시."
+        },
+        {
+          "name": "학기",
+          "before_supported": true,
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "선발시부터6개학기만 지원 명시."
+        }
+      ]
+    }
+  ],
+  "followups": [
+    "S13 retrieved a separate student-roster attachment; corpus unchanged for paired evaluation. Review corpus exclusion separately."
+  ],
+  "proxy_summary": {
+    "after_complete": 22,
+    "after_items": 52
+  }
+}

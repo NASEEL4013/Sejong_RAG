@@ -1,6 +1,8 @@
 """저장된 임베딩과 질문 벡터의 코사인 유사도로 청크를 검색한다."""
 
 from __future__ import annotations
+from sejong_rag.corpus_policy import allowed_chunk, EXCLUDED_DOCUMENTS
+
 
 import argparse
 import json
@@ -21,7 +23,9 @@ def load_index(path: Path) -> tuple[np.ndarray, list[dict[str, object]], dict[st
         metadata = json.loads(data["metadata"].item())
     if embeddings.ndim != 2 or embeddings.shape[0] != len(chunks):
         raise ValueError("벡터 행과 chunk 수가 일치하지 않습니다.")
-    return embeddings, chunks, metadata
+    keep=[i for i,c in enumerate(chunks) if allowed_chunk(c)]
+    metadata=dict(metadata, policy_excluded_chunks=len(chunks)-len(keep), active_chunk_count=len(keep))
+    return embeddings[keep], [chunks[i] for i in keep], metadata
 
 
 def rank_by_similarity(

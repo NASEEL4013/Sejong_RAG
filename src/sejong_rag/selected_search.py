@@ -2,6 +2,7 @@
 from __future__ import annotations
 import argparse
 from collections import defaultdict
+from copy import deepcopy
 import json
 from pathlib import Path
 import re
@@ -10,8 +11,9 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sejong_rag.embed_chunks import file_sha256
 from sejong_rag.vector_search import load_index
+from sejong_rag.workflow_search import whole_workflow, ordered_members
 
-VERSION = 'selected_context_v1'
+VERSION = 'selected_context_v2'
 DEFAULT_STRATEGY = 'vector_context'
 
 
@@ -63,8 +65,14 @@ class SelectedSearch:
         self.vectorizer=TfidfVectorizer(analyzer='char',ngram_range=(2,3),min_df=2,
             max_features=150000,sublinear_tf=True,dtype=np.float32)
         self.lexical=self.vectorizer.fit_transform([compact(t) for t in self.bodies])
+        self.procedures=defaultdict(list)
+        self.last_procedure_decisions=[]
+        for i,c in enumerate(chunks):
+            if c.get('procedure_id'):
+                self.procedures[(c['document_id'],c['procedure_id'])].append(i)
         self.by_record=defaultdict(list)
         for i,c in enumerate(chunks):
+            if c.get('context_text'): continue
             refs=c['source_spans'];ids={r['record_id'] for r in refs}
             if len(ids)==1:
                 self.by_record[next(iter(ids))].append((min(r['start'] for r in refs),max(r['end'] for r in refs),i))
@@ -115,7 +123,21 @@ class SelectedSearch:
         return ranked
 
     def bundle(self,indices,query):
-        anchor=self.chunks[indices[0]];refs=[];seen=set()
+        anchor=self.chunks[indices[0]]
+        if anchor.get('context_text'):
+            if len(indices)!=1: raise ValueError('Semantic context units must remain intact')
+            # Semantic tables/steps deliberately format source text; do not try
+            # reconstructing them as a contiguous suffix of the original record.
+            alias={k:deepcopy(anchor[k]) for k in ('document_id','parent_document_id',
+                'document_title','source_url','attachment_url','filename') if k in anchor}
+            out=dict(anchor_chunk_id=anchor['chunk_id'],chunk_ids=[anchor['chunk_id']],
+                source_spans=deepcopy(anchor['context_source_spans']),source_aliases=[alias],
+                document_title=anchor.get('document_title',''),source_url=anchor.get('source_url'),
+                attachment_url=anchor.get('attachment_url'),filename=anchor.get('filename'),
+                body=anchor['context_text'],text=anchor['context_text'])
+            out.update({k:deepcopy(v) for k,v in anchor.items() if k.startswith('procedure_')})
+            return out
+        refs=[];seen=set()
         for i in indices:
             for ref in self.chunks[i]['source_spans']:
                 key=(ref['record_id'],ref['start'],ref['end'])
@@ -153,10 +175,40 @@ class SelectedSearch:
         hybrid=strategy in {'hybrid','improved'};expand=strategy in {'vector_context','improved'}
         ranked=self.rank(query,qvector,hybrid,candidate_k)
         bundles=[];used=set();budget=0;duplicates={}
+        self.last_procedure_decisions=[]
         for index,score in ranked:
             if index in used:continue
+            chunk=self.chunks[index]
+            if expand and chunk.get('procedure_id'):
+                members=self.procedures[(chunk['document_id'],chunk['procedure_id'])]
+                used.update(members)
+                decision=dict(procedure_id=chunk['procedure_id'],document_id=chunk['document_id'])
+                self.last_procedure_decisions.append(decision)
+                # Alias metadata must not substitute another semester's content.
+                if period_score(query,[chunk])<0:
+                    decision['status']='period_mismatch';continue
+                full=whole_workflow(query)
+                chosen=ordered_members(self.chunks,members) if full else [index]
+                if chosen is None:
+                    decision['status']='incomplete_group';continue
+                assembled=[self.bundle([i],query) for i in chosen]
+                costs=[self.count(b['text']) for b in assembled]
+                if (len(bundles)+len(assembled)>top_k or any(c>max_bundle_tokens for c in costs)
+                        or budget+sum(costs)>total_tokens):
+                    decision['status']='insufficient_budget';continue
+                decision.update(status='complete' if full else 'specific_step',
+                                steps=[self.chunks[i]['procedure_step'] for i in chosen])
+                for i,b,cost in zip(chosen,assembled,costs):
+                    b.update(score=score,token_count=cost,strategy=strategy,
+                        context_expanded=full,procedure_expansion_anchor=chunk['chunk_id'],
+                        procedure_scope='whole' if full else 'step',
+                        ranking_policy='workflow_source_order' if full else 'workflow_anchor')
+                    bundles.append(b)
+                budget+=sum(costs)
+                if len(bundles)==top_k:break
+                continue
             components=[index];bundle=self.bundle(components,query)
-            if expand and self.count(self.bodies[index])<=100:
+            if expand and not chunk.get('context_text') and self.count(self.bodies[index])<=100:
                 for neighbor in self.neighbors.get(index,[]):
                     if neighbor in used:continue
                     candidate=self.bundle(components+[neighbor],query)
@@ -188,17 +240,21 @@ def load_search(index,normalized):
     source=Path(meta['source_chunks']);normalized=Path(normalized)
     if file_sha256(source)!=meta['source_sha256']:raise ValueError('Index source mismatch')
     manifest=json.loads((source.parent/'report.json').read_text())
-    expected=manifest.get('input_sha256',{}).get(str(normalized.resolve()))
+    expected=next((value for path,value in manifest.get('input_sha256',{}).items()
+                   if Path(path).resolve()==normalized.resolve()),None)
     if not expected or file_sha256(normalized)!=expected:
         raise ValueError('Normalized source differs from the selected chunk manifest')
     records={r['record_id']:r for r in (json.loads(l) for l in normalized.open())}
     for chunk in chunks:
-        for ref in chunk['source_spans']:
+        for ref in chunk['source_spans']+chunk.get('context_source_spans',[]):
             if ref['record_id'] not in records or not 0<=ref['start']<ref['end']<=len(records[ref['record_id']]['text']):
                 raise ValueError('Invalid source span in '+chunk['chunk_id'])
     from transformers import AutoTokenizer
     tokenizer=AutoTokenizer.from_pretrained(meta['model'],local_files_only=True)
-    return SelectedSearch(chunks,vectors,records,tokenizer),meta
+    from sejong_rag.syllabus_originals import build_catalog
+    engine=SelectedSearch(chunks,vectors,records,tokenizer)
+    engine.syllabus_catalog=build_catalog(records.values(),normalized.parents[2])
+    return engine,meta
 
 
 def main():

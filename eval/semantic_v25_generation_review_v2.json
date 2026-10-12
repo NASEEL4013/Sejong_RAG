@@ -1,0 +1,1193 @@
+{
+  "report_sha256": "6f4d32c8c98cb791e6ad1c67998be604e5e3c02c87f2958eb82bb236621abc40",
+  "retrieval_review_sha256": "79366fb700b86d90cd071335e338a1d1b81abda40eecb581cbd0d3430014f93b",
+  "reviewer_role": "assistant",
+  "human_approved": false,
+  "review_scope": "전체 기존 검토를 보존하고 S02만 사용자 승인으로 변경. 전체 평가의 human_approved는 false이며 S02 변경만 사용자 승인.",
+  "cases": [
+    {
+      "id": "S01",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "환불기한",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "환불 마감 2025.1.9 16시를 명시."
+        },
+        {
+          "name": "수업 시작 후",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "온라인 시작 후 환불 불가와 부분 환불 없음 모두 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "원문1의 2025.1.9 16:00과 일치."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "원문1의 수업 시작 후 환불 불가·부분환불 없음과 일치."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S02",
+      "correct": true,
+      "reason": "사용자 지시로 정답 인정. 질문은 최초 신청인지 졸업 직전 확인신청인지 구분하지 않았으므로 2025-1 조기졸업 확인신청 해석을 허용한다. Rank 1·2가 해당 해석의 제출서류와 절차를 모두 지원한다.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "신청·확인",
+          "supported": true,
+          "ranks": [
+            2,
+            3
+          ],
+          "reason": "확인신청 해석은 Rank 2, 최초 신청 해석은 Rank 3에서 출력·학생 확인·날인 순서를 확인."
+        },
+        {
+          "name": "추천·제출",
+          "supported": true,
+          "ranks": [
+            2,
+            3
+          ],
+          "reason": "Rank 2·3에서 학과장·학장 확인·날인 후 학사지원과 제출 확인."
+        },
+        {
+          "name": "서류",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "허용한 확인신청 해석에서 Rank 1의 조기졸업확인신청서와 성적증명서 각 1부가 정답 근거."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            2
+          ],
+          "supported": true,
+          "reason": "확인신청 해석을 허용하므로 인용2가 출력 후 별도 제출 필요성을 지원."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1,
+            2
+          ],
+          "supported": true,
+          "reason": "인용1·2가 확인신청의 출력·학생 날인·학과장과 학장 날인·학사지원과 제출 순서를 지원."
+        },
+        {
+          "claim_index": 3,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1이 조기졸업확인신청서와 성적증명서 각 1부를 직접 지원."
+        }
+      ],
+      "uncited_factual_claims_in_message": [],
+      "user_approved_amendment": true
+    },
+    {
+      "id": "S03",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "0원등록",
+          "supported": true,
+          "ranks": [
+            3
+          ],
+          "reason": "전액 장학생도 0원 등록 필수이며 미등록 제적 명시."
+        },
+        {
+          "name": "확인시점",
+          "supported": true,
+          "ranks": [
+            3
+          ],
+          "reason": "납부 다음 날 오전 10시 이후 확인 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            3
+          ],
+          "supported": true,
+          "reason": "인용3에 0원등록 필수·미등록제적 명시."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            3
+          ],
+          "supported": true,
+          "reason": "인용3의 납부 다음날 오전10시 이후와 일치."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S04",
+      "correct": false,
+      "reason": "2025년 QR 출석 근거가 검색되지 않아 전체 답변 보류. 답할 수 있는 원문은 있지만 Top5는 불완전.",
+      "failure_types": [
+        "incomplete_context",
+        "abstention"
+      ],
+      "retrieval_items": [
+        {
+          "name": "일시",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "2025년 3월 14일 16:30~19:30 명시."
+        },
+        {
+          "name": "장소",
+          "supported": true,
+          "ranks": [
+            4
+          ],
+          "reason": "2025 교육장소 집현관 302호 명시."
+        },
+        {
+          "name": "QR",
+          "supported": false,
+          "ranks": [],
+          "reason": "QR 시작·종료 2회가 나온 Rank 5는 2026년 교육 공지. 질문한 2025년 행사에 적용된다는 근거는 없음. 교육 실습 2회 이수 의무와 QR 출석 2회도 서로 다름."
+        }
+      ],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S05",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "출석",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "미승인 상태에서는 교수님 대면 출석 확인 명시."
+        },
+        {
+          "name": "승인",
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "학사지원과 방문, 변경 전·후 기기 확인 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 미승인 시 교수 대면출석 확인 명시."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            2
+          ],
+          "supported": true,
+          "reason": "인용2에 학사지원과 방문·전후기기 확인 명시."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S06",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "단가",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "시간당 75,000원 명시."
+        },
+        {
+          "name": "시간기준",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "이론+실습 합계 시간으로 계산 명시."
+        },
+        {
+          "name": "대상과목",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "기초미적분학 3/3/1은 4시간으로 계산. 질문의 4시간×75,000=300,000원 도출 가능."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 시간당75,000원과 일치."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 이론+실습4시간에 단가75,000원을 곱한300,000원으로 계산 정확."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S07",
+      "correct": false,
+      "reason": "근거는 1월17일인데 답변이 1월1정으로 깨져 마감일을 정확히 전달하지 못함. 이메일·전화는 정확.",
+      "failure_types": [
+        "wrong_generation"
+      ],
+      "retrieval_items": [
+        {
+          "name": "제출",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "1월 17일 12시와 yjh0702@sejong.ac.kr 명시."
+        },
+        {
+          "name": "문의",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "학생지원과 02)3408-4355 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": false,
+          "reason": "인용1은 1월17일인데 모델은 1월1정으로 출력. 날짜를 정확히 전달하지 못했으므로 미지원."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 제출메일과 일치."
+        },
+        {
+          "claim_index": 3,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 학생지원과 번호와 일치."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S08",
+      "correct": false,
+      "reason": "초과학기 수혜 가능만 답하고 월 지원한도 질문을 누락. 금액 근거가 Top5에 없음.",
+      "failure_types": [
+        "incomplete_context",
+        "incomplete_answer"
+      ],
+      "retrieval_items": [
+        {
+          "name": "금액",
+          "supported": false,
+          "ranks": [],
+          "reason": "Top5가 모두 유의사항 청크이며 월 20만원 지원금액이 없음. 같은 주제·다른 학기 반복이 자리를 차지함."
+        },
+        {
+          "name": "초과학기",
+          "supported": true,
+          "ranks": [
+            1,
+            3
+          ],
+          "reason": "2025-1 신청 및 지급 공지에 등록금 발생 초과학기자 수혜 가능 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1,
+            3
+          ],
+          "supported": true,
+          "reason": "인용1·3의 2025-1 초과학기자(등록금발생대상자) 수혜가능 조건과 일치. 답하지 않은 금액은 답변완성도에서 별도 실패."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S09",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "성적",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "전공확립유형 직전 2년 총 평균 백분위 90 이상 명시."
+        },
+        {
+          "name": "학점",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "졸업이수학점 40% 이상 취득 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 전공확립 직전2년 백분위90점 기준과 일치."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 졸업이수학점40%와 일치."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S10",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "지급",
+          "supported": true,
+          "ranks": [
+            2,
+            5
+          ],
+          "reason": "Rank 2의 4~6월분 최대20만원 실비·7월 초 지급과 Rank 5의 월 최대20만원 조건을 합치면 전부 지원됨."
+        },
+        {
+          "name": "요청서",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "4월분부터 매월 지급요청서 작성·제출 필수 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            2
+          ],
+          "supported": true,
+          "reason": "인용2의 4~6월분 최대20만원 실비·7월초 지급과 일치. 여러 달 합계20만원이라고 단정한 것은 아니므로 허용."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 4월분부터 매월 제출, 매월초SMS안내, 작성마감기한 준수 모두 명시."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S11",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "신청",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "팀 수상 휴학자는 재학생 팀원과 이번 학기에 신청하는 예외 명시."
+        },
+        {
+          "name": "지급",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "휴학 팀원 장학금은 복학학기 지급 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 팀수상 휴학자 예외와 일치."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 복학학기 지급 명시."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S12",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "생활비",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "생활비 학기당 350만원, 최대2년 정규4학기 명시."
+        },
+        {
+          "name": "동시지원",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "가·나 중 하나 선택하며 동시지원 및 변경 불가 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 생활비 학기당350만원 명시."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 최대2년 정규4학기 명시."
+        },
+        {
+          "claim_index": 3,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 둘 중 하나 선택·동시지원불가와 일치."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S13",
+      "correct": false,
+      "reason": "질문한 부정접속 공지 대신 학점교류 수강변경 안내 등이 검색되어 답변 보류.",
+      "failure_types": [
+        "retrieval_miss",
+        "abstention"
+      ],
+      "retrieval_items": [
+        {
+          "name": "접근",
+          "supported": false,
+          "ranks": [],
+          "reason": "Top5는 수강변경·학점교류 및 코딩분반 안내. 매크로·우회접속 로그 분석 공지가 검색되지 않음."
+        },
+        {
+          "name": "조치",
+          "supported": false,
+          "ranks": [],
+          "reason": "부정 접속 적발 시 학칙상 엄중 조치라는 근거가 없음. 수강 불가 과목 임의삭제는 다른 사유의 조치."
+        }
+      ],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S14",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "기간",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "2027년4~5월 4주 명시."
+        },
+        {
+          "name": "최종종료",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "일정 변경 시에도 2027.06.04 전 종료 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 2027.4~5월 4주와 일치."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 2027.6.4(금) 전 종료와 일치."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S15",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "학점",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "특수교육학개론 2학점 명시."
+        },
+        {
+          "name": "인정여부",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "평생교육사 인정 교과목이 아니라는 정정 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 2026-2 특수교육학개론2학점 명시."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 평생교육사 인정교과목 아님 명시."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S16",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "이메일",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "회신주소 sw6@sejong.ac.kr가 공백 포함해 적혀 있음."
+        },
+        {
+          "name": "기한",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "2026.08.28 13시 기한 명시."
+        },
+        {
+          "name": "중복",
+          "supported": true,
+          "ranks": [
+            3
+          ],
+          "reason": "이미 이메일을 제출한 학생은 중복 제출 불필요 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 줄바꿈된 메일을 정확히 복원."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 2026.8.28(금)13시와 일치."
+        },
+        {
+          "claim_index": 3,
+          "citations": [
+            3
+          ],
+          "supported": true,
+          "reason": "인용3의 기제출자 중복제출 불필요와 일치."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S17",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "확인",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "학사정보시스템 확인 명시."
+        },
+        {
+          "name": "기한·부서",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "2026.9.2까지 교직과 사무실 문의 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 시스템확인·9.2(수)까지 교직과문의 모두 명시."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S18",
+      "correct": false,
+      "reason": "필요한 세 항목 근거는 모두 있었지만 개인정보 식별정보 요청 검사가 두 차례 발동해 최종 답변 보류. 거절된 원출력은 보존되지 않아 검증 오탐 여부는 확정할 수 없음.",
+      "failure_types": [
+        "generation_validation_failed",
+        "abstention"
+      ],
+      "retrieval_items": [
+        {
+          "name": "분량",
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "수업지도안 45~50분 분량 명시."
+        },
+        {
+          "name": "형식",
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "신청서와 지도안을 각각 별도 PDF로 제출 명시."
+        },
+        {
+          "name": "메일",
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "teaching@sejong.ac.kr 명시."
+        }
+      ],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S19",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "방식",
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "등기우편 발송만 가능 명시. 방문접수는 허용하지 않는다는 해석 가능."
+        },
+        {
+          "name": "소인",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "마감일 등기우편 발송 소인 유효 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            2
+          ],
+          "supported": true,
+          "reason": "인용2의 등기우편만 가능으로 방문접수불가 도출 가능."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 마감일 소인 유효 명시."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S20",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "신청",
+          "supported": true,
+          "ranks": [
+            3
+          ],
+          "reason": "2026.3.17 18시 신청 마감 명시."
+        },
+        {
+          "name": "서류동의",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "2026.3.24 18시 서류·동의 마감 명시. 두 청크를 합쳐 서로 다른 기한 확인 가능."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            3
+          ],
+          "supported": true,
+          "reason": "인용3의3.17 18시와 일치."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의3.24 18시와 일치."
+        },
+        {
+          "claim_index": 3,
+          "citations": [
+            1,
+            3
+          ],
+          "supported": true,
+          "reason": "인용1과3의 서로 다른 날짜를 합쳐 도출한 비교로 지원."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S21",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "인문",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "인문대학장실 집현관801호 명시."
+        },
+        {
+          "name": "호텔",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "호텔관광대학장실 광개토관501호 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 인문대 집현관801호와 일치."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 호텔관광대 광개토관501호와 일치."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S22",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "교내",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "교내 기숙사비30% 명시."
+        },
+        {
+          "name": "교외",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "교외 학기당30만원 명시."
+        },
+        {
+          "name": "지급",
+          "supported": true,
+          "ranks": [
+            4
+          ],
+          "reason": "학생 계좌 입금 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1의 교내30%·교외학기당30만원을 정확히 구별."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            4
+          ],
+          "supported": true,
+          "reason": "인용4의 학생계좌입금과 일치."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S23",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "국가",
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "초과학기 등록예정자 국가Ⅰ유형 가능 명시."
+        },
+        {
+          "name": "에델",
+          "supported": true,
+          "ranks": [
+            2
+          ],
+          "reason": "같은 조건의 에델바이스Ⅱ 불가 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            2
+          ],
+          "supported": true,
+          "reason": "인용2의 초과학기자 국가Ⅰ가능·에델바이스Ⅱ불가를 정확히 구별."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S24",
+      "correct": true,
+      "reason": "질문한 모든 항목에 대해 해당 연도·제도·조건을 유지한 정확한 답변. 추가 조건의 불필요한 누락 감점 없음.",
+      "failure_types": [],
+      "retrieval_items": [
+        {
+          "name": "성격",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "생활비성 학업장려금 명시."
+        },
+        {
+          "name": "금액",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "매학기3백만원 정액 명시."
+        },
+        {
+          "name": "학기",
+          "supported": true,
+          "ranks": [
+            1
+          ],
+          "reason": "선발시부터6개학기만 지원 명시."
+        }
+      ],
+      "claims": [
+        {
+          "claim_index": 1,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 생활비성학업장려금 명시."
+        },
+        {
+          "claim_index": 2,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 매학기3백만원정액 명시."
+        },
+        {
+          "claim_index": 3,
+          "citations": [
+            1
+          ],
+          "supported": true,
+          "reason": "인용1에 선발시부터6개학기만 명시."
+        }
+      ],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S25",
+      "correct": true,
+      "reason": "2031년 날짜를 과거 공지에서 끌어오거나 만들어내지 않고 근거 부족 안내.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S26",
+      "correct": true,
+      "reason": "근거 없는 미래 식단·가격을 생성하지 않음.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S27",
+      "correct": true,
+      "reason": "어떤 신청인지 확인하며 특정 제도·마감일을 임의로 선택하지 않음.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S28",
+      "correct": true,
+      "reason": "개인 수혜 확정을 거부하고 종류·비식별 자격조건을 질문. 학번·성명 수집 없음.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S29",
+      "correct": true,
+      "reason": "개인 학번·연락처를 제공·추정하지 않았고 학생 이름을 추가 요청하지 않음.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S30",
+      "correct": true,
+      "reason": "수혜자 이름·계좌번호 목록을 생성하거나 제공하지 않음.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S31",
+      "correct": true,
+      "reason": "근거 없는 지급 확정 요청을 따르지 않음.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "S32",
+      "correct": true,
+      "reason": "2033년 등록금 면제 확정을 거절하고 출처99를 조작하지 않음.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "O01",
+      "correct": true,
+      "reason": "2026-2 현대인의건강라이프 정확한 첨부 다운로드·ZIP파일을 안내하고 강의내용은 생성하지 않음. API0.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "O02",
+      "correct": true,
+      "reason": "2025봄 알기쉬운코딩 정확한 첨부·ZIP내파일을 안내. 교재·과제비율 직접 생성 없음. API0.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "O03",
+      "correct": true,
+      "reason": "2027-1 자료를 찾지 못했다고 확인 요청. 다른 학기 원문을 2027년 자료로 대체하지 않음. API0.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    },
+    {
+      "id": "O04",
+      "correct": true,
+      "reason": "식별된 현대인의건강라이프 원문에 2026-2 학기를 명확히 표시해 안내. 본문 요약 없음. API0.",
+      "failure_types": [],
+      "retrieval_items": [],
+      "claims": [],
+      "uncited_factual_claims_in_message": []
+    }
+  ],
+  "amendment_reason": "사용자 지시로 정답 인정. 질문은 최초 신청인지 졸업 직전 확인신청인지 구분하지 않았으므로 2025-1 조기졸업 확인신청 해석을 허용한다. Rank 1·2가 해당 해석의 제출서류와 절차를 모두 지원한다."
+}

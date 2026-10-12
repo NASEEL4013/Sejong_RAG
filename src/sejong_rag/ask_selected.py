@@ -28,6 +28,9 @@ def prepare_request(query, engine, metadata, embedding_model):
     if not isinstance(query, str) or not query.strip():
         raise ValueError('질문은 비어 있을 수 없어.')
     query = query.strip()
+    from sejong_rag.syllabus_originals import guidance_request
+    original=guidance_request(query,getattr(engine,'syllabus_catalog',[]))
+    if original is not None:return original
     encoded_query = metadata['query_prefix'] + query
     if engine.count(encoded_query) > embedding_model.max_seq_length:
         raise ValueError('질문이 임베딩 입력 한도를 넘었어. 조금 짧게 나눠서 질문해줘.')
@@ -45,7 +48,8 @@ def prepare_request(query, engine, metadata, embedding_model):
     request['retrieval'] = dict(version=VERSION, strategy=DEFAULT_STRATEGY,
         index_model=metadata['model'], source_sha256=metadata['source_sha256'],
         corpus_chunks=len(engine.chunks), top_k=5, max_bundle_tokens=512,
-        total_evidence_tokens=2200)
+        total_evidence_tokens=2200,
+        procedure_decisions=deepcopy(getattr(engine,'last_procedure_decisions',[])))
     return request
 
 
@@ -87,9 +91,12 @@ def main():
         print(json.dumps(request, ensure_ascii=False, indent=2))
         return
     try:
-        with create_client() as client:
-            result = generate_answer(client, request, model=args.model,
-                                     max_output_tokens=args.max_output_tokens)
+        if 'original_document_response' in request:
+            result = generate_answer(None, request, model=args.model, max_output_tokens=args.max_output_tokens)
+        else:
+            with create_client() as client:
+                result = generate_answer(client, request, model=args.model,
+                                         max_output_tokens=args.max_output_tokens)
     except Exception as error:
         # Provider exception messages can include request URLs. Never print keys,
         # headers, or the provider's raw error body.

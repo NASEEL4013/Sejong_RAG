@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "status": "user_confirmed_example",
+  "scope": "B excerpt lines 1-17 only; example for future common-rule implementation",
+  "source_record_id": "notice7-810913-body",
+  "source_text_sha256": "46fb73dae3d2bbe6b02706447c6c3669c8c0ab67a0a3a31d34a5ff53f6b1fc7c",
+  "document_title": "2025학년도 신라문화장학재단 장학생 공개선발 안내",
+  "rules": [
+    "각 묶음에 문서 제목을 붙인다.",
+    "대상 조건 전체와 모든 조건 충족 문구를 하나의 청크로 유지한다.",
+    "서류접수기간·전형방법·결과고지를 각각 제목과 내용으로 묶는다.",
+    "장학금지급액·지원 기간·계속 지급 기준·중복수혜 제한과 예시를 하나의 청크로 유지한다."
+  ],
+  "chunks": [
+    {
+      "id": "B1",
+      "label": "대상",
+      "user_line_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "text": "대상\n․\n2025\n년도 2\n학년 예정자\n, 5\n년제는\n3\n학년\n․\n32\n학점 이상 이수하고 평점평균\n3.0\n이상\n(4.5\n만점\n)\n․\n2024\n년도 양친 재산세 합계액\n(주택 +\n건물\n+\n토지\n)\n100\n만원 이하\n․ 수여식 등 재단에서 주최하는 행사에 참석이 가능한자\n※ 상기의 조건이 모두\n충족되어야 합니다\n.\n",
+      "retrieval_text": "문서 제목: 2025학년도 신라문화장학재단 장학생 공개선발 안내\n\n대상\n․\n2025\n년도 2\n학년 예정자\n, 5\n년제는\n3\n학년\n․\n32\n학점 이상 이수하고 평점평균\n3.0\n이상\n(4.5\n만점\n)\n․\n2024\n년도 양친 재산세 합계액\n(주택 +\n건물\n+\n토지\n)\n100\n만원 이하\n․ 수여식 등 재단에서 주최하는 행사에 참석이 가능한자\n※ 상기의 조건이 모두\n충족되어야 합니다\n.\n",
+      "retrieval_source_spans": [
+        {
+          "record_id": "notice7-810913-body",
+          "start": 0,
+          "end": 176
+        }
+      ],
+      "context_text": "문서 제목: 2025학년도 신라문화장학재단 장학생 공개선발 안내\n\n대상\n․\n2025\n년도 2\n학년 예정자\n, 5\n년제는\n3\n학년\n․\n32\n학점 이상 이수하고 평점평균\n3.0\n이상\n(4.5\n만점\n)\n․\n2024\n년도 양친 재산세 합계액\n(주택 +\n건물\n+\n토지\n)\n100\n만원 이하\n․ 수여식 등 재단에서 주최하는 행사에 참석이 가능한자\n※ 상기의 조건이 모두\n충족되어야 합니다\n.\n",
+      "context_source_spans": [
+        {
+          "record_id": "notice7-810913-body",
+          "start": 0,
+          "end": 176
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "label": "서류접수기간",
+      "user_line_numbers": [
+        7,
+        8
+      ],
+      "text": "서류접수기간\n․\n2025. 1. 20 ~ 2. 4 (\n등기우편 발송만 가능\n, 마감일 등기 우편 발송 소인분\n유효\n)\n",
+      "retrieval_text": "문서 제목: 2025학년도 신라문화장학재단 장학생 공개선발 안내\n\n서류접수기간\n․\n2025. 1. 20 ~ 2. 4 (\n등기우편 발송만 가능\n, 마감일 등기 우편 발송 소인분\n유효\n)\n",
+      "retrieval_source_spans": [
+        {
+          "record_id": "notice7-810913-body",
+          "start": 176,
+          "end": 242
+        }
+      ],
+      "context_text": "문서 제목: 2025학년도 신라문화장학재단 장학생 공개선발 안내\n\n서류접수기간\n․\n2025. 1. 20 ~ 2. 4 (\n등기우편 발송만 가능\n, 마감일 등기 우편 발송 소인분\n유효\n)\n",
+      "context_source_spans": [
+        {
+          "record_id": "notice7-810913-body",
+          "start": 176,
+          "end": 242
+        }
+      ]
+    },
+    {
+      "id": "B3",
+      "label": "전형방법",
+      "user_line_numbers": [
+        9,
+        10
+      ],
+      "text": "전형방법\n․\n서류전형\n",
+      "retrieval_text": "문서 제목: 2025학년도 신라문화장학재단 장학생 공개선발 안내\n\n전형방법\n․\n서류전형\n",
+      "retrieval_source_spans": [
+        {
+          "record_id": "notice7-810913-body",
+          "start": 242,
+          "end": 254
+        }
+      ],
+      "context_text": "문서 제목: 2025학년도 신라문화장학재단 장학생 공개선발 안내\n\n전형방법\n․\n서류전형\n",
+      "context_source_spans": [
+        {
+          "record_id": "notice7-810913-body",
+          "start": 242,
+          "end": 254
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "label": "결과고지",
+      "user_line_numbers": [
+        11,
+        12
+      ],
+      "text": "결과고지\n․ 2025. 2. 21 오후 5시 이후(개인별 통보/ 일정변동 가능성 있음)\n",
+      "retrieval_text": "문서 제목: 2025학년도 신라문화장학재단 장학생 공개선발 안내\n\n결과고지\n․ 2025. 2. 21 오후 5시 이후(개인별 통보/ 일정변동 가능성 있음)\n",
+      "retrieval_source_spans": [
+        {
+          "record_id": "notice7-810913-body",
+          "start": 254,
+          "end": 303
+        }
+      ],
+      "context_text": "문서 제목: 2025학년도 신라문화장학재단 장학생 공개선발 안내\n\n결과고지\n․ 2025. 2. 21 오후 5시 이후(개인별 통보/ 일정변동 가능성 있음)\n",
+      "context_source_spans": [
+        {
+          "record_id": "notice7-810913-body",
+          "start": 254,
+          "end": 303
+        }
+      ]
+    },
+    {
+      "id": "B5",
+      "label": "장학금지급액",
+      "user_line_numbers": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "text": "장학금지급액\n․\n졸업까지\n(\n정규학기\n)\n등록금 전액\n(\n결격사유 없을 시\n)\n․ 계속 지급 기준 : 학점 기준 충족\n※\n선발시 타 등록금명목 장학금과 중복수혜 불가능\nex.\n국가장학금\n",
+      "retrieval_text": "문서 제목: 2025학년도 신라문화장학재단 장학생 공개선발 안내\n\n장학금지급액\n․\n졸업까지\n(\n정규학기\n)\n등록금 전액\n(\n결격사유 없을 시\n)\n․ 계속 지급 기준 : 학점 기준 충족\n※\n선발시 타 등록금명목 장학금과 중복수혜 불가능\nex.\n국가장학금\n",
+      "retrieval_source_spans": [
+        {
+          "record_id": "notice7-810913-body",
+          "start": 303,
+          "end": 407
+        }
+      ],
+      "context_text": "문서 제목: 2025학년도 신라문화장학재단 장학생 공개선발 안내\n\n장학금지급액\n․\n졸업까지\n(\n정규학기\n)\n등록금 전액\n(\n결격사유 없을 시\n)\n․ 계속 지급 기준 : 학점 기준 충족\n※\n선발시 타 등록금명목 장학금과 중복수혜 불가능\nex.\n국가장학금\n",
+      "context_source_spans": [
+        {
+          "record_id": "notice7-810913-body",
+          "start": 303,
+          "end": 407
+        }
+      ]
+    }
+  ],
+  "production_applied": false
+}

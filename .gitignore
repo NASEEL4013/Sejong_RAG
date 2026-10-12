@@ -13,3 +13,7 @@ data/metadata/
 data/evaluation/
 data/manual-input/
 
+data/backups/
+
+# Generated semantic evaluation index; retained locally.
+data/index/sejong-semantic-v25-e5-small.npz

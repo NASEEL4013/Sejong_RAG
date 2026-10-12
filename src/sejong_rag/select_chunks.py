@@ -1,5 +1,7 @@
 """Select ready chunks and deduplicate byte-identical attachment copies only."""
 from __future__ import annotations
+from sejong_rag.corpus_policy import allowed_chunk, EXCLUDED_DOCUMENTS
+
 import argparse
 from collections import Counter, defaultdict
 import hashlib
@@ -96,6 +98,9 @@ def build(data_dir, chunks_dir, normalized_dir, output_dir):
         for c in jsonl(chunks_dir/'ready.jsonl'):
             counts['ready_input_chunks'] += 1
             docid = c['document_id']
+            if not allowed_chunk(c):
+                counts['excluded_by_user_policy_chunks'] += 1
+                continue
             if c['source_kind']=='attachment':
                 canonical = representative[docid]
                 if docid != canonical:

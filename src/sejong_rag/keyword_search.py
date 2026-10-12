@@ -1,6 +1,8 @@
 """JSONL chunk를 대상으로 하는 단순 키워드 검색 baseline."""
 
 from __future__ import annotations
+from sejong_rag.corpus_policy import allowed_chunk, EXCLUDED_DOCUMENTS
+
 
 import argparse
 import json
@@ -65,7 +67,7 @@ def load_chunks(path: Path) -> list[dict[str, object]]:
             raise ValueError(
                 f"{path}의 {line_number}번째 줄이 올바른 JSON이 아닙니다."
             ) from error
-    return chunks
+    return [c for c in chunks if allowed_chunk(c)]
 
 
 def build_document_frequency(
